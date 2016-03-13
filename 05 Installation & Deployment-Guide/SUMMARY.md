@@ -5,5 +5,6 @@
     * [安装 Mysql](1. Environment/1.1.1 Install Mysql.md)
     * [安装 Mongodb](1. Environment/1.1.2 Install Mongodb.md)
     * [安装 Tomcat](1. Environment/1.1.3 Install Tomcat.md)
-* [EAD 平台部署](2. Deployment/README.md)
-  * [Tomcat](2. Deployment/2.1 Tomcat Deployment.md)
+* [配置数据初始化](2. Config Data Init/Config Data Init.md)
+* [平台部署](3. Deployment/README.md)
+  * [Tomcat](3. Deployment/3.1 Tomcat Deployment.md)
