@@ -12,22 +12,7 @@ EAD 平台开发应用的核心思想是**数据定义软件**，每一个应用
 
 第二步：导入开发者中心（develop）应用配置数据；
 
-  运行以下 sql 文件，进行开发者中心应用配置数据初始化；
-
-  - ead_app.sql
-  - ead_res.sql
-  - ead_domain.sql
-  - ead_data_type.sql
-  - ead_data_source.sql
-  - ead_model.sql
-  - ead_model_attr.sql
-  - ead_collection.sql
-  - ead_view.sql
-  - ead_view_attr.sql
-  - ead_view_filter.sql
-  - ead_view_action.sql
-  - ead_variable.sql
-  - ead_driver.sql
+  运行以下 ead_init.sql 文件，进行开发者中心应用配置数据初始化；
 
 #### 系统库（app）
 
@@ -39,12 +24,8 @@ EAD 平台开发应用的核心思想是**数据定义软件**，每一个应用
 
 第二步：导入超级开发账号及权限；
 
-  运行以下 sql 文件，进行开发者中心应用开发者账号初始化；
+  运行 sys_init.sql 文件，进行开发者中心应用开发者账号初始化；
 
-  - sys_account.sql
-  - sys_contacts.sql
-  - sys_role.sql
-  - sys_role_res.sql
 
 
 
