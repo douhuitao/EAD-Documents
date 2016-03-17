@@ -4,7 +4,7 @@
   * [执行流程架构](Overview/3. Execute Workflow Architechture.md)
 * [关键技术](Primary Technology/README.md)
   * [J2EE](Primary Technology/1. J2EE.md)
-  * [Restful](Primary Technology/2. Restful.md)
+  * [RESTful](Primary Technology/2. RESTful.md)
   * [MVC](Primary Technology/3. MVC.md)
   * [AOP](Primary Technology/4. AOP.md)
   * [Maven](Primary Technology/5. Maven.md)
