@@ -1,18 +1,6 @@
 # Summary
 
 * [前言](1. Introduction/README.md)
-* [开始](2. Get Started/README.md)
-  * [准备](2. Get Started/2.1 Ready To Develop.md)
-  * [用户开发环境](2. Get Started/2.2 Custom Developer Environment.md)
-    * [开发工具安装](2. Get Started/2.2.1 Develop Utils Install.md)
-    * [EAD 工程创建](2. Get Started/2.2.2 Create EAD Project.md)
-  * [应用扩展开发及部署](2. Get Started/2.3 App Extend Develop & Deployment.md)
-* [安装与部署](3. Install & Deployment/README.md)
-  * [服务器环境](3. Install & Deployment/3.1 Server Environment Install.md)
-    * [安装 Mysql](3. Install & Deployment/3.1.1 Install Mysql.md)
-    * [安装 Mongodb](3. Install & Deployment/3.1.2 Install Mongodb.md)
-    * [安装 Tomcat](3. Install & Deployment/3.1.3 Install Tomcat.md)
-  * [EAD 平台部署启动](3. Install & Deployment/3.2 EAD Deployment.md)
 * [模型](4. Model/README.md)
   * [创建模型](4. Model/4.1. Create Model.md)
   * [创建模型属性](4. Model/4.2. Create Model Attributes.md)
