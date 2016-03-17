@@ -10,5 +10,5 @@
 * [扩展支持](Extension Driver/README.md)
 * [一切皆资源](Everything Resources/README.md)
 * [开发者应用](Developer App/README.md)
-* [通用应用场景](Common Application Scenario/README.md)
+* [典型应用场景](Common Application Scenario/README.md)
 * [部署架构](Deployment/README.md)
