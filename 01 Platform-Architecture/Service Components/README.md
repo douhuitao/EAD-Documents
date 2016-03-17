@@ -1,6 +1,6 @@
 # 服务组件
 
-![服务组件](..\images\service-components.png)
+![服务组件](..\images\services-components.png)
 
 ## 基础组件
 
