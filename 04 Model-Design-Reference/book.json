@@ -1,0 +1,13 @@
+{
+    "pdf": {
+        "pageNumbers": false,
+        "fontSize": 8,
+		"paperSize": "a4",
+        "margin": {
+            "right": 30,
+            "left": 30,
+            "top": 20,
+            "bottom": 20
+        }
+    }
+}
