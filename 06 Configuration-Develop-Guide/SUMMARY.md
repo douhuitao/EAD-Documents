@@ -37,4 +37,4 @@
     * [注册视图动作驱动](Advanced Settings/Register Action Driver.md)
     * [注册系统变量驱动](Advanced Settings/Register Variable Driver.md)
 * [网盘](Netdisk/README.md)
-* [案例](User Case/README.md)
+* [案例](UseCase/README.md)
