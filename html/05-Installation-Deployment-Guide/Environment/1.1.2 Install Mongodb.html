@@ -1,0 +1,419 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>安装 Mongodb | EAD-Deployment-Document</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Environment/1.1.3 Install Tomcat.html" />
+    
+    
+    <link rel="prev" href="../Environment/1.1.1 Install Mysql.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1.1.2"
+        data-chapter-title="安装 Mongodb"
+        data-filepath="Environment/1.1.2 Install Mongodb.md"
+        data-basepath=".."
+        data-revision="Tue Mar 22 2016 08:08:31 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Environment/index.html">
+            
+                
+                    <a href="../Environment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        服务器运行环境准备
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Environment/1.1 Windows Server.html">
+            
+                
+                    <a href="../Environment/1.1 Windows Server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Winows Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Environment/1.1.1 Install Mysql.html">
+            
+                
+                    <a href="../Environment/1.1.1 Install Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        安装 Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.2" data-path="Environment/1.1.2 Install Mongodb.html">
+            
+                
+                    <a href="../Environment/1.1.2 Install Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        安装 Mongodb
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Environment/1.1.3 Install Tomcat.html">
+            
+                
+                    <a href="../Environment/1.1.3 Install Tomcat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        安装 Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Config Data Init/Config Data Init.html">
+            
+                
+                    <a href="../Config Data Init/Config Data Init.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        配置数据初始化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Deployment/index.html">
+            
+                
+                    <a href="../Deployment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        平台部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Deployment/3.1 Tomcat Deployment.html">
+            
+                
+                    <a href="../Deployment/3.1 Tomcat Deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >EAD-Deployment-Document</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="112-&#x5B89;&#x88C5;-mongodb">1.1.2 &#x5B89;&#x88C5; Mongodb</h3>
+<h4 id="1-&#x4E0B;&#x8F7D;-mongodb">1. &#x4E0B;&#x8F7D; Mongodb</h4>
+<p>&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="https://www.mongodb.org/" target="_blank">https://www.mongodb.org/</a></p>
+<h4 id="2-windows-&#x4E0B;&#x5B89;&#x88C5;-mongodb">2. Windows &#x4E0B;&#x5B89;&#x88C5; Mongodb</h4>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x8FD0;&#x884C; Mongodb &#x5B89;&#x88C5;&#x5305;&#xFF1B;</p>
+<p><img src="../images/mongodb/1.png" alt="PNG">
+<img src="../images/mongodb/2.png" alt="PNG"></p>
+<p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x8BBE;&#x7F6E;&#x5B89;&#x88C5;&#x4F4D;&#x7F6E;&#xFF1B;</p>
+<p><img src="../images/mongodb/3.png" alt="PNG">
+<img src="../images/mongodb/4.png" alt="PNG"></p>
+<p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x5B8C;&#x6210;&#x5B89;&#x88C5;&#xFF1B;</p>
+<p><img src="../images/mongodb/5.png" alt="PNG">
+<img src="../images/mongodb/7.png" alt="PNG"></p>
+<h4 id="3-&#x914D;&#x7F6E;-mongodb-&#x4E3A;-windows-&#x670D;&#x52A1;">3. &#x914D;&#x7F6E; Mongodb &#x4E3A; Windows &#x670D;&#x52A1;</h4>
+<blockquote>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x628A;mongodb&#x8BBE;&#x7F6E;&#x4E3A;windows&#x670D;&#x52A1;&#xFF0C;&#x5E76;&#x4E14;&#x5F00;&#x542F;&#x8BA4;&#x8BC1;&#x3002;</p>
+</blockquote>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x542F;&#x52A8;&#x5B89;&#x88C5;&#x597D;&#x7684; Mongodb</p>
+<pre><code>Script&#xFF1A;&quot;bin\mongod.exe&quot; --config=D:\gbros\mongodb\mongod.cfg
+</code></pre><p>&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x901A;&#x8FC7;&#x64CD;&#x4F5C; Mongodb &#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x589E;&#x52A0;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;</p>
+<pre><code>use admin
+db.createUser(
+  {
+    user: &quot;root&quot;,
+    pwd: &quot;test@2016&quot;,
+    roles:
+    [
+      {
+        role: &quot;userAdminAnyDatabase&quot;,
+        db: &quot;admin&quot;
+      }
+    ]
+  }
+)
+</code></pre><p>&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x628A; Mongodb &#x8BBE;&#x7F6E;&#x4E3A; Windows</p>
+<p>&#x5728; Windows &#x547D;&#x4EE4;&#x7A97;&#x53E3;&#x4E2D;&#x8FD0;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#xFF0C;&#x628A; mongodb &#x52A0;&#x5165; Windows &#x670D;&#x52A1;&#xFF1A;</p>
+<pre><code>sc.exe create MongoDB binPath= &quot;bin\mongod.exe --auth --service --config=\&quot;D:\gbros\mongodb\mongod.cfg\&quot;&quot; DisplayName= &quot;MongoDB&quot; start= &quot;auto&quot;
+</code></pre><blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A;&#x4EE5;&#x4E0A;&#x547D;&#x4EE4;&#x4E2D;&#x7684; binPath &#x548C; config &#x8DEF;&#x5F84;&#x8BBE;&#x7F6E;&#x4E3A;&#x6B63;&#x786E;&#x8DEF;&#x5F84;&#xFF1B;
+DisplayName &#x4E3A; Windows &#x4E2D;mongodb&#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF0C;start &#x4E3A; mongodb &#x542F;&#x52A8;&#x7C7B;&#x578B;&#xFF1B;</p>
+</blockquote>
+<h4 id="4-&#x542F;&#x52A8;-mongodb&#x670D;&#x52A1;&#xFF0C;&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;">4. &#x542F;&#x52A8; Mongodb&#x670D;&#x52A1;&#xFF0C;&#x521B;&#x5EFA;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x914D;&#x7F6E;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;</h4>
+<p>&#x6253;&#x5F00; Windows &#x670D;&#x52A1;&#x754C;&#x9762;&#xFF0C;&#x542F;&#x52A8; mongodb &#x670D;&#x52A1;&#xFF1B;</p>
+<p><img src="../images/mongodb/8.png" alt="PNG"></p>
+<p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5E76;&#x589E;&#x52A0;&#x8BE5;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;</p>
+<p>&#x9996;&#x5148;&#x8FDB;&#x884C;&#x8D85;&#x7EA7;&#x7BA1;&#x7406;&#x5458;&#x8BA4;&#x8BC1;&#xFF1A;</p>
+<pre><code>use admin
+db.auth(&apos;root&apos;,&apos;test@2016&apos;)
+</code></pre><p>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x53CA;&#x6570;&#x636E;&#x5E93;&#x7BA1;&#x7406;&#x5458;</p>
+<pre><code>use ead
+db.createUser({&quot;user&quot;: &quot;admin&quot;,&quot;pwd&quot;: &quot;test@2016&quot;,&quot;roles&quot;: [&quot;readWrite&quot;,&quot;dbAdmin&quot;]})
+</code></pre><h4 id="5-windows-&#x4E0B;-mongodb-&#x5168;&#x91CF;&#x5907;&#x4EFD;">5. Windows &#x4E0B; Mongodb &#x5168;&#x91CF;&#x5907;&#x4EFD;</h4>
+<pre><code>@echo off
+rem ----------------------------------------------------------------------
+rem This is the mongodb backup script.
+rem You can use this script to copy an other mongodb&apos;s data file. 
+rem ----------------------------------------------------------------------
+
+rem GetDate
+rem  GetYear:%date:~0,4%GetMonth:%date:~5,2%:GetDay:%date:~8,2%
+
+echo current date : %date%
+set strYear=%date:~0,4%&amp;set strMonth=%date:~5,2%&amp;set strDay=%date:~8,2%
+set strDate=%strYear%%strMonth%%strDay%
+
+rem ----------------------------------------------------------------------
+rem ----------------------Backup Start------------------------------------
+echo ----------------------Backup Start-----------------------------------
+
+rem &#x8BBE;&#x7F6E; mongodb &#x6839;&#x76EE;&#x5F55;
+set MONGO_PATH=D:\gbros\mongodb
+rem &#x8BBE;&#x7F6E; mongodb &#x5907;&#x4EFD;&#x76EE;&#x5F55;&#x540D;
+set BACKUP_DIR_LOCAL=%MONGO_PATH%\backup\mongo_bak_%strDate%
+
+rem &#x521B;&#x5EFA;&#x5907;&#x4EFD;&#x76EE;&#x5F55;
+echo Backup Dir 1 : %BACKUP_DIR_LOCAL%
+mkdir %BACKUP_DIR_LOCAL%
+
+rem &#x8BBE;&#x7F6E;&#x5907;&#x4EFD;&#x547D;&#x4EE4;
+set _EXECMONGODUMP=start %MONGO_PATH%\bin\mongodump.exe
+
+rem &#x8BBE;&#x7F6E;&#x5907;&#x4EFD;&#x547D;&#x4EE4;&#x53C2;&#x6570;
+set MONGODUMP_OPTS_LOCAL= --db ead --out %BACKUP_DIR_LOCAL%
+
+rem &#x6267;&#x884C;&#x5907;&#x4EFD;&#x547D;&#x4EE4;
+echo ---------Backup Local------------
+%_EXECMONGODUMP% %MONGODUMP_OPTS_LOCAL% 
+echo ---------Backup Local Over-------
+
+echo ---------------------------Backup Over-----------------------------------
+rem ----------------------------Backup Over------------------------------------
+rem ---------------------------------------------------------------------------
+
+rem mongodb delete bak script
+rem the script can delete backup fold 7 days before now day.
+rem &#x6307;&#x5B9A;&#x5F85;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x5B58;&#x653E;&#x8DEF;&#x5F84;
+set SrcDir=D:\gbros\mongodb\backup\
+rem &#x6307;&#x5B9A;&#x4FDD;&#x7559;&#x6587;&#x4EF6;&#x5929;&#x6570;
+set DaysAgo=7
+
+&gt;&quot;%temp%/DstDate.vbs&quot; echo LastDate=date()-%DaysAgo%
+&gt;&gt;&quot;%temp%/DstDate.vbs&quot; echo FmtDate=right(year(LastDate),4) ^&amp; right(&quot;0&quot; ^&amp; month(LastDate),2) ^&amp; right(&quot;0&quot; ^&amp; day(LastDate),2)
+&gt;&gt;&quot;%temp%/DstDate.vbs&quot; echo wscript.echo FmtDate
+for /f %%a in (&apos;cscript /nologo &quot;%temp%/DstDate.vbs&quot;&apos;) do (
+  set &quot;DstDate=%%a&quot;
+)
+set DstDate=%DstDate:~0,4%%DstDate:~4,2%%DstDate:~6,2%
+
+rem &#x8BBE;&#x7F6E;&#x5220;&#x9664;&#x8DEF;&#x5F84;
+echo %DstDate%
+set DEL_PATH=D:\gbros\mongodb\backup\mongo_bak_%DstDate%
+
+echo Delete Local %DEL_PATH%
+if exist %DEL_PATH% (rd /s /q %DEL_PATH%)
+
+endlocal
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Environment/1.1.1 Install Mysql.html" class="navigation navigation-prev " aria-label="Previous page: 安装 Mysql"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Environment/1.1.3 Install Tomcat.html" class="navigation navigation-next " aria-label="Next page: 安装 Tomcat"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

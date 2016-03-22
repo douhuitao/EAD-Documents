@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>概述 | EAD 平台模型设计</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../2. Base Model/Base Model.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="1"
+        data-chapter-title="概述"
+        data-filepath="1. Introduction/Introduction.md"
+        data-basepath=".."
+        data-revision="Tue Mar 22 2016 08:06:31 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="1" data-path="1. Introduction/Introduction.html">
+            
+                
+                    <a href="../1. Introduction/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="2. Base Model/Base Model.html">
+            
+                
+                    <a href="../2. Base Model/Base Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Base Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="3. EAD Core Model/EAD Core Model.html">
+            
+                
+                    <a href="../3. EAD Core Model/EAD Core Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        EAD Core Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="4. Sys Model/Sys Model.html">
+            
+                
+                    <a href="../4. Sys Model/Sys Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Sys Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="5. Workflow Model/Workflow Model.html">
+            
+                
+                    <a href="../5. Workflow Model/Workflow Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Workflow Model
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >EAD 平台模型设计</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="1-&#x6982;&#x8FF0;">1. &#x6982;&#x8FF0;</h3>
+<h4 id="&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6620;&#x5C04;">&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6620;&#x5C04;</h4>
+<table>
+<thead>
+<tr>
+<th>EAD &#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x7C7B;&#x578B;&#x8BF4;&#x660E;</th>
+<th>Mysql &#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>alpha</td>
+<td>&#x5B57;&#x6BCD;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>alphanumeicunline</td>
+<td>&#x5B57;&#x6BCD;&#x6570;&#x5B57;&#x4E0B;&#x5212;&#x7EBF;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>alphanumeric</td>
+<td>&#x5B57;&#x6BCD;&#x6570;&#x5B57;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>array</td>
+<td>&#x6570;&#x7EC4;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>bin</td>
+<td>&#x4E8C;&#x8FDB;&#x5236;</td>
+<td>blob</td>
+</tr>
+<tr>
+<td>bool</td>
+<td>&#x5E03;&#x5C14;&#x578B;</td>
+<td>tinyint(1)</td>
+</tr>
+<tr>
+<td>collection</td>
+<td>&#x96C6;&#x5408;</td>
+<td>char(48)</td>
+</tr>
+<tr>
+<td>date</td>
+<td>&#x65E5;&#x671F;</td>
+<td>bigint(20)</td>
+</tr>
+<tr>
+<td>datetime</td>
+<td>&#x65E5;&#x671F;</td>
+<td>Date</td>
+</tr>
+<tr>
+<td>email</td>
+<td>Email</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>file</td>
+<td>&#x6587;&#x4EF6;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>geopoint</td>
+<td>&#x5730;&#x7406;&#x5750;&#x6807;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>html</td>
+<td>HTML</td>
+<td>text</td>
+</tr>
+<tr>
+<td>id</td>
+<td>ID</td>
+<td>char(48)</td>
+</tr>
+<tr>
+<td>image</td>
+<td>&#x56FE;&#x7247;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>&#x6574;&#x578B;</td>
+<td>bigint(20)</td>
+</tr>
+<tr>
+<td>list</td>
+<td>&#x5217;&#x8868;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>model</td>
+<td>&#x6A21;&#x578B;</td>
+<td>char(48)</td>
+</tr>
+<tr>
+<td>month</td>
+<td>&#x6708;</td>
+<td>bigint(20)</td>
+</tr>
+<tr>
+<td>number</td>
+<td>&#x6570;&#x5B57;</td>
+<td>float(15,2)</td>
+</tr>
+<tr>
+<td>object</td>
+<td>&#x5BF9;&#x8C61;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>password</td>
+<td>&#x5BC6;&#x7801;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>string</td>
+<td>&#x957F;&#x5B57;&#x7B26;&#x4E32;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>text</td>
+<td>&#x6587;&#x672C;</td>
+<td>text</td>
+</tr>
+<tr>
+<td>time</td>
+<td>&#x65F6;&#x95F4;</td>
+<td>bigint(20)</td>
+</tr>
+<tr>
+<td>token</td>
+<td>&#x4EE4;&#x724C;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>url</td>
+<td>URL</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>uuid</td>
+<td>UUID</td>
+<td>char(48)</td>
+</tr>
+<tr>
+<td>variable</td>
+<td>&#x53D8;&#x91CF;</td>
+<td>varchar(512)</td>
+</tr>
+<tr>
+<td>week</td>
+<td>&#x5468;</td>
+<td>bigint(20)</td>
+</tr>
+<tr>
+<td>wordbook</td>
+<td>&#x5B57;&#x5178;</td>
+<td>char(48)</td>
+</tr>
+<tr>
+<td>year</td>
+<td>&#x5E74;</td>
+<td>bigint(20)</td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../2. Base Model/Base Model.html" class="navigation navigation-next " aria-label="Next page: Base Model"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

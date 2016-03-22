@@ -1,0 +1,916 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Workflow Model | EAD 平台模型设计</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="../4. Sys Model/Sys Model.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5"
+        data-chapter-title="Workflow Model"
+        data-filepath="5. Workflow Model/Workflow Model.md"
+        data-basepath=".."
+        data-revision="Tue Mar 22 2016 08:06:31 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="1. Introduction/Introduction.html">
+            
+                
+                    <a href="../1. Introduction/Introduction.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="2. Base Model/Base Model.html">
+            
+                
+                    <a href="../2. Base Model/Base Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Base Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="3. EAD Core Model/EAD Core Model.html">
+            
+                
+                    <a href="../3. EAD Core Model/EAD Core Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        EAD Core Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="4. Sys Model/Sys Model.html">
+            
+                
+                    <a href="../4. Sys Model/Sys Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Sys Model
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="5. Workflow Model/Workflow Model.html">
+            
+                
+                    <a href="../5. Workflow Model/Workflow Model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Workflow Model
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >EAD 平台模型设计</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="workflow">WORKFLOW</h2>
+<p>&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x578B;&#x8BBE;&#x8BA1;</p>
+<h3 id="1&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x5B9E;&#x4F8B;-sysflowcase">1&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x5B9E;&#x4F8B; (sys_flow_case)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x8BED;&#x4E49;&#x540D;&#x79F0;</th>
+<th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x987B;</th>
+<th>&#x6700;&#x5927;&#x957F;&#x5EA6;</th>
+<th>&#x6700;&#x5C0F;&#x957F;&#x5EA6;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x552F;&#x4E00;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>case_id</td>
+<td>&#x5B9E;&#x4F8B;&#x4E3B;&#x952E;</td>
+<td>uuid</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>last_step_id</td>
+<td>&#x6700;&#x8FD1;&#x6B65;&#x9AA4;</td>
+<td>wordbook</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>source_uid</td>
+<td>&#x5B9E;&#x4F8B;&#x53D1;&#x8D77;&#x8005;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>to_do_users</td>
+<td>&#x7528;&#x6237;&#x5217;&#x8868;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>org_id</td>
+<td>&#x7EC4;&#x7EC7;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>model_id</td>
+<td>&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x578B;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>case_status</td>
+<td>&#x5B9E;&#x4F8B;&#x72B6;&#x6001;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>case_status_desc</td>
+<td>&#x72B6;&#x6001;&#x63CF;&#x8FF0;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>is_over</td>
+<td>&#x662F;&#x5426;&#x7ED3;&#x675F;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>&#x66F4;&#x65B0;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>log</td>
+<td>&#x65E5;&#x5FD7;</td>
+<td>sys_flow_log</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x65E5;&#x5FD7;-sysflowlog">2&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x65E5;&#x5FD7; (sys_flow_log)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x8BED;&#x4E49;&#x540D;&#x79F0;</th>
+<th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x987B;</th>
+<th>&#x6700;&#x5927;&#x957F;&#x5EA6;</th>
+<th>&#x6700;&#x5C0F;&#x957F;&#x5EA6;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x552F;&#x4E00;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>case_log_id</td>
+<td>&#x5B9E;&#x4F8B;&#x8BB0;&#x5F55;&#x4E3B;&#x952E;</td>
+<td>uuid</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>case_id</td>
+<td>&#x5B9E;&#x4F8B;</td>
+<td>wordbook</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>current_user_id</td>
+<td>&#x5F53;&#x524D;&#x7528;&#x6237;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>step_id</td>
+<td>&#x6B65;&#x9AA4;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>deal_type</td>
+<td>&#x5904;&#x7406;&#x6807;&#x8BC6;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>deal_desc</td>
+<td>&#x5904;&#x7406;&#x8BF4;&#x660E;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>deal_time</td>
+<td>&#x5904;&#x7406;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>is_handled_form</td>
+<td>&#x662F;&#x5426;&#x64CD;&#x4F5C;&#x8FC7;&#x8868;&#x5355;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>deal_note</td>
+<td>&#x5904;&#x7406;&#x5907;&#x6CE8;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>deal_status</td>
+<td>&#x5904;&#x7406;&#x72B6;&#x6001;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x578B;-sysflowmodel">3&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x578B; (sys_flow_model)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x8BED;&#x4E49;&#x540D;&#x79F0;</th>
+<th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x987B;</th>
+<th>&#x6700;&#x5927;&#x957F;&#x5EA6;</th>
+<th>&#x6700;&#x5C0F;&#x957F;&#x5EA6;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x552F;&#x4E00;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>model_id</td>
+<td>&#x6A21;&#x578B;&#x4E3B;&#x952E;</td>
+<td>uuid</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>model_name</td>
+<td>&#x6A21;&#x578B;&#x540D;&#x79F0;</td>
+<td>string</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>model_alias</td>
+<td>&#x6A21;&#x578B;&#x522B;&#x540D;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>flow_chart</td>
+<td>&#x6A21;&#x578B;&#x6D41;&#x7A0B;&#x56FE;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>model_desc</td>
+<td>&#x8BF4;&#x660E;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sort_num</td>
+<td>&#x5E8F;&#x53F7;</td>
+<td>integer</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>${time}</td>
+<td>-</td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>&#x66F4;&#x65B0;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>${time}</td>
+<td>-</td>
+</tr>
+<tr>
+<td>creator</td>
+<td>&#x521B;&#x5EFA;&#x8005;</td>
+<td>id</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>${uid}</td>
+<td>-</td>
+</tr>
+<tr>
+<td>step</td>
+<td>&#x6B65;&#x9AA4;</td>
+<td>sys_flow_step</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>case</td>
+<td>&#x5B9E;&#x4F8B;</td>
+<td>sys_flow_case</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x6B65;&#x9AA4;-sysflowstep">4&#x3001;&#x5DE5;&#x4F5C;&#x6D41;&#x6B65;&#x9AA4; (sys_flow_step)</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5B57;&#x6BB5;&#x540D;&#x79F0;</th>
+<th>&#x8BED;&#x4E49;&#x540D;&#x79F0;</th>
+<th>&#x6570;&#x636E;&#x7C7B;&#x578B;</th>
+<th>&#x5FC5;&#x987B;</th>
+<th>&#x6700;&#x5927;&#x957F;&#x5EA6;</th>
+<th>&#x6700;&#x5C0F;&#x957F;&#x5EA6;</th>
+<th>&#x9ED8;&#x8BA4;&#x503C;</th>
+<th>&#x552F;&#x4E00;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>step_id</td>
+<td>&#x6B65;&#x9AA4;&#x4E3B;&#x952E;</td>
+<td>uuid</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+</tr>
+<tr>
+<td>step_name</td>
+<td>&#x6B65;&#x9AA4;&#x540D;&#x79F0;</td>
+<td>string</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>model_id</td>
+<td>&#x5DE5;&#x4F5C;&#x6D41;&#x6A21;&#x578B;</td>
+<td>wordbook</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>step_code</td>
+<td>&#x6B65;&#x9AA4;&#x7F16;&#x7801;</td>
+<td>string</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>step_type</td>
+<td>&#x6B65;&#x9AA4;&#x7C7B;&#x578B;</td>
+<td>string</td>
+<td>&#x662F;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>before_step_id</td>
+<td>&#x524D;&#x7F6E;&#x6B65;&#x9AA4;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>after_step_id</td>
+<td>&#x540E;&#x7F6E;&#x6B65;&#x9AA4;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>act_user</td>
+<td>&#x53C2;&#x4E0E;&#x7528;&#x6237;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>act_role</td>
+<td>&#x53C2;&#x4E0E;&#x89D2;&#x8272;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>act_org</td>
+<td>&#x53C2;&#x4E0E;&#x7EC4;&#x7EC7;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>over_time</td>
+<td>&#x8D85;&#x65F6;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>over_time_event</td>
+<td>&#x8D85;&#x65F6;&#x4E8B;&#x4EF6;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>status_desc</td>
+<td>&#x72B6;&#x6001;&#x8BF4;&#x660E;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>data_condition</td>
+<td>&#x6570;&#x636E;&#x6761;&#x4EF6;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>msg_template</td>
+<td>&#x6D88;&#x606F;&#x6A21;&#x677F;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>back_step</td>
+<td>&#x56DE;&#x9000;&#x6B65;&#x9AA4;</td>
+<td>wordbook</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>event_notice</td>
+<td>&#x4E8B;&#x4EF6;&#x901A;&#x77E5;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>form_param</td>
+<td>&#x8868;&#x5355;&#x53C2;&#x6570;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>actor_condition</td>
+<td>&#x64CD;&#x4F5C;&#x8005;&#x6761;&#x4EF6;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>allow_skip</td>
+<td>&#x5141;&#x8BB8;&#x8DF3;&#x8FC7;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>allow_over</td>
+<td>&#x662F;&#x5426;&#x5B8C;&#x6210;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>allow_back_origin</td>
+<td>&#x662F;&#x5426;&#x5141;&#x8BB8;&#x9000;&#x56DE;&#x8D77;&#x70B9;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>is_back_origin</td>
+<td>&#x662F;&#x5426;&#x9000;&#x56DE;&#x8D77;&#x70B9;</td>
+<td>string</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>sort_num</td>
+<td>&#x6B65;&#x9AA4;&#x5E8F;&#x53F7;</td>
+<td>integer</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>callback_driver</td>
+<td>&#x56DE;&#x8C03;&#x9A71;&#x52A8;</td>
+<td>text</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>create_time</td>
+<td>&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>update_time</td>
+<td>&#x66F4;&#x65B0;&#x65F6;&#x95F4;</td>
+<td>time</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>creator</td>
+<td>&#x521B;&#x5EFA;&#x8005;</td>
+<td>id</td>
+<td>&#x5426;</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../4. Sys Model/Sys Model.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Sys Model"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
