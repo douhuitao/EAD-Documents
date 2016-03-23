@@ -15,6 +15,3 @@
 * [引擎 APIs](APIs/README.md)
 * [国际化](International/README.md)
 * [应用扩展](Extension/README.md)
-  * [查询扩展](Extension/1. Query Extend Develop.md)
-  * [视图动作扩展](Extension/2. Action Extend Develop.md)
-  * [变量扩展](Extension/3. Variable Extend Develop.md)

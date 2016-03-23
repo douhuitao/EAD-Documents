@@ -17,7 +17,32 @@ EAD 平台扩展开发是指针对特殊业务，通用功能无法满足的情�
 
 #### 查询接口规范
 
+查询接口规范包括**参数传入**和**数据返回**
+- 参数传入为：QueryContext，详细说明见《扩展开发手册》；
+- 数据返回为：List<Map<String, Object>>。
+
+下面是模型属性扩展查询驱动例子：
+
 ```
+ //由于模型创建时有模型间的继承关系，所以数据列表包括自己本身的属性列表及继承模型的属性列表
+ public List<Map<String, Object>> getAllIncludeBase(QueryContext queryContext)
+      throws Exception {
+    String modelId = queryContext.getView().getParent().getData().getModel()
+        .get("model_id").toString();
+    EadModel model = eadModelService.getById(modelId);
+    List<Map<String, Object>> attrList = new ArrayList<Map<String, Object>>();
+    if (model != null) {
+      if (StringKit.isBlank(model.getBase())) {
+        List<Map<String, Object>> list = eadModelAttrDao.selectByModelId(model.getModelId(), 
+            queryContext.getFindAttrs());
+        attrList.addAll(list);
+      } else {
+        addBaseAttrList(model.getModelId(), attrList, queryContext.getFindAttrs());
+      }
+    }
+    //返回 Map 集合列表
+    return attrList;
+  }
 
 ```
 
@@ -28,10 +53,10 @@ EAD 平台扩展开发是指针对特殊业务，通用功能无法满足的情�
 #### 视图动作接口规范
 
 视图动作接口规范包括**参数传入**和**数据返回**
-- 参数传入为：ActionContext
-- 数据返回为：Object，一般有两种形式
+- 参数传入为：ActionContext，详细说明见《扩展开发手册》；
+- 数据返回为：Object，一般有两种形式；
   - Object 可以为新增、修改、删除后的对象，数据类型为 Map；
-  - Object 可以为操作后的消息，即把通过 ActionContext 传入的 MessageBuilder 构建 Message 进行返回；
+  - Object 可以为操作后的消息，即把通过 ActionContext 传入的 MessageBuilder 构建 Message 进行返回。
 
 下面是创建模型属性的扩展驱动
 
@@ -64,8 +89,27 @@ public Object create(ActionContext context) throws Exception {
 
 ### 3、变量扩展
 
+变量模块的获取有三种途径：
+- 直接量；
+- 用户会话信息；
+- 变量驱动执行后的结果；
+
+变量驱动就是为了实现变量的动态获取而编写的一些方法。
+
 #### 变量接口规范
 
+变量驱动接口规范包括**参数传入**和**数据返回**
+- 参数传入为：EadVariable，详细说明见《扩展开发手册》；
+- 数据返回为：Object，必须是基础数据类型，如：String、Integer、Double、Float等。
+
+下面是获取当前时间的扩展驱动
+
 ```
+/**
+   * Get current time
+   */
+  public Object getNow(EadVariable variable) throws Exception {
+    return DateUtils.getTime();
+  }
 
 ```
