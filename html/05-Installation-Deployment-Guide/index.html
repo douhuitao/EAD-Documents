@@ -5,9 +5,9 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Introduction | EAD-Deployment-Document</title>
+        <title>Introduction | EAD 安装部署手册</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="EAD Deployment Document -《EAD平台部署文档》">
+        <meta name="description" content="本文档为 EAD 平台的安装部署手册，包括依赖软件的安装及平台本身的部署。">
         <meta name="generator" content="GitBook 2.6.7">
         
         
@@ -51,7 +51,7 @@
         data-chapter-title="Introduction"
         data-filepath="README.md"
         data-basepath="."
-        data-revision="Thu Mar 24 2016 09:30:56 GMT+0800 (CST)"
+        data-revision="Thu Mar 24 2016 10:31:36 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -241,7 +241,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >EAD-Deployment-Document</a>
+        <a href="./" >EAD 安装部署手册</a>
     </h1>
 </div>
 
@@ -251,9 +251,23 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="eaddeploymentdocument">EAD-Deployment-Document</h1>
-<hr>
-<p>EAD Deployment Document -&#x300A;EAD&#x5E73;&#x53F0;&#x90E8;&#x7F72;&#x6587;&#x6863;&#x300B;</p>
+                        <h1 id="ead-&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x624B;&#x518C;">EAD &#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x624B;&#x518C;</h1>
+<p>&#x672C;&#x6587;&#x6863;&#x4E3A; EAD &#x5E73;&#x53F0;&#x7684;&#x5B89;&#x88C5;&#x90E8;&#x7F72;&#x624B;&#x518C;&#xFF0C;&#x5305;&#x62EC;&#x4F9D;&#x8D56;&#x8F6F;&#x4EF6;&#x7684;&#x5B89;&#x88C5;&#x53CA;&#x5E73;&#x53F0;&#x672C;&#x8EAB;&#x7684;&#x90E8;&#x7F72;&#x3002;</p>
+<h2 id="&#x4F9D;&#x8D56;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;">&#x4F9D;&#x8D56;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;</h2>
+<h3 id="mysql-&#x5B89;&#x88C5;">Mysql &#x5B89;&#x88C5;</h3>
+<p>&#x5E73;&#x53F0;&#x4F9D;&#x8D56; Mysql &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7528;&#x4E8E;&#x5B58;&#x653E;<strong>&#x6838;&#x5FC3;&#x914D;&#x7F6E;&#x6570;&#x636E;</strong>&#x53CA;<strong>&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#x6570;&#x636E;</strong>&#x3002;
+&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x5B89;&#x88C5;&#x89C1;&#x672C;&#x624B;&#x518C;&#xFF1A;<code>&#x670D;&#x52A1;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907; - &gt; Winows Server -&gt; &#x5B89;&#x88C5; Mysql</code></p>
+<h3 id="mongodb-&#x5B89;&#x88C5;">Mongodb &#x5B89;&#x88C5;</h3>
+<p>&#x5E73;&#x53F0;&#x4F9D;&#x8D56; Mongodb &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F7F;&#x7528; GridFS &#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x3002;
+&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x5B89;&#x88C5;&#x89C1;&#x672C;&#x624B;&#x518C;&#xFF1A;<code>&#x670D;&#x52A1;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907; - &gt; Winows Server -&gt; &#x5B89;&#x88C5; Mongodb</code></p>
+<h3 id="tomcat-&#x5B89;&#x88C5;">Tomcat &#x5B89;&#x88C5;</h3>
+<p>&#x5E73;&#x53F0;&#x8FD0;&#x884C;&#x65F6;&#x4F9D;&#x8D56; Tomcat Web &#x5BB9;&#x5668;&#x3002;
+&#x8BE6;&#x7EC6;&#x914D;&#x7F6E;&#x5B89;&#x88C5;&#x89C1;&#x672C;&#x624B;&#x518C;&#xFF1A;<code>&#x670D;&#x52A1;&#x5668;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x51C6;&#x5907; - &gt; Winows Server -&gt; &#x5B89;&#x88C5; Tomcat</code></p>
+<h2 id="&#x5E73;&#x53F0;&#x90E8;&#x7F72;">&#x5E73;&#x53F0;&#x90E8;&#x7F72;</h2>
+<p>&#x4F9D;&#x8D56;&#x8F6F;&#x4EF6;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x6309;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#x8FDB;&#x884C;&#x5E73;&#x53F0;&#x90E8;&#x7F72;&#xFF1A;</p>
+<p>&#x7B2C;&#x4E00;&#x6B65;&#xFF1A;&#x521D;&#x59CB;&#x5316;&#x914D;&#x7F6E;&#x6570;&#x636E;&#xFF0C;&#x5373;&#xFF1A;&#x5BFC;&#x5165;&#x5E73;&#x53F0;&#x6240;&#x4F9D;&#x8D56;&#x7684;<strong>&#x6838;&#x5FC3;&#x914D;&#x7F6E;&#x6570;&#x636E;&#xFF08;ead&#x5E93;&#xFF09;</strong>&#x4E0E;<strong>&#x7CFB;&#x7EDF;&#x5E93;&#xFF08;sys&#xFF09;</strong>&#xFF1B;
+&#x7B2C;&#x4E8C;&#x6B65;&#xFF1A;&#x914D;&#x7F6E; Tomcat&#xFF0C;&#x62F7;&#x8D1D;&#x5E94;&#x7528;&#x81F3; Tomcat &#x5BB9;&#x5668;&#x4E2D;&#xFF1B;
+&#x7B2C;&#x4E09;&#x6B65;&#xFF1A;&#x542F;&#x52A8; Tomcat Web &#x5BB9;&#x5668;&#x3002;</p>
 
                     
                     </section>

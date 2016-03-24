@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>用户开发环境 | EAD-Deployment-Document</title>
+        <title>全局对象 | EAD-Deployment-Document</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../Ready To Develop/1.2.1 Develop Utils Install.html" />
+    <link rel="next" href="../Rainbow/Action.html" />
     
     
-    <link rel="prev" href="../Ready To Develop/1.1 Ready To Develop.html" />
+    <link rel="prev" href="../Rainbow/index.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="1.2"
-        data-chapter-title="用户开发环境"
-        data-filepath="Ready To Develop/1.2 Custom Developer Environment.md"
+        data-level="3.1"
+        data-chapter-title="全局对象"
+        data-filepath="Rainbow/Global.md"
         data-basepath=".."
         data-revision="Thu Mar 24 2016 10:34:22 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -113,7 +113,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="Ready To Develop/1.2 Custom Developer Environment.html">
+        <li class="chapter " data-level="1.2" data-path="Ready To Develop/1.2 Custom Developer Environment.html">
             
                 
                     <a href="../Ready To Develop/1.2 Custom Developer Environment.html">
@@ -184,7 +184,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1" data-path="Rainbow/Global.html">
+        <li class="chapter active" data-level="3.1" data-path="Rainbow/Global.html">
             
                 
                     <a href="../Rainbow/Global.html">
@@ -326,14 +326,39 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h3 id="12-&#x7528;&#x6237;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;">1.2 &#x7528;&#x6237;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;</h3>
-<p>&#x7528;&#x6237;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x642D;&#x5EFA;&#x65F6;&#xFF0C;&#x9996;&#x5148;&#x8981;&#x5B89;&#x88C5;&#x4EE5;&#x4E0B;&#x5F00;&#x53D1;&#x5DE5;&#x5177;&#xFF1A;</p>
-<ul>
-<li>JDK&#xFF1A;EAD &#x5E73;&#x53F0;&#x7684;&#x5F00;&#x53D1;&#x8BED;&#x8A00;&#x4E3A;Java&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x9996;&#x5148;&#x8981;&#x5B89;&#x88C5; JDK&#xFF1B;</li>
-<li>Eclipse&#xFF1A;EAD &#x6269;&#x5C55;&#x5F00;&#x53D1;&#x9700;&#x8981;&#x5728; IDE &#x4E0A;&#x8FDB;&#x884C;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9; Eclipse &#x8FDB;&#x884C;&#x6269;&#x5C55;&#x5F00;&#x53D1;&#xFF1B;</li>
-<li>Maven&#xFF1A;EAD &#x6269;&#x5C55;&#x5F00;&#x53D1;&#x65F6;&#x7684;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x53CA;&#x6253;&#x5305;&#x5DE5;&#x5177;&#x6211;&#x4EEC;&#x9009;&#x62E9; Maven&#x3002;</li>
-</ul>
-<p>&#x5DE5;&#x5177;&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x5728; Java &#x5F00;&#x53D1;&#x5DE5;&#x5177; Eclipse &#x4E2D;&#x5EFA;&#x7ACB; EAD &#x5DE5;&#x7A0B;&#x3002;</p>
+                        <h2 id="&#x5168;&#x5C40;&#x5BF9;&#x8C61;">&#x5168;&#x5C40;&#x5BF9;&#x8C61;</h2>
+<h3 id="rainbow">Rainbow</h3>
+<p>&#x6E90;&#x7801;&#x4F4D;&#x7F6E;&#xFF1A;<code>/src/base/app.js</code>,&#x5168;&#x5C40;&#x547D;&#x540D;&#x7A7A;&#x95F4; <code>rainbow</code>&#x3002;</p>
+<p>&#x5C5E;&#x6027;&#x8BFB;&#x53D6;&#x793A;&#x4F8B;:</p>
+<pre><code>var url = rainbow.baseUrl + &apos;/res-path&apos;;
+</code></pre><p>&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x793A;&#x4F8B;:</p>
+<pre><code>var msg = &apos;content&apos;;
+rianbow.alert(msg);
+</code></pre><h4 id="&#x5C5E;&#x6027;">&#x5C5E;&#x6027;</h4>
+<p><strong>baseUrl</strong> : &#x5F53;&#x524D;&#x5E94;&#x7528; API &#x6839;&#x8DEF;&#x5F84;&#x3002;</p>
+<p><strong>LANG</strong> : Rainbow &#x5168;&#x5C40;&#x8BED;&#x8A00;&#x5305;&#x5BF9;&#x8C61;&#xFF0C;&#x8BED;&#x8A00;&#x5305;&#x5B58;&#x50A8;&#x4F4D;&#x7F6E; <code>/nls/</code>&#xFF0C;&#x547D;&#x540D;&#x7A7A;&#x95F4;&#x53C2;&#x8003;<code>/nls/en/rainbow.js</code>&#xFF0C;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A; <code>rainbow.LANG.__form.done</code>&#x3002;</p>
+<p><strong>sign</strong> : &#x7528;&#x6237;&#x7B7E;&#x5230;&#x6A21;&#x5757;&#x5F15;&#x7528;&#xFF0C;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x53C2;&#x8003; <code>/src/common/sign.js</code>&#x3002;</p>
+<p><strong>layout</strong> : &#x5E94;&#x7528;&#x5E03;&#x5C40;&#x5B9E;&#x4F8B;,&#x652F;&#x6301;&#x52A0;&#x8F7D; (load) &#x548C;&#x6E32;&#x67D3; (render) &#x65B9;&#x6CD5;&#xFF0C;&#x5177;&#x4F53;&#x65B9;&#x6CD5;&#x53C2;&#x8003; <code>/src/base/app.js</code>&#x3002;</p>
+<p><strong>router</strong> : &#x5E94;&#x7528;&#x8DEF;&#x7531;&#x5B9E;&#x4F8B;&#xFF0C;&#x8BE6;&#x60C5;&#x53C2;&#x8003; Backbone.Router &#x5BF9;&#x8C61;&#x3002;</p>
+<p><strong>current</strong> : &#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x89C6;&#x56FE;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x3002;</p>
+<h4 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h4>
+<p><strong>alert</strong> : &#x81EA;&#x5B9A;&#x4E49;&#x63D0;&#x9192;&#x3002;</p>
+<pre><code>rainbow.alert(msg);
+</code></pre><p><strong>errorMsg</strong> : &#x9519;&#x8BEF;&#x63D0;&#x9192;&#x3002;</p>
+<pre><code>rainbow.errorMsg(msg);
+</code></pre><p><strong>successMsg</strong> : &#x6210;&#x529F;&#x63D0;&#x9192;&#x3002;</p>
+<pre><code>rainbow.successMsg(msg);
+</code></pre><p><strong>confirm</strong> : &#x786E;&#x8BA4;&#x63D0;&#x9192;&#x3002;</p>
+<pre><code>rainbow.confirm = function(msg)
+</code></pre><h3 id="underscore">Underscore</h3>
+<p>Rainbow &#x5BB9;&#x5668;&#x5185;&#x521D;&#x59CB;&#x5316;&#x5185;&#x7F6E;&#x4E86; Underscore &#x5E93;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>_</code> &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x8BBF;&#x95EE;&#x548C;&#x8C03;&#x7528; Underscore &#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x53CA;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>API &#x53C2;&#x8003;&#xFF1A;<a href="http://underscorejs.org/" target="_blank">http://underscorejs.org/</a></p>
+<h3 id="jquery">jQuery</h3>
+<p>Rainbow &#x5BB9;&#x5668;&#x5185;&#x521D;&#x59CB;&#x5316;&#x5185;&#x7F6E;&#x4E86; jQuery &#x5E93;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>$</code> &#x6216; <code>jQuery</code> &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x8BBF;&#x95EE;&#x548C;&#x8C03;&#x7528; jQuery &#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x53CA;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>API &#x53C2;&#x8003;&#xFF1A;<a href="http://jquery.com/" target="_blank">http://jquery.com/</a></p>
+<h3 id="backbone">Backbone</h3>
+<p>Rainbow &#x5BB9;&#x5668;&#x5185;&#x521D;&#x59CB;&#x5316;&#x5185;&#x7F6E;&#x4E86; Backbone &#x5E93;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x4F5C;&#x7528;&#x57DF;&#x5185;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; <code>Backbone</code> &#x547D;&#x540D;&#x7A7A;&#x95F4;&#x8BBF;&#x95EE;&#x548C;&#x8C03;&#x7528; Backbone &#x7684;&#x6240;&#x6709;&#x5BF9;&#x8C61;&#x53CA;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>API &#x53C2;&#x8003;&#xFF1A;<a href="http://backbonejs.org/" target="_blank">http://backbonejs.org/</a></p>
 
                     
                     </section>
@@ -344,10 +369,10 @@
         </div>
 
         
-        <a href="../Ready To Develop/1.1 Ready To Develop.html" class="navigation navigation-prev " aria-label="Previous page: 准备"><i class="fa fa-angle-left"></i></a>
+        <a href="../Rainbow/index.html" class="navigation navigation-prev " aria-label="Previous page: Rainbow 扩展开发"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../Ready To Develop/1.2.1 Develop Utils Install.html" class="navigation navigation-next " aria-label="Next page: 开发工具安装"><i class="fa fa-angle-right"></i></a>
+        <a href="../Rainbow/Action.html" class="navigation navigation-next " aria-label="Next page: 动作扩展"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
