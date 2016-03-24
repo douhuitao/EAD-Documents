@@ -13,9 +13,3 @@
 第三步：修改扩展开发工程项目名；
 ![PNG](..\images\create-ead-project\30.png)
 ![PNG](..\images\create-ead-project\31.png)
-
-#### 2. 部署扩展开发完成的功能
-
-开发测试完成后，使用 Maven 进行打包，把打好的 jar 包拷贝至服务器环境，
-拷贝路径为 `Tomcat > webapps_pro > ROOT > WEB_INF > lib`。
-拷贝完成后重新启动 Tomcat 服务。

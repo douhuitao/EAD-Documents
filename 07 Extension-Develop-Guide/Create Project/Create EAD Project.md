@@ -1,4 +1,4 @@
-### 1.2.2 创建 EAD 工程
+### 平台工程创建
 
 首先建立 EAD 工程级目录，把 EAD 所包含的工程及工程文件都拷贝到该目录，项目包括：gbros-root，gbros-hill，gbros-web。
 
@@ -103,15 +103,4 @@
 若在编译打包时发生错误，请先清理工程环境，然后再尝试；
 ![PNG](..\images\create-ead-project\21.png)
 ![PNG](..\images\create-ead-project\22.png)
-
-
-
-
-
-
-
-
-
-
-
 
