@@ -53,7 +53,7 @@
         data-chapter-title="国际化"
         data-filepath="International/README.md"
         data-basepath=".."
-        data-revision="Tue Mar 22 2016 17:05:39 GMT+0800 (CST)"
+        data-revision="Thu Mar 24 2016 09:24:27 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -282,6 +282,21 @@
             
         </li>
     
+        <li class="chapter " data-level="3.3" data-path="Framework/3. Router Rule.html">
+            
+                
+                    <a href="../Framework/3. Router Rule.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Router Rule
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -345,57 +360,6 @@
                     </a>
             
             
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="7.1" data-path="Extension/1. Query Extend Develop.html">
-            
-                
-                    <a href="../Extension/1. Query Extend Develop.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.1.</b>
-                        
-                        查询扩展
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7.2" data-path="Extension/2. Action Extend Develop.html">
-            
-                
-                    <a href="../Extension/2. Action Extend Develop.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.2.</b>
-                        
-                        视图动作扩展
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="7.3" data-path="Extension/3. Variable Extend Develop.html">
-            
-                
-                    <a href="../Extension/3. Variable Extend Develop.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>7.3.</b>
-                        
-                        变量扩展
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
         </li>
     
 
@@ -431,7 +395,30 @@
                 
                     <section class="normal" id="section-">
                     
-                        
+                        <h3 id="&#x56FD;&#x9645;&#x5316;">&#x56FD;&#x9645;&#x5316;</h3>
+<p>EAD &#x5E73;&#x53F0;&#x56FD;&#x9645;&#x5316;&#x5373;&#x6307;&#x591A;&#x8BED;&#x8A00;&#x7684;&#x652F;&#x6301;&#x3002;&#x5F53;&#x524D; EAD &#x5F15;&#x64CE;&#x591A;&#x8BED;&#x8A00;&#x652F;&#x6301;&#x662F;&#x57FA;&#x4E8E; ResourceBundleMessageSource &#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x4E0D;&#x540C;&#x5E94;&#x7528;&#x8BED;&#x8A00;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x52A8;&#x6001;&#x83B7;&#x53D6;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x524D;&#x652F;&#x6301;&#x5E73;&#x53F0;&#x53EA;&#x652F;&#x6301;&#x4E2D;&#x6587;&#x548C; English&#x3002;</p>
+<h3 id="i18n-&#x914D;&#x7F6E;">I18N &#x914D;&#x7F6E;</h3>
+<p>Spring &#x76F8;&#x5173;&#x5185;&#x5BB9;&#x914D;&#x7F6E;&#x5728; i18n.xml &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;beans xmlns=&quot;http://www.springframework.org/schema/beans&quot;
+  xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+  xsi:schemaLocation=&quot;http://www.springframework.org/schema/beans 
+  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd &quot;&gt;
+
+  &lt;bean id=&quot;messageSource&quot;
+    class=&quot;org.springframework.context.support.ResourceBundleMessageSource&quot;&gt;
+    &lt;property name=&quot;basenames&quot;&gt;
+      &lt;list&gt;
+        &lt;value&gt;i18n/message&lt;/value&gt;
+        &lt;value&gt;i18n/exceptions&lt;/value&gt;
+        &lt;value&gt;i18n/windows&lt;/value&gt;
+      &lt;/list&gt;
+    &lt;/property&gt;
+  &lt;/bean&gt;
+&lt;/beans&gt;
+</code></pre><p>&#x8BED;&#x8A00;&#x5305;&#x5305;&#x62EC; message&#xFF08;&#x6D88;&#x606F;&#x63D0;&#x9192;&#xFF09;&#x3001;exceptions&#xFF08;&#x5F02;&#x5E38;&#xFF09;&#x3001;windows&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#x3002;</p>
+<p>&#x5982;&#x9700;&#x6269;&#x5C55;&#x8BED;&#x8A00;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x628A;&#x76F8;&#x5E94;&#x7684;&#x8BED;&#x8A00;&#x5305;&#x653E;&#x7F6E;&#x5230; i18n &#x6587;&#x4EF6;&#x5939;&#x4E0B;&#x5373;&#x53EF;&#xFF1B;</p>
+
                     
                     </section>
                 
