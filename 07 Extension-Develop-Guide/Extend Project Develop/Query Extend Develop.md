@@ -6,7 +6,7 @@
 
 查询接口规范包括**参数传入**和**数据返回**
 - 参数传入为：QueryContext，详细说明见《扩展开发手册》；
-- 数据返回为：List<Map<String, Object>>。
+- 数据返回为：`List<Map<String, Object>>`。
 
 下面是模型属性扩展查询驱动例子：
 
