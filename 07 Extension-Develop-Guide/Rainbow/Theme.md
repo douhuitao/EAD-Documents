@@ -7,18 +7,7 @@
 - **less/**, less、CSS 样式文件存放目录; 
 - **destop.html**, 模板文件;
 
-### 模板开发示例
-
-#### 面包屑条目模板（tpl-breadcurm）
-
-```
-<script type="text/template" id="tpl-breadcurm-item">
-  <button type="button" class="btn btn-primary">
-    <span class="glyphicon glyphicon-th"></span>
-  </button>
-</script>
-```
-
+### 模板开发
 
 #### 模板组件
 
@@ -33,6 +22,17 @@
 #### 命名
 
 设置模板模块的 DOM id 以“tpl-” 开头，例如“tpl-breadcurm-item”。
+
+#### 面包屑条目模板示例（tpl-breadcurm）
+
+```
+<script type="text/template" id="tpl-breadcurm-item">
+  <button type="button" class="btn btn-primary">
+    <span class="glyphicon glyphicon-th"></span>
+  </button>
+</script>
+```
+
 
 ### 创建或发布主题
 
