@@ -3,6 +3,7 @@
 * [开发环境搭建](Ready To Develop/README.md)
   * [准备](Ready To Develop/Ready To Develop.md)
   * [用户开发环境](Ready To Develop/Custom Developer Environment.md)
+  * [Maven 私服搭建](Ready To Develop/Maven repository.md)
 * [工程创建](Create Project/README.md)
   * [平台工程创建](Create Project/Create EAD Project.md)
   * [扩展开发工程创建](Create Project/Create Extend Project.md)
