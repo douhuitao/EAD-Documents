@@ -12,6 +12,7 @@
   * [Mybatis](Framework/1. Mybatis.md)
   * [Spring Boot](Framework/2. Spring Boot.md)
 * [引擎组件](Components/README.md)
+* [源码包结构](Source Code/README.md)
 * [路由规则](Router/README.md)
 * [引擎 APIs](APIs/README.md)
 * [国际化](International/README.md)
