@@ -4,8 +4,8 @@
 
 ### 主题包结构
 
-- **less** less、CSS 样式文件存放路径; 
-- destop.html 模板文件;
+- **less/**, less、CSS 样式文件存放目录; 
+- **destop.html**, 模板文件;
 
 ### 模板开发示例
 
