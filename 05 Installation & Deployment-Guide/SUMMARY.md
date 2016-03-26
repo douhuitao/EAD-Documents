@@ -12,6 +12,8 @@
   * [Mysql 数据备份](Backup/Mysql.md)
   * [Mongodb 数据备份](Backup/Mongodb.md)
   * [EAD 安装包备份](Backup/EAD.md)
+* [安装扩展配置](Install Extend/README.md)
+  * [Mysql 优化配置](Install Extend/Mysql.md)
 * [集群部署](Master&Slave/README.md)
   * [Mysql 主备配置](Master&Slave/Mysql.md)
   * [Mongodb 主备配置](Master&Slave/Mongodb.md)
