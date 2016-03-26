@@ -15,8 +15,6 @@
   * [全局对象](Rainbow/Global.md)
   * [动作扩展](Rainbow/Action.md)
   * [视图扩展](Rainbow/View.md)
-  * [通用组件自定义](Rainbow/CommonView.md) 
-  * [表单控件组件自定义](Rainbow/Control.md)
   * [主题自定义](Rainbow/Theme.md)
 * [程序打包](Packaging/README.md)
 * [程序发布](Deployment/README.md)
