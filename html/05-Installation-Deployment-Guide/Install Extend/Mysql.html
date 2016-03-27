@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mysql 优化配置 | EAD 安装部署手册</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Master&amp;Slave/index.html" />
+    
+    
+    <link rel="prev" href="../Install Extend/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="5.1"
+        data-chapter-title="Mysql 优化配置"
+        data-filepath="Install Extend/Mysql.md"
+        data-basepath=".."
+        data-revision="Mon Mar 28 2016 07:33:00 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Environment/index.html">
+            
+                
+                    <a href="../Environment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        服务器运行环境准备
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Environment/Windows Server.html">
+            
+                
+                    <a href="../Environment/Windows Server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Winows Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Environment/Install Mysql.html">
+            
+                
+                    <a href="../Environment/Install Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        安装 Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Environment/Install Mongodb.html">
+            
+                
+                    <a href="../Environment/Install Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        安装 Mongodb
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Environment/Install Tomcat.html">
+            
+                
+                    <a href="../Environment/Install Tomcat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        安装 Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Config Data Init/Config Data Init.html">
+            
+                
+                    <a href="../Config Data Init/Config Data Init.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        配置数据初始化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Deployment/index.html">
+            
+                
+                    <a href="../Deployment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        平台部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Deployment/Tomcat Deployment.html">
+            
+                
+                    <a href="../Deployment/Tomcat Deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Backup/index.html">
+            
+                
+                    <a href="../Backup/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        备份
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="Backup/Mysql.html">
+            
+                
+                    <a href="../Backup/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Mysql 数据备份
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Backup/Mongodb.html">
+            
+                
+                    <a href="../Backup/Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Mongodb 数据备份
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Backup/EAD.html">
+            
+                
+                    <a href="../Backup/EAD.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        EAD 安装包备份
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Install Extend/index.html">
+            
+                
+                    <a href="../Install Extend/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        安装扩展配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="5.1" data-path="Install Extend/Mysql.html">
+            
+                
+                    <a href="../Install Extend/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Mysql 优化配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Master&amp;Slave/index.html">
+            
+                
+                    <a href="../Master&amp;Slave/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        集群部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="Master&amp;Slave/Mysql.html">
+            
+                
+                    <a href="../Master&amp;Slave/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Mysql 主备配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Master&amp;Slave/Mongodb.html">
+            
+                
+                    <a href="../Master&amp;Slave/Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Mongodb 主备配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >EAD 安装部署手册</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h3 id="mysql-&#x4F18;&#x5316;&#x914D;&#x7F6E;">Mysql &#x4F18;&#x5316;&#x914D;&#x7F6E;</h3>
+<p>Mysql &#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x82E5;&#x5B89;&#x88C5;&#x65F6;&#x7684;&#x914D;&#x7F6E;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x5B9E;&#x9645;&#x7684;&#x4F7F;&#x7528;&#x9700;&#x6C42;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5728; Mysql &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x914D;&#x7F6E;&#xFF1B;</p>
+<p>&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5728; Mysql &#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#xFF1A;<code>my.ini</code>;</p>
+<h3 id="myini-&#x914D;&#x7F6E;">my.ini &#x914D;&#x7F6E;</h3>
+<pre><code>[mysqld]
+port = 3306
+serverid = 1
+socket = /tmp/mysql.sock
+skip-locking # &#x907F;&#x514D;MySQL&#x7684;&#x5916;&#x90E8;&#x9501;&#x5B9A;&#xFF0C;&#x51CF;&#x5C11;&#x51FA;&#x9519;&#x51E0;&#x7387;&#x589E;&#x5F3A;&#x7A33;&#x5B9A;&#x6027;&#x3002;
+</code></pre><pre><code>skip-name-resolve
+</code></pre><p>&#x7981;&#x6B62;MySQL&#x5BF9;&#x5916;&#x90E8;&#x8FDE;&#x63A5;&#x8FDB;&#x884C;DNS&#x89E3;&#x6790;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E00;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x6D88;&#x9664;MySQL&#x8FDB;&#x884C;DNS&#x89E3;&#x6790;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x4F46;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C;&#x5F00;&#x542F;&#x8BE5;&#x9009;&#x9879;&#xFF0C;&#x5219;&#x6240;&#x6709;&#x8FDC;&#x7A0B;&#x4E3B;&#x673A;&#x8FDE;&#x63A5;&#x6388;&#x6743;&#x90FD;&#x8981;&#x4F7F;&#x7528;IP&#x5730;&#x5740;&#x65B9;&#x5F0F;&#xFF0C;&#x5426;&#x5219;MySQL&#x5C06;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x5904;&#x7406;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;!</p>
+<pre><code>back_log = 500
+</code></pre><p>&#x8981;&#x6C42; MySQL &#x80FD;&#x6709;&#x7684;&#x8FDE;&#x63A5;&#x6570;&#x91CF;&#x3002;&#x5F53;&#x4E3B;&#x8981;MySQL&#x7EBF;&#x7A0B;&#x5728;&#x4E00;&#x4E2A;&#x5F88;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x5F97;&#x5230;&#x975E;&#x5E38;&#x591A;&#x7684;&#x8FDE;&#x63A5;&#x8BF7;&#x6C42;&#xFF0C;&#x8FD9;&#x5C31;&#x8D77;&#x4F5C;&#x7528;&#xFF0C;&#x7136;&#x540E;&#x4E3B;&#x7EBF;&#x7A0B;&#x82B1;&#x4E9B;&#x65F6;&#x95F4;(&#x5C3D;&#x7BA1;&#x5F88;&#x77ED;)&#x68C0;&#x67E5;&#x8FDE;&#x63A5;&#x5E76;&#x4E14;&#x542F;&#x52A8;&#x4E00;&#x4E2A;&#x65B0;&#x7EBF;&#x7A0B;&#x3002;
+back_log&#x503C;&#x6307;&#x51FA;&#x5728;MySQL&#x6682;&#x65F6;&#x505C;&#x6B62;&#x56DE;&#x7B54;&#x65B0;&#x8BF7;&#x6C42;&#x4E4B;&#x524D;&#x7684;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x591A;&#x5C11;&#x4E2A;&#x8BF7;&#x6C42;&#x53EF;&#x4EE5;&#x88AB;&#x5B58;&#x5728;&#x5806;&#x6808;&#x4E2D;&#x3002;&#x53EA;&#x6709;&#x5982;&#x679C;&#x671F;&#x671B;&#x5728;&#x4E00;&#x4E2A;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x6709;&#x5F88;&#x591A;&#x8FDE;&#x63A5;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x589E;&#x52A0;&#x5B83;&#xFF0C;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x8FD9;&#x503C;&#x5BF9;&#x5230;&#x6765;&#x7684;TCP/IP&#x8FDE;&#x63A5;&#x7684;&#x4FA6;&#x542C;&#x961F;&#x5217;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x4F60;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x5728;&#x8FD9;&#x4E2A;&#x961F;&#x5217;&#x5927;&#x5C0F;&#x4E0A;&#x6709;&#x5B83;&#x81EA;&#x5DF1;&#x7684;&#x9650;&#x5236;&#x3002;&#x8BD5;&#x56FE;&#x8BBE;&#x5B9A;back_log&#x9AD8;&#x4E8E;&#x4F60;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x9650;&#x5236;&#x5C06;&#x662F;&#x65E0;&#x6548;&#x7684;&#x3002;&#x5F53;&#x4F60;&#x89C2;&#x5BDF;&#x4F60;&#x7684;&#x4E3B;&#x673A;&#x8FDB;&#x7A0B;&#x5217;&#x8868;&#xFF0C;&#x53D1;&#x73B0;&#x5927;&#x91CF; 264084 | unauthenticated user | xxx.xxx.xxx.xxx | NULL | Connect | NULL | login | NULL &#x7684;&#x5F85;&#x8FDE;&#x63A5;&#x8FDB;&#x7A0B;&#x65F6;&#xFF0C;&#x5C31;&#x8981;&#x52A0;&#x5927; back_log &#x7684;&#x503C;&#x4E86;&#x3002;&#x9ED8;&#x8BA4;&#x6570;&#x503C;&#x662F;50&#xFF0C;&#x6211;&#x628A;&#x5B83;&#x6539;&#x4E3A;500&#x3002;</p>
+<pre><code>key_buffer_size = 384M
+</code></pre><p>key_buffer_size&#x6307;&#x5B9A;&#x7528;&#x4E8E;&#x7D22;&#x5F15;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF0C;&#x589E;&#x52A0;&#x5B83;&#x53EF;&#x5F97;&#x5230;&#x66F4;&#x597D;&#x5904;&#x7406;&#x7684;&#x7D22;&#x5F15;(&#x5BF9;&#x6240;&#x6709;&#x8BFB;&#x548C;&#x591A;&#x91CD;&#x5199;)&#xFF0C;&#x5230;&#x4F60;&#x80FD;&#x8D1F;&#x62C5;&#x5F97;&#x8D77;&#x90A3;&#x6837;&#x591A;&#x3002;&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x5B83;&#x592A;&#x5927;&#xFF0C;&#x7CFB;&#x7EDF;&#x5C06;&#x5F00;&#x59CB;&#x6362;&#x9875;&#x5E76;&#x4E14;&#x771F;&#x7684;&#x53D8;&#x6162;&#x4E86;&#x3002;&#x5BF9;&#x4E8E;&#x5185;&#x5B58;&#x5728;4GB&#x5DE6;&#x53F3;&#x7684;&#x670D;&#x52A1;&#x5668;&#x8BE5;&#x53C2;&#x6570;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;384M&#x6216;512M&#x3002;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x72B6;&#x6001;&#x503C;Key_read_requests&#x548C; Key_reads,&#x53EF;&#x4EE5;&#x77E5;&#x9053;key_buffer_size&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x5408;&#x7406;&#x3002;&#x6BD4;&#x4F8B;key_reads / key_read_requests&#x5E94;&#x8BE5;&#x5C3D;&#x53EF;&#x80FD;&#x7684;&#x4F4E;&#xFF0C;&#x81F3;&#x5C11;&#x662F;1:100&#xFF0C;1:1000&#x66F4;&#x597D;(&#x4E0A;&#x8FF0;&#x72B6;&#x6001;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SHOW STATUS LIKE &#x2018;key_read%&apos;&#x83B7;&#x5F97;)&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x8BE5;&#x53C2;&#x6570;&#x503C;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x5927;&#x53CD;&#x800C;&#x4F1A;&#x662F;&#x670D;&#x52A1;&#x5668;&#x6574;&#x4F53;&#x6548;&#x7387;&#x964D;&#x4F4E;!</p>
+<pre><code>max_allowed_packet = 32M
+</code></pre><p>&#x589E;&#x52A0;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x503C;&#x5341;&#x5206;&#x5B89;&#x5168;&#xFF0C;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;&#x4EC5;&#x5F53;&#x9700;&#x8981;&#x65F6;&#x624D;&#x4F1A;&#x5206;&#x914D;&#x989D;&#x5916;&#x5185;&#x5B58;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x4EC5;&#x5F53;&#x4F60;&#x53D1;&#x51FA;&#x957F;&#x67E5;&#x8BE2;&#x6216;mysqld&#x5FC5;&#x987B;&#x8FD4;&#x56DE;&#x5927;&#x7684;&#x7ED3;&#x679C;&#x884C;&#x65F6;mysqld&#x624D;&#x4F1A;&#x5206;&#x914D;&#x66F4;&#x591A;&#x5185;&#x5B58;&#x3002;&#x8BE5;&#x53D8;&#x91CF;&#x4E4B;&#x6240;&#x4EE5;&#x53D6;&#x8F83;&#x5C0F;&#x9ED8;&#x8BA4;&#x503C;&#x662F;&#x4E00;&#x79CD;&#x9884;&#x9632;&#x63AA;&#x65BD;&#xFF0C;&#x4EE5;&#x6355;&#x83B7;&#x5BA2;&#x6237;&#x7AEF;&#x548C;&#x670D;&#x52A1;&#x5668;&#x4E4B;&#x95F4;&#x7684;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x5305;&#xFF0C;&#x5E76;&#x786E;&#x4FDD;&#x4E0D;&#x4F1A;&#x56E0;&#x5076;&#x7136;&#x4F7F;&#x7528;&#x5927;&#x7684;&#x4FE1;&#x606F;&#x5305;&#x800C;&#x5BFC;&#x81F4;&#x5185;&#x5B58;&#x6EA2;&#x51FA;&#x3002;</p>
+<pre><code>table_cache = 512
+</code></pre><p>table_cache&#x6307;&#x5B9A;&#x8868;&#x9AD8;&#x901F;&#x7F13;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x6BCF;&#x5F53;MySQL&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x8868;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x8868;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x8FD8;&#x6709;&#x7A7A;&#x95F4;&#xFF0C;&#x8BE5;&#x8868;&#x5C31;&#x88AB;&#x6253;&#x5F00;&#x5E76;&#x653E;&#x5165;&#x5176;&#x4E2D;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x66F4;&#x5FEB;&#x5730;&#x8BBF;&#x95EE;&#x8868;&#x5185;&#x5BB9;&#x3002;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x5CF0;&#x503C;&#x65F6;&#x95F4;&#x7684;&#x72B6;&#x6001;&#x503C;Open_tables&#x548C;Opened_tables&#xFF0C;&#x53EF;&#x4EE5;&#x51B3;&#x5B9A;&#x662F;&#x5426;&#x9700;&#x8981;&#x589E;&#x52A0;table_cache&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x4F60;&#x53D1;&#x73B0; open_tables&#x7B49;&#x4E8E;table_cache&#xFF0C;&#x5E76;&#x4E14;opened_tables&#x5728;&#x4E0D;&#x65AD;&#x589E;&#x957F;&#xFF0C;&#x90A3;&#x4E48;&#x4F60;&#x5C31;&#x9700;&#x8981;&#x589E;&#x52A0;table_cache&#x7684;&#x503C;&#x4E86;(&#x4E0A;&#x8FF0;&#x72B6;&#x6001;&#x503C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;SHOW STATUS LIKE &#x2018;Open%tables&apos;&#x83B7;&#x5F97;)&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x4E0D;&#x80FD;&#x76F2;&#x76EE;&#x5730;&#x628A;table_cache&#x8BBE;&#x7F6E;&#x6210;&#x5F88;&#x5927;&#x7684;&#x503C;&#x3002;&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x5F97;&#x592A;&#x9AD8;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x9020;&#x6210;&#x6587;&#x4EF6;&#x63CF;&#x8FF0;&#x7B26;&#x4E0D;&#x8DB3;&#xFF0C;&#x4ECE;&#x800C;&#x9020;&#x6210;&#x6027;&#x80FD;&#x4E0D;&#x7A33;&#x5B9A;&#x6216;&#x8005;&#x8FDE;&#x63A5;&#x5931;&#x8D25;&#x3002;</p>
+<pre><code>sort_buffer_size = 4M
+</code></pre><p>&#x67E5;&#x8BE2;&#x6392;&#x5E8F;&#x65F6;&#x6240;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#x3002;&#x6CE8;&#x610F;&#xFF1A;&#x8BE5;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x7684;&#x5206;&#x914D;&#x5185;&#x5B58;&#x662F;&#x6BCF;&#x8FDE;&#x63A5;&#x72EC;&#x5360;!&#x5982;&#x679C;&#x6709;100&#x4E2A;&#x8FDE;&#x63A5;&#xFF0C;&#x90A3;&#x4E48;&#x5B9E;&#x9645;&#x5206;&#x914D;&#x7684;&#x603B;&#x5171;&#x6392;&#x5E8F;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#x4E3A;100 &#xD7; 4 = 400MB&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x5185;&#x5B58;&#x5728;4GB&#x5DE6;&#x53F3;&#x7684;&#x670D;&#x52A1;&#x5668;&#x63A8;&#x8350;&#x8BBE;&#x7F6E;&#x4E3A;4-8M&#x3002;</p>
+<pre><code>read_buffer_size = 4M
+</code></pre><p>&#x8BFB;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6240;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#x3002;&#x548C;sort_buffer_size&#x4E00;&#x6837;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x7684;&#x5206;&#x914D;&#x5185;&#x5B58;&#x4E5F;&#x662F;&#x6BCF;&#x8FDE;&#x63A5;&#x72EC;&#x4EAB;!</p>
+<pre><code>join_buffer_size = 8M
+</code></pre><p>&#x8054;&#x5408;&#x67E5;&#x8BE2;&#x64CD;&#x4F5C;&#x6240;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x7F13;&#x51B2;&#x533A;&#x5927;&#x5C0F;&#xFF0C;&#x548C;sort_buffer_size&#x4E00;&#x6837;&#xFF0C;&#x8BE5;&#x53C2;&#x6570;&#x5BF9;&#x5E94;&#x7684;&#x5206;&#x914D;&#x5185;&#x5B58;&#x4E5F;&#x662F;&#x6BCF;&#x8FDE;&#x63A5;&#x72EC;&#x4EAB;!</p>
+<pre><code>myisam_sort_buffer_size = 64M
+</code></pre><p>MyISAM&#x8868;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x65F6;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x6240;&#x9700;&#x7684;&#x7F13;&#x51B2;</p>
+<pre><code>query_cache_size = 64M
+</code></pre><p>&#x6307;&#x5B9A;MySQL&#x67E5;&#x8BE2;&#x7F13;&#x51B2;&#x533A;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;MySQL&#x63A7;&#x5236;&#x53F0;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x89C2;&#x5BDF;&#xFF1A;</p>
+<pre><code># &gt; SHOW VARIABLES LIKE &#x2018;%query_cache%&apos;; 
+# &gt; SHOW STATUS LIKE &#x2018;Qcache%&apos;; # &#x5982;&#x679C;Qcache_lowmem_prunes&#x7684;&#x503C;&#x975E;&#x5E38;&#x5927;&#xFF0C;&#x5219;&#x8868;&#x660E;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;&#x7F13;&#x51B2;&#x4E0D;&#x591F;&#x7684;&#x60C5;&#x51B5;;
+</code></pre><p>&#x5982;&#x679C;Qcache_hits&#x7684;&#x503C;&#x975E;&#x5E38;&#x5927;&#xFF0C;&#x5219;&#x8868;&#x660E;&#x67E5;&#x8BE2;&#x7F13;&#x51B2;&#x4F7F;&#x7528;&#x975E;&#x5E38;&#x9891;&#x7E41;&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x503C;&#x8F83;&#x5C0F;&#x53CD;&#x800C;&#x4F1A;&#x5F71;&#x54CD;&#x6548;&#x7387;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x8003;&#x8651;&#x4E0D;&#x7528;&#x67E5;&#x8BE2;&#x7F13;&#x51B2;;Qcache_free_blocks&#xFF0C;&#x5982;&#x679C;&#x8BE5;&#x503C;&#x975E;&#x5E38;&#x5927;&#xFF0C;&#x5219;&#x8868;&#x660E;&#x7F13;&#x51B2;&#x533A;&#x4E2D;&#x788E;&#x7247;&#x5F88;&#x591A;&#x3002;</p>
+<pre><code>thread_cache_size = 64
+</code></pre><p>&#x53EF;&#x4EE5;&#x590D;&#x7528;&#x7684;&#x4FDD;&#x5B58;&#x5728;&#x4E2D;&#x7684;&#x7EBF;&#x7A0B;&#x7684;&#x6570;&#x91CF;&#x3002;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x53D6;&#x5F97;&#xFF0C;&#x5F53;&#x65AD;&#x5F00;&#x8FDE;&#x63A5;&#x7684;&#x65F6;&#x5019;&#x5982;&#x679C;&#x6709;&#x7A7A;&#x95F4;&#xFF0C;&#x5BA2;&#x6237;&#x7684;&#x7EBF;&#x7F6E;&#x5728;&#x7F13;&#x5B58;&#x4E2D;&#x3002;&#x5982;&#x679C;&#x6709;&#x5F88;&#x591A;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8;&#x6027;&#x80FD;&#x53EF;&#x4EE5;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x503C;&#x3002;&#x901A;&#x8FC7;&#x6BD4;&#x8F83; Connections &#x548C; Threads_created &#x72B6;&#x6001;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;</p>
+<pre><code>tmp_table_size = 256M
+max_connections = 1000
+</code></pre><p>&#x6307;&#x5B9A;MySQL&#x5141;&#x8BB8;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x8FDB;&#x7A0B;&#x6570;&#x3002;&#x5982;&#x679C;&#x5728;&#x8BBF;&#x95EE;&#x8BBA;&#x575B;&#x65F6;&#x7ECF;&#x5E38;&#x51FA;&#x73B0;Too Many Connections&#x7684;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x589E;&#x5927;&#x8BE5;&#x53C2;&#x6570;&#x503C;&#x3002;</p>
+<pre><code>max_connect_errors = 10000000
+</code></pre><p>&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E3B;&#x673A;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x8D85;&#x51FA;&#x8BE5;&#x53C2;&#x6570;&#x503C;&#x4E2A;&#x6570;&#x7684;&#x4E2D;&#x65AD;&#x9519;&#x8BEF;&#x8FDE;&#x63A5;&#xFF0C;&#x5219;&#x8BE5;&#x4E3B;&#x673A;&#x5C06;&#x88AB;&#x7981;&#x6B62;&#x8FDE;&#x63A5;&#x3002;&#x5982;&#x9700;&#x5BF9;&#x8BE5;&#x4E3B;&#x673A;&#x8FDB;&#x884C;&#x89E3;&#x7981;&#xFF0C;&#x6267;&#x884C;&#xFF1A;<code>FLUSH HOST</code>;&#x3002;</p>
+<pre><code>wait_timeout = 10
+</code></pre><p>&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x65F6;&#x95F4;&#xFF0C;&#x5BF9;&#x4E8E;4GB&#x5DE6;&#x53F3;&#x5185;&#x5B58;&#x7684;&#x670D;&#x52A1;&#x5668;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;5-10&#x3002;</p>
+<pre><code>thread_concurrency = 8
+</code></pre><p>&#x8BE5;&#x53C2;&#x6570;&#x53D6;&#x503C;&#x4E3A;&#x670D;&#x52A1;&#x5668;&#x903B;&#x8F91;CPU&#x6570;&#x91CF;&#xD7;2&#xFF0C;&#x5728;&#x672C;&#x4F8B;&#x4E2D;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x6709;2&#x9897;&#x7269;&#x7406;CPU&#xFF0C;&#x800C;&#x6BCF;&#x9897;&#x7269;&#x7406;CPU&#x53C8;&#x652F;&#x6301;H.T&#x8D85;&#x7EBF;&#x7A0B;&#xFF0C;&#x6240;&#x4EE5;&#x5B9E;&#x9645;&#x53D6;&#x503C;&#x4E3A;4 &#xD7; 2 = 8</p>
+<pre><code>skip-networking
+</code></pre><p>&#x5F00;&#x542F;&#x8BE5;&#x9009;&#x9879;&#x53EF;&#x4EE5;&#x5F7B;&#x5E95;&#x5173;&#x95ED;MySQL&#x7684;TCP/IP&#x8FDE;&#x63A5;&#x65B9;&#x5F0F;&#xFF0C;&#x5982;&#x679C;WEB&#x670D;&#x52A1;&#x5668;&#x662F;&#x4EE5;&#x8FDC;&#x7A0B;&#x8FDE;&#x63A5;&#x7684;&#x65B9;&#x5F0F;&#x8BBF;&#x95EE;MySQL&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x5219;&#x4E0D;&#x8981;&#x5F00;&#x542F;&#x8BE5;&#x9009;&#x9879;!&#x5426;&#x5219;&#x5C06;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x8FDE;&#x63A5;!</p>
+<pre><code>long_query_time = 10
+log-slow-queries =
+log-queries-not-using-indexes
+</code></pre><p>&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;( slow query log )
+&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x5BF9;&#x4E8E;&#x8DDF;&#x8E2A;&#x6709;&#x95EE;&#x9898;&#x7684;&#x67E5;&#x8BE2;&#x975E;&#x5E38;&#x6709;&#x7528;&#x3002;&#x5B83;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x67E5;&#x8FC7;long_query_time&#x7684;&#x67E5;&#x8BE2;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x8BB0;&#x5F55;&#x4E0D;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#x7684;&#x4F8B;&#x5B50;&#xFF1A;
+&#x5F00;&#x542F;&#x6162;&#x67E5;&#x8BE2;&#x65E5;&#x5FD7;&#xFF0C;&#x9700;&#x8981;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;log_slow_queries&#x3001;long_query_times&#x3001;log-queries-not-using-indexes&#x3002;
+log_slow_queries&#x6307;&#x5B9A;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x63D0;&#x4F9B;&#x6587;&#x4EF6;&#x540D;&#xFF0C;MySQL&#x5C06;&#x81EA;&#x5DF1;&#x4EA7;&#x751F;&#x7F3A;&#x7701;&#x6587;&#x4EF6;&#x540D;&#x3002;long_query_times&#x6307;&#x5B9A;&#x6162;&#x67E5;&#x8BE2;&#x7684;&#x9608;&#x503C;&#xFF0C;&#x7F3A;&#x7701;&#x662F;10&#x79D2;&#x3002;log-queries-not-using-indexes&#x662F;4.1.0&#x4EE5;&#x540E;&#x5F15;&#x5165;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5B83;&#x6307;&#x793A;&#x8BB0;&#x5F55;&#x4E0D;&#x4F7F;&#x7528;&#x7D22;&#x5F15;&#x7684;&#x67E5;&#x8BE2;&#x3002;&#x8BBE;&#x7F6E; long_query_time=10</p>
+<h3 id="&#x9644;&#x5F55;&#x547D;&#x4EE4;">&#x9644;&#x5F55;&#x547D;&#x4EE4;</h3>
+<p>&#x4F7F;&#x7528;show status&#x547D;&#x4EE4;&#x67E5;&#x770B;mysql&#x72B6;&#x6001;&#x76F8;&#x5173;&#x7684;&#x503C;&#x53CA;&#x5176;&#x542B;&#x4E49;&#xFF1A;
+&#x4F7F;&#x7528;show status&#x547D;&#x4EE4;&#xFF0C;&#x542B;&#x4E49;&#x5982;&#x4E0B;:</p>
+<ul>
+<li>aborted_clients &#x5BA2;&#x6237;&#x7AEF;&#x975E;&#x6CD5;&#x4E2D;&#x65AD;&#x8FDE;&#x63A5;&#x6B21;&#x6570;</li>
+<li>aborted_connects &#x8FDE;&#x63A5;mysql&#x5931;&#x8D25;&#x6B21;&#x6570;</li>
+<li>com_xxx xxx&#x547D;&#x4EE4;&#x6267;&#x884C;&#x6B21;&#x6570;,&#x6709;&#x5F88;&#x591A;&#x6761;</li>
+<li>connections &#x8FDE;&#x63A5;mysql&#x7684;&#x6570;&#x91CF;</li>
+<li>Created_tmp_disk_tables &#x5728;&#x78C1;&#x76D8;&#x4E0A;&#x521B;&#x5EFA;&#x7684;&#x4E34;&#x65F6;&#x8868;</li>
+<li>Created_tmp_tables &#x5728;&#x5185;&#x5B58;&#x91CC;&#x521B;&#x5EFA;&#x7684;&#x4E34;&#x65F6;&#x8868;</li>
+<li>Created_tmp_files &#x4E34;&#x65F6;&#x6587;&#x4EF6;&#x6570;</li>
+<li>Key_read_requests The number of requests to read a key block from the cache</li>
+<li>Key_reads The number of physical reads of a key block from disk</li>
+<li>Max_used_connections &#x540C;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x8FDE;&#x63A5;&#x6570;</li>
+<li>Open_tables &#x5F00;&#x653E;&#x7684;&#x8868;</li>
+<li>Open_files &#x5F00;&#x653E;&#x7684;&#x6587;&#x4EF6;</li>
+<li>Opened_tables &#x6253;&#x5F00;&#x7684;&#x8868;</li>
+<li>Questions &#x63D0;&#x4EA4;&#x5230;server&#x7684;&#x67E5;&#x8BE2;&#x6570;</li>
+<li>Sort_merge_passes &#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x503C;&#x5F88;&#x5927;,&#x5E94;&#x8BE5;&#x589E;&#x52A0; my.ini &#x4E2D;&#x7684;sort_buffer&#x503C;</li>
+<li>Uptime &#x670D;&#x52A1;&#x5668;&#x5DF2;&#x7ECF;&#x5DE5;&#x4F5C;&#x7684;&#x79D2;&#x6570;</li>
+</ul>
+<h3 id="&#x63D0;&#x5347;&#x6027;&#x80FD;&#x7684;&#x5EFA;&#x8BAE;">&#x63D0;&#x5347;&#x6027;&#x80FD;&#x7684;&#x5EFA;&#x8BAE;</h3>
+<ul>
+<li>&#x5982;&#x679C; opened_tables &#x592A;&#x5927;,&#x5E94;&#x8BE5;&#x628A; my.ini &#x4E2D;&#x7684; table_cache &#x53D8;&#x5927;</li>
+<li>&#x5982;&#x679C; Key_reads &#x592A;&#x5927;,&#x5219;&#x5E94;&#x8BE5;&#x628A; my.ini &#x4E2D; key_buffer_size &#x53D8;&#x5927;.&#x53EF;&#x4EE5;&#x7528; Key_reads/Key_read_requests &#x8BA1;&#x7B97;&#x51FA; cache &#x5931;&#x8D25;&#x7387;</li>
+<li>&#x5982;&#x679C; Handler_read_rnd &#x592A;&#x5927;,&#x5219;&#x4F60;&#x5199;&#x7684; SQL &#x8BED;&#x53E5;&#x91CC;&#x5F88;&#x591A;&#x67E5;&#x8BE2;&#x90FD;&#x662F;&#x8981;&#x626B;&#x63CF;&#x6574;&#x4E2A;&#x8868;,&#x800C;&#x6CA1;&#x6709;&#x53D1;&#x6325;&#x7D22;&#x5F15;&#x7684;&#x952E;&#x7684;&#x4F5C;&#x7528;</li>
+<li>&#x5982;&#x679C; Threads_created &#x592A;&#x5927;,&#x5C31;&#x8981;&#x589E;&#x52A0; my.ini &#x4E2D; thread_cache_size &#x7684;&#x503C;.&#x53EF;&#x4EE5;&#x7528; Threads_created/Connections &#x8BA1;&#x7B97; cache &#x547D;&#x4E2D;&#x7387;</li>
+<li>&#x5982;&#x679C; Created_tmp_disk_tables &#x592A;&#x5927;,&#x5C31;&#x8981;&#x589E;&#x52A0; my.ini &#x4E2D; tmp_table_size &#x7684;&#x503C;,&#x7528;&#x57FA;&#x4E8E;&#x5185;&#x5B58;&#x7684;&#x4E34;&#x65F6;&#x8868;&#x4EE3;&#x66FF;&#x57FA;&#x4E8E;&#x78C1;&#x76D8;&#x7684;</li>
+</ul>
+<h3 id="&#x5176;&#x4ED6;&#x5185;&#x5BB9;">&#x5176;&#x4ED6;&#x5185;&#x5BB9;</h3>
+<p>&#x5B58;&#x50A8;&#x5F15;&#x64CE;&#x662F;&#x4EC0;&#x4E48;&#xFF1F;MySQL&#x4E2D;&#x7684;&#x6570;&#x636E;&#x7528;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x6280;&#x672F;&#x5B58;&#x50A8;&#x5728;&#x6587;&#x4EF6;(&#x6216;&#x8005;&#x5185; &#x6B63;&#x786E;&#x7684;&#x7F16;&#x8BD1;&#x65B9;&#x6CD5;&#x56FA;&#x7136;&#x91CD;&#x8981;&#xFF0C;&#x4F46;&#x5B83;&#x53EA;&#x662F;&#x63D0;&#x9AD8;MySQL&#x670D;&#x52A1;&#x5668;&#x6027;&#x80FD;&#x5DE5;&#x4F5C;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x8BB8;&#x591A;&#x53C2;&#x6570;&#x4F1A;&#x5F71;&#x54CD;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6027;&#x80FD;&#x8868;&#x73B0;&#xFF0C;&#x800C;&#x4E14;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x4FDD;&#x5B58;&#x5230;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x5F97;&#x6BCF;&#x6B21;MySQL&#x670D;&#x52A1;&#x5668;&#x542F;&#x52A8;&#x65F6;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x90FD;&#x81EA;&#x52A8;&#x53D1;&#x6325;&#x4F5C;&#x7528;&#x3002;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x5C31;&#x662F; my.ini&#x3002;
+MySQL&#x670D;&#x52A1;&#x5668;&#x63D0;&#x4F9B;&#x4E86; my.ini &#x6587;&#x4EF6;&#x7684;&#x51E0;&#x4E2A;&#x793A;&#x4F8B;&#xFF0C;&#x5B83;&#x4EEC;&#x53EF;&#x4EE5;&#x5728; Mysql &#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x627E;&#x5230;&#xFF0C;&#x540D;&#x5B57;&#x5206;&#x522B;&#x4E3A; my-small.ini&#x3001;my-medium.ini&#x3001;my-large.ini &#x4EE5;&#x53CA;my-huge.ini&#x3002;&#x6587;&#x4EF6;&#x540D;&#x5B57;&#x4E2D;&#x5173;&#x4E8E;&#x89C4;&#x6A21;&#x7684;&#x8BF4;&#x660E;&#x63CF;&#x8FF0;&#x4E86;&#x8BE5;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x9002;&#x7528;&#x7684;&#x7CFB;&#x7EDF;&#x7C7B;&#x578B;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x8FD0;&#x884C;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x7CFB;&#x7EDF;&#x5185;&#x5B58;&#x4E0D;&#x591A;&#xFF0C;&#x800C;&#x4E14;MySQL&#x53EA;&#x662F;&#x5076;&#x5C14;&#x4F7F;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;my-small.ini &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6700;&#x4E3A;&#x7406;&#x60F3;&#xFF0C;&#x8FD9;&#x4E2A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x544A;&#x8BC9;mysqld daemon&#x4F7F;&#x7528;&#x6700;&#x5C11;&#x7684;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#x3002;&#x53CD;&#x4E4B;&#xFF0C;&#x5982;&#x679C;MySQL&#x670D;&#x52A1;&#x5668;&#x7528;&#x4E8E;&#x652F;&#x6301;&#x4E00;&#x4E2A;&#x5927;&#x89C4;&#x6A21;&#x7684;&#x5728;&#x7EBF;&#x5546;&#x573A;&#xFF0C;&#x7CFB;&#x7EDF;&#x62E5;&#x6709;2G&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x90A3;&#x4E48;&#x4F7F;&#x7528;mysql-huge.ini &#x6700;&#x4E3A;&#x5408;&#x9002;&#x3002;
+&#x8981;&#x4F7F;&#x7528;&#x4E0A;&#x8FF0;&#x793A;&#x4F8B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x6211;&#x4EEC;&#x5E94;&#x8BE5;&#x5148;&#x590D;&#x5236;&#x4E00;&#x4E2A;&#x6700;&#x9002;&#x5408;&#x8981;&#x6C42;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x547D;&#x540D;&#x4E3A; my.ini &#x3002;&#x8FD9;&#x4E2A;&#x590D;&#x5236;&#x5F97;&#x5230;&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#xFF1A;</p>
+<ul>
+<li>&#x5168;&#x5C40;&#xFF1A;&#x628A;&#x8FD9;&#x4E2A; my.ini &#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7684;/etc&#x76EE;&#x5F55;&#xFF0C;&#x6B64;&#x65F6;&#x6587;&#x4EF6;&#x4E2D;&#x6240;&#x5B9A;&#x4E49;&#x7684;&#x53C2;&#x6570;&#x5C06;&#x5168;&#x5C40;&#x6709;&#x6548;&#xFF0C;&#x5373;&#x5BF9;&#x8BE5;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x8FD0;&#x884C;&#x7684;&#x6240;&#x6709;MySQL&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;&#x5668;&#x90FD;&#x6709;&#x6548;&#x3002;</li>
+<li>&#x5C40;&#x90E8;&#xFF1A;&#x628A;&#x8FD9;&#x4E2A; my.ini &#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230; Mysql &#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x5C06;&#x4F7F;&#x8BE5;&#x6587;&#x4EF6;&#x53EA;&#x5BF9;&#x6307;&#x5B9A;&#x7684;&#x670D;&#x52A1;&#x5668;&#x6709;&#x6548;&#x3002;</li>
+<li>&#x7528;&#x6237;&#xFF1A;&#x6700;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x53EF;&#x4EE5;&#x628A;&#x8BE5;&#x6587;&#x4EF6;&#x7684;&#x4F5C;&#x7528;&#x8303;&#x56F4;&#x5C40;&#x9650;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x8FD9;&#x53EA;&#x9700;&#x628A; my.ini &#x6587;&#x4EF6;&#x590D;&#x5236;&#x5230;&#x7528;&#x6237;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x5982;&#x4F55;&#x8BBE;&#x7F6E;my.ini&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x5462;&#xFF1F;&#x6216;&#x8005;&#x8FDB;&#x4E00;&#x6B65;&#x8BF4;&#xFF0C;&#x54EA;&#x4E9B;&#x53C2;&#x6570;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x7684;&#x5462;&#xFF1F;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x90FD;&#x5BF9;MySQL&#x670D;&#x52A1;&#x5668;&#x6709;&#x7740;&#x5168;&#x5C40;&#x6027;&#x7684;&#x5F71;&#x54CD;&#xFF0C;&#x4F46;&#x540C;&#x65F6;&#x6BCF;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x90FD;&#x548C; MySQL &#x7684;&#x7279;&#x5B9A;&#x90E8;&#x5206;&#x5173;&#x7CFB;&#x8F83;&#x4E3A;&#x5BC6;&#x5207;&#x3002;&#x4F8B;&#x5982;&#xFF0C;max_connections &#x53C2;&#x6570;&#x5C5E;&#x4E8E; mysqld &#x4E00;&#x7C7B;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x5982;&#x4F55;&#x624D;&#x80FD;&#x5F97;&#x77E5;&#x8FD9;&#x4E00;&#x70B9;&#x5462;&#xFF1F;&#x8FD9;&#x53EA;&#x9700;&#x6267;&#x884C;&#x5982;&#x4E0B;&#x547D;&#x4EE4;&#xFF1A;</p>
+<pre><code>$ mysqld &#x2013;help
+</code></pre><p>&#x8BE5;&#x547D;&#x4EE4;&#x5C06;&#x663E;&#x793A;&#x51FA;&#x548C;mysqld&#x6709;&#x5173;&#x7684;&#x5404;&#x79CD;&#x9009;&#x9879;&#x548C;&#x53C2;&#x6570;&#x3002;&#x8981;&#x5BFB;&#x627E;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x90FD;&#x5728;&#x201C;Possible variables for option &#x2013;set-variable (-O) are&#x201D;&#x8FD9;&#x884C;&#x5185;&#x5BB9;&#x7684;&#x540E;&#x9762;&#x3002;&#x627E;&#x5230;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x4E4B;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x5728;my.ini&#x6587;&#x4EF6;&#x4E2D;&#x6309;&#x7167;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x8BBE;&#x7F6E;&#x6240;&#x6709;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code>set-variable = max_connections=100
+</code></pre><p>&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x7684;&#x6548;&#x679C;&#x662F;&#xFF1A;&#x540C;&#x65F6;&#x8FDE;&#x63A5;MySQL&#x670D;&#x52A1;&#x5668;&#x7684;&#x6700;&#x5927;&#x8FDE;&#x63A5;&#x6570;&#x91CF;&#x9650;&#x5236;&#x4E3A;100&#x3002;&#x4E0D;&#x8981;&#x5FD8;&#x4E86;&#x5728;my.ini&#x6587;&#x4EF6;[mysqld]&#x5C0F;&#x8282;&#x52A0;&#x4E0A;&#x4E00;&#x4E2A;set-variable&#x6307;&#x4EE4;&#xFF0C;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x89C1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x793A;&#x4F8B;&#x3002;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Install Extend/index.html" class="navigation navigation-prev " aria-label="Previous page: 安装扩展配置"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Master&amp;Slave/index.html" class="navigation navigation-next " aria-label="Next page: 集群部署"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

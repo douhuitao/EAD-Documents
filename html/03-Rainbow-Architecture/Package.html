@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>源码包结构 | 概述</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./International.html" />
+    
+    
+    <link rel="prev" href="./Theme/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="7"
+        data-chapter-title="源码包结构"
+        data-filepath="Package.md"
+        data-basepath="."
+        data-revision="Mon Mar 28 2016 07:28:26 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Overview.html">
+            
+                
+                    <a href="./Overview.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        架构概述
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Framework/index.html">
+            
+                
+                    <a href="./Framework/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Framework
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Modules/index.html">
+            
+                
+                    <a href="./Modules/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        模块及流程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Views/index.html">
+            
+                
+                    <a href="./Views/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        视图
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Components/index.html">
+            
+                
+                    <a href="./Components/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        组件
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Theme/index.html">
+            
+                
+                    <a href="./Theme/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        界面主题
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="7" data-path="Package.html">
+            
+                
+                    <a href="./Package.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        源码包结构
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="International.html">
+            
+                
+                    <a href="./International.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        国际化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="Extension.html">
+            
+                
+                    <a href="./Extension.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        扩展支持
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="Tools/index.html">
+            
+                
+                    <a href="./Tools/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        开发工具
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >概述</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x6E90;&#x7801;&#x5305;&#x7ED3;&#x6784;">&#x6E90;&#x7801;&#x5305;&#x7ED3;&#x6784;</h2>
+<pre><code>&#x251C;&#x2500;assets
+&#x2502;  &#x251C;&#x2500;bootstrap
+&#x2502;  &#x251C;&#x2500;css
+&#x2502;  &#x251C;&#x2500;fonts
+&#x2502;  &#x2514;&#x2500;img
+&#x251C;&#x2500;dist
+&#x2502;  &#x2514;&#x2500;js
+&#x251C;&#x2500;js
+&#x2502;  &#x251C;&#x2500;action
+&#x2502;  &#x251C;&#x2500;vendor
+&#x2502;  &#x2502;  &#x251C;&#x2500;bootstrap-daterangepicker
+&#x2502;  &#x2502;  &#x251C;&#x2500;bootstrap-datetimepicker
+&#x2502;  &#x2502;  &#x251C;&#x2500;highlight
+&#x2502;  &#x2502;  &#x251C;&#x2500;jquery
+&#x2502;  &#x2502;  &#x251C;&#x2500;kindeditor-4.1.9
+&#x2502;  &#x2502;  &#x251C;&#x2500;requirejs
+&#x2502;  &#x2502;  &#x251C;&#x2500;select2-4.0.0
+&#x2502;  &#x2502;  &#x251C;&#x2500;soundmanager
+&#x2502;  &#x2502;  &#x251C;&#x2500;sweetalert
+&#x2502;  &#x2502;  &#x2514;&#x2500;webuploader-0.1.5
+&#x2502;  &#x2514;&#x2500;view
+&#x251C;&#x2500;nls
+&#x2502;  &#x251C;&#x2500;en
+&#x2502;  &#x2514;&#x2500;zh
+&#x251C;&#x2500;src
+&#x2502;  &#x251C;&#x2500;base
+&#x2502;  &#x251C;&#x2500;common
+&#x2502;  &#x251C;&#x2500;components
+&#x2502;  &#x2502;  &#x251C;&#x2500;base
+&#x2502;  &#x2502;  &#x251C;&#x2500;controls
+&#x2502;  &#x2502;  &#x251C;&#x2500;editor
+&#x2502;  &#x2502;  &#x251C;&#x2500;form
+&#x2502;  &#x2502;  &#x251C;&#x2500;list
+&#x2502;  &#x2502;  &#x2514;&#x2500;webkit
+&#x2502;  &#x251C;&#x2500;utility
+&#x2502;  &#x2514;&#x2500;view
+&#x2502;      &#x2514;&#x2500;kit
+&#x2502;         &#x2514;&#x2500;action
+&#x2514;&#x2500;theme
+    &#x251C;&#x2500;classic
+    &#x2514;&#x2500;tech
+</code></pre><ul>
+<li>assets &#xFF1A;&#x8D44;&#x6E90;&#x5305;<ul>
+<li>bootstrap &#xFF1A;Bootstrap</li>
+<li>css &#xFF1A;CSS &#x6837;&#x5F0F;&#x6587;&#x4EF6;</li>
+<li>fonts &#xFF1A;&#x5B57;&#x4F53;</li>
+<li>img &#xFF1A;&#x56FE;&#x7247;</li>
+</ul>
+</li>
+<li>dist<ul>
+<li>js &#xFF1A;&#x6253;&#x5305; JS &#x751F;&#x6210;&#x76EE;&#x5F55;</li>
+</ul>
+</li>
+<li>js<ul>
+<li>action &#xFF1A;&#x6269;&#x5C55; Action &#x5B58;&#x653E;&#x8DEF;&#x5F84;</li>
+<li>vendor &#xFF1A;&#x7B2C;&#x4E09;&#x65B9;&#x7EC4;&#x4EF6;&#x76EE;&#x5F55;<ul>
+<li>bootstrap-daterangepicker &#xFF1A;&#x65E5;&#x671F;&#x533A;&#x95F4;&#x9009;&#x62E9;&#x5668;</li>
+<li>bootstrap-datetimepicker &#xFF1A;&#x65E5;&#x671F;&#x9009;&#x62E9;&#x5668;</li>
+<li>highlight &#xFF1A;&#x4EE3;&#x7801;&#x9AD8;&#x4EAE;</li>
+<li>jquery &#xFF1A;jQuery</li>
+<li>kindeditor-4.1.9 &#xFF1A;&#x5BCC;&#x6587;&#x672C;&#x7F16;&#x8F91;&#x5668;</li>
+<li>requirejs &#xFF1A;AMD &#x52A0;&#x8F7D;&#x5668;</li>
+<li>select2-4.0.0 &#xFF1A;&#x589E;&#x5F3A;&#x9009;&#x62E9;&#x5668;&#x8868;&#x5355;&#x63A7;&#x4EF6;</li>
+<li>soundmanager &#xFF1A;&#x58F0;&#x97F3;&#x64AD;&#x653E;</li>
+<li>sweetalert &#xFF1A;&#x6D88;&#x606F;&#x63D0;&#x793A;</li>
+<li>webuploader-0.1.5 &#xFF1A;Web &#x4E0A;&#x4F20;&#x7EC4;&#x4EF6;</li>
+</ul>
+</li>
+<li>view &#xFF1A;&#x6269;&#x5C55;&#x89C6;&#x56FE;&#x5B58;&#x653E;&#x8DEF;&#x5F84;</li>
+</ul>
+</li>
+<li>nls &#xFF1A;&#x8BED;&#x8A00;&#x5305;<ul>
+<li>en &#xFF1A;&#x82F1;&#x6587;&#x8BED;&#x8A00;&#x5305;&#x76EE;&#x5F55;</li>
+<li>zh &#xFF1A;&#x4E2D;&#x6587;&#x8BED;&#x8A00;&#x5305;&#x76EE;&#x5F55;</li>
+</ul>
+</li>
+<li>src &#xFF1A;&#x6E90;&#x7801;&#x76EE;&#x5F55;<ul>
+<li>base &#xFF1A;&#x57FA;&#x7840;&#x6A21;&#x5757;</li>
+<li>common &#xFF1A;&#x901A;&#x7528;&#x6A21;&#x5757;</li>
+<li>components &#xFF1A;&#x7EC4;&#x4EF6;<ul>
+<li>base &#xFF1A;&#x57FA;&#x7840;&#x62BD;&#x8C61;</li>
+<li>controls &#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;</li>
+<li>editor &#xFF1A;&#x5BCC;&#x4EA4;&#x4E92;&#x7F16;&#x8F91;&#x5668;</li>
+<li>form &#xFF1A;&#x8868;&#x5355;</li>
+<li>list &#xFF1A;&#x5217;&#x8868;</li>
+<li>webkit &#xFF1A;&#x5C0F;&#x7EC4;&#x4EF6;</li>
+</ul>
+</li>
+<li>utility &#xFF1A;&#x8F85;&#x52A9;&#x51FD;&#x6570;</li>
+<li>view &#xFF1A;&#x89C6;&#x56FE;<ul>
+<li>kit &#xFF1A;&#x90E8;&#x4EF6;<ul>
+<li>action &#xFF1A;&#x89C6;&#x56FE;&#x52A8;&#x4F5C;</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>theme &#xFF1A;&#x4E3B;&#x9898;&#x5305;&#x5B58;&#x653E;&#x8DEF;&#x5F84;<ul>
+<li>classic &#xFF1A;&#x7ECF;&#x5178;&#x4E3B;&#x9898;</li>
+<li>tech &#xFF1A;&#x79D1;&#x6280;&#x4E3B;&#x9898;</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./Theme/index.html" class="navigation navigation-prev " aria-label="Previous page: 界面主题"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./International.html" class="navigation navigation-next " aria-label="Next page: 国际化"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
