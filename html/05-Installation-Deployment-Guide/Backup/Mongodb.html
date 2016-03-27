@@ -1,0 +1,522 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mongodb 数据备份 | EAD 安装部署手册</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Backup/EAD.html" />
+    
+    
+    <link rel="prev" href="../Backup/Mysql.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="Mongodb 数据备份"
+        data-filepath="Backup/Mongodb.md"
+        data-basepath=".."
+        data-revision="Mon Mar 28 2016 07:33:00 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Environment/index.html">
+            
+                
+                    <a href="../Environment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        服务器运行环境准备
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Environment/Windows Server.html">
+            
+                
+                    <a href="../Environment/Windows Server.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Winows Server
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Environment/Install Mysql.html">
+            
+                
+                    <a href="../Environment/Install Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.1.</b>
+                        
+                        安装 Mysql
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Environment/Install Mongodb.html">
+            
+                
+                    <a href="../Environment/Install Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.2.</b>
+                        
+                        安装 Mongodb
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Environment/Install Tomcat.html">
+            
+                
+                    <a href="../Environment/Install Tomcat.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.3.</b>
+                        
+                        安装 Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Config Data Init/Config Data Init.html">
+            
+                
+                    <a href="../Config Data Init/Config Data Init.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        配置数据初始化
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Deployment/index.html">
+            
+                
+                    <a href="../Deployment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        平台部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Deployment/Tomcat Deployment.html">
+            
+                
+                    <a href="../Deployment/Tomcat Deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Tomcat
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Backup/index.html">
+            
+                
+                    <a href="../Backup/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        备份
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="Backup/Mysql.html">
+            
+                
+                    <a href="../Backup/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        Mysql 数据备份
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="Backup/Mongodb.html">
+            
+                
+                    <a href="../Backup/Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        Mongodb 数据备份
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Backup/EAD.html">
+            
+                
+                    <a href="../Backup/EAD.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        EAD 安装包备份
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Install Extend/index.html">
+            
+                
+                    <a href="../Install Extend/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        安装扩展配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="Install Extend/Mysql.html">
+            
+                
+                    <a href="../Install Extend/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        Mysql 优化配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Master&amp;Slave/index.html">
+            
+                
+                    <a href="../Master&amp;Slave/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        集群部署
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="Master&amp;Slave/Mysql.html">
+            
+                
+                    <a href="../Master&amp;Slave/Mysql.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        Mysql 主备配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="Master&amp;Slave/Mongodb.html">
+            
+                
+                    <a href="../Master&amp;Slave/Mongodb.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        Mongodb 主备配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >EAD 安装部署手册</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h4 id="windows-&#x4E0B;-mongodb-&#x5168;&#x91CF;&#x5907;&#x4EFD;">Windows &#x4E0B; Mongodb &#x5168;&#x91CF;&#x5907;&#x4EFD;</h4>
+<p>&#x4EE5;&#x4E0B;&#x662F; Windows &#x4E0B; Mongodb &#x5907;&#x4EFD;&#x7684; bat &#x6587;&#x4EF6;&#x5185;&#x5BB9;&#xFF0C;&#x6839;&#x636E;&#x6BCF;&#x4E2A;&#x5177;&#x4F53;&#x670D;&#x52A1;&#x5668;&#x7684;&#x73AF;&#x5883;&#x8BBE;&#x7F6E;&#x4FEE;&#x6539; bat &#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x52A0;&#x5165;&#x5230; Windows &#x8BA1;&#x5212;&#x4EFB;&#x52A1;&#x4E2D;&#xFF0C;&#x5B9E;&#x73B0; Mongodb &#x7684;&#x5B9A;&#x65F6;&#x5168;&#x91CF;&#x5907;&#x4EFD;&#xFF1B;</p>
+<pre><code>@echo off
+rem ----------------------------------------------------------------------
+rem This is the mongodb backup script.
+rem You can use this script to copy an other mongodb&apos;s data file. 
+rem ----------------------------------------------------------------------
+
+rem GetDate
+rem  GetYear:%date:~0,4%GetMonth:%date:~5,2%:GetDay:%date:~8,2%
+
+echo current date : %date%
+set strYear=%date:~0,4%&amp;set strMonth=%date:~5,2%&amp;set strDay=%date:~8,2%
+set strDate=%strYear%%strMonth%%strDay%
+
+rem ----------------------------------------------------------------------
+rem ----------------------Backup Start------------------------------------
+echo ----------------------Backup Start-----------------------------------
+
+rem &#x8BBE;&#x7F6E; mongodb &#x6839;&#x76EE;&#x5F55;
+set MONGO_PATH=D:\gbros\mongodb
+rem &#x8BBE;&#x7F6E; mongodb &#x5907;&#x4EFD;&#x76EE;&#x5F55;&#x540D;
+set BACKUP_DIR_LOCAL=%MONGO_PATH%\backup\mongo_bak_%strDate%
+
+rem &#x521B;&#x5EFA;&#x5907;&#x4EFD;&#x76EE;&#x5F55;
+echo Backup Dir 1 : %BACKUP_DIR_LOCAL%
+mkdir %BACKUP_DIR_LOCAL%
+
+rem &#x8BBE;&#x7F6E;&#x5907;&#x4EFD;&#x547D;&#x4EE4;
+set _EXECMONGODUMP=start %MONGO_PATH%\bin\mongodump.exe
+
+rem &#x8BBE;&#x7F6E;&#x5907;&#x4EFD;&#x547D;&#x4EE4;&#x53C2;&#x6570;
+set MONGODUMP_OPTS_LOCAL= --db ead --out %BACKUP_DIR_LOCAL%
+
+rem &#x6267;&#x884C;&#x5907;&#x4EFD;&#x547D;&#x4EE4;
+echo ---------Backup Local------------
+%_EXECMONGODUMP% %MONGODUMP_OPTS_LOCAL% 
+echo ---------Backup Local Over-------
+
+echo ---------------------------Backup Over-----------------------------------
+rem ----------------------------Backup Over------------------------------------
+rem ---------------------------------------------------------------------------
+
+rem mongodb delete bak script
+rem the script can delete backup fold 7 days before now day.
+rem &#x6307;&#x5B9A;&#x5F85;&#x5220;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x5B58;&#x653E;&#x8DEF;&#x5F84;
+set SrcDir=D:\gbros\mongodb\backup\
+rem &#x6307;&#x5B9A;&#x4FDD;&#x7559;&#x6587;&#x4EF6;&#x5929;&#x6570;
+set DaysAgo=7
+
+&gt;&quot;%temp%/DstDate.vbs&quot; echo LastDate=date()-%DaysAgo%
+&gt;&gt;&quot;%temp%/DstDate.vbs&quot; echo FmtDate=right(year(LastDate),4) ^&amp; right(&quot;0&quot; ^&amp; month(LastDate),2) ^&amp; right(&quot;0&quot; ^&amp; day(LastDate),2)
+&gt;&gt;&quot;%temp%/DstDate.vbs&quot; echo wscript.echo FmtDate
+for /f %%a in (&apos;cscript /nologo &quot;%temp%/DstDate.vbs&quot;&apos;) do (
+  set &quot;DstDate=%%a&quot;
+)
+set DstDate=%DstDate:~0,4%%DstDate:~4,2%%DstDate:~6,2%
+
+rem &#x8BBE;&#x7F6E;&#x5220;&#x9664;&#x8DEF;&#x5F84;
+echo %DstDate%
+set DEL_PATH=D:\gbros\mongodb\backup\mongo_bak_%DstDate%
+
+echo Delete Local %DEL_PATH%
+if exist %DEL_PATH% (rd /s /q %DEL_PATH%)
+
+endlocal
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Backup/Mysql.html" class="navigation navigation-prev " aria-label="Previous page: Mysql 数据备份"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Backup/EAD.html" class="navigation navigation-next " aria-label="Next page: EAD 安装包备份"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

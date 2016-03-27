@@ -1,14 +1,8 @@
-# EAD-Developer-Reference-Guide
-
----------------------------------------------
-
-EAD Developer Reference Guide -《EAD开发者指南》
-
-## EAD说明
+# EAD 配置开发手册
 
 本文档为**EAD云应用开发平台**的配置开发进行的详细说明。
 
-## EAD特点
+## EAD 特点
 
 ### 信息模型
 
@@ -51,14 +45,3 @@ EAD平台之上的APP统一使用基础功能；
 前后端通过Restful API进行交换访问；
 对于不同的应用，可以只开发前端样式，进行简单配置即可；
 
-## 关注EAD
-
-如感兴趣，可以star或fork该[仓库](https://github.com/xiyouqi/Ead-Developer-Reference-Guide)！
-
-Github：[https://github.com/xiyouqi/](https://github.com/xiyouqi/)
-
-GitBook : [EAD 开发者指南](https://www.gitbook.com/book/xiyuntu/ead-developer/details)
-
-Email：peilw625311@gmail.com
-
-[从这里开始](SUMMARY.md)

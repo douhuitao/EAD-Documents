@@ -1,40 +1,73 @@
-### 表单控件
+## 表单控件
 
-|名称|描述|匹配类型|说明|
-|--|--|--|--|
-|text|单行文本框|任意||
+### text
 
-### 通用视图
+文本输入框。
 
-#### 标准视图(standard)
+### password
 
-- 表格(table)
-- 网盘(box)
-- 日历(calendar)
-- 排程(schedule) 
+密码输入框。
 
-### 通用动作事件
+### email
 
-#### POST
+电子邮件输入框（HTML5）。
 
-#### PUT
+### number
 
-#### DELETE
+数字输入框（HTML5）。
 
-#### one
+### url
 
-#### batch
+URL 输入框（HTML5）。
 
-#### ever
+### date
 
-#### file
+日期输入框。
 
-#### download
+### datetime
 
-#### upload
+日期时间输入框。
 
-#### move
+### daterange
 
-#### auth
+日期区间输入框。
 
-### 图标资源
+### monthly
+
+月度切换。
+
+### btn-group
+
+单选按钮组。
+
+### select
+
+下拉列表框。
+
+### file
+
+文件选择框。
+
+### hidden
+
+隐藏域。
+
+### textarea
+
+多行文本域。
+
+### editor
+
+建议富文本编辑器。
+
+### html
+
+HTML 编辑器。
+
+### chosen
+
+基于 Select 2 的单选控件。
+
+### multiple
+
+基于 Select 2 的多选控件。

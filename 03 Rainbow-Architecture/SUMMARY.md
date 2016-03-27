@@ -7,6 +7,7 @@
 * [视图](Views/README.md)
 * [组件](Components/README.md)
 * [界面主题](Theme/README.md)
+* [源码包结构](Package.md)
 * [国际化](International.md)
 * [扩展支持](Extension.md)
 * [开发工具](Tools/README.md)
