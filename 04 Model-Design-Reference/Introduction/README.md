@@ -36,3 +36,12 @@
 | week | 周 | bigint(20) |
 | wordbook | 字典 | char(48) |
 | year | 年 | bigint(20) |
+
+#### EAD ERWin 图
+
+![PNG](..\images\1.png)
+
+#### Sys & Workflow ERWin 图
+
+![PNG](..\images\2.png)
+
