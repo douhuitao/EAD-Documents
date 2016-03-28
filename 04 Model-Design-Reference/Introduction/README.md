@@ -39,9 +39,13 @@
 
 #### EAD ERWin 图
 
+ERWin 文件见 PDF/ERWIN 目录；
+
 ![PNG](..\images\1.png)
 
 #### Sys & Workflow ERWin 图
+
+ERWin 文件见 PDF/ERWIN 目录；
 
 ![PNG](..\images\2.png)
 
