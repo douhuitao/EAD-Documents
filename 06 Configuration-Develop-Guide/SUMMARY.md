@@ -1,6 +1,7 @@
 # Summary
 
 * [前言](Introduction/README.md)
+* [规范](Specification/README.md)
 * [模型](Model/README.md)
   * [创建模型](Model/Create Model.md)
   * [创建模型属性](Model/Create Model Attributes.md)
