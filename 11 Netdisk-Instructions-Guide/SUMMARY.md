@@ -20,6 +20,7 @@
     * [自定义内容修改](CustomContentEdit/README.md)
     * [下载](Download/README.md)
     * [动态](Activity/README.md)
+    * [共享](Partage/README.md)
     * [重命名](Rename/README.md)
     * [删除](Remove/README.md)
 * [用户权限说明](Auth/README.md)
