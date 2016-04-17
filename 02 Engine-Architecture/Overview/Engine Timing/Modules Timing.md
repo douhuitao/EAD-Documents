@@ -2,7 +2,7 @@
 
 EAD 引擎模块调用顺序如下图所示：
 
-![PNG](..\images\7.png)
+![PNG](..\..\images\7.png)
 
 #### 1. Spring Boot
 
