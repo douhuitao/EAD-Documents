@@ -13,6 +13,7 @@
     * [自定义视图新增](CustomView/README.md)
     * [自定义内容新增](CustomContent/README.md)
   * [选择操作](Choose/README.md)
+    * [设置默认路径](SetTemplate/DefaultPath.md)
     * [拷贝](Copy/README.md)
     * [移动](move/README.md)
     * [设置为模版目录](SetTemplate/README.md)
@@ -26,4 +27,4 @@
 * [用户权限说明](Auth/README.md)
     * [权限功能及限制](Limit/README.md)
     * [授权操作说明](Share/README.md)
-    * [操作所需权限](Operate/README.md)
+    * [超级管理员](Share/Super.md)

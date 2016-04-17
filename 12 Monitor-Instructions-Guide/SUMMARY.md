@@ -1,7 +1,6 @@
 # Summary
 
-* [概述](README/README.md)
-* [登录](Sign in/README.md)
+* [登录](README.md)
 * [登录首页](Login page/README.md)
 * [系统](system/README.md)
 	*[用户管理](User management/README.md)
