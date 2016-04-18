@@ -3,6 +3,7 @@
 动作工厂时序图如下所示：
 
 ![PNG](..\..\images\11.png)
+![PNG](..\..\images\Action Factory.png)
 
 #### 1. 视图动作工厂（Factory）
 

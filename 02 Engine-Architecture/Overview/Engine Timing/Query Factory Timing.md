@@ -3,6 +3,7 @@
 查询工厂时序图如下所示：
 
 ![PNG](..\..\images\10.png)
+![PNG](..\..\images\Query Factory.png)
 
 #### 1. 查询工厂
 

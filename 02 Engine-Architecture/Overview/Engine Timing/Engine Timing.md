@@ -3,6 +3,7 @@
 平台引擎模块调用顺序如下图所示：
 
 ![PNG](..\..\images\8.png)
+![PNG](..\..\images\Engine Core.png)
 
 #### 1. 客户端（Client）
 

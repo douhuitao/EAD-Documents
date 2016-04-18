@@ -3,6 +3,7 @@
 视图工厂时序图如下所示：
 
 ![PNG](..\..\images\9.png)
+![PNG](..\..\images\View Factory.png)
 
 #### 1. 视图工厂（Factory）
 
