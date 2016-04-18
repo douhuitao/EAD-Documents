@@ -1,9 +1,7 @@
 # Summary
 
-<<<<<<< HEAD
-* [概述](README/README.md)
 * [登录](Sign In/README.md)
-* [登录首页](Login Page/README.md)
+* [首页](Login Page/README.md)
 * [系统](System/README.md)
 	* [用户管理](User Management/README.md)
 	* [角色管理](Role Management/README.md)
@@ -23,26 +21,3 @@
 * [移动端说明](Mobile Terminal Description/README.md)
 	* [ios桌面图标生成步骤](IOS Generating Steps/README.md)
 	* [android桌面图标生成步骤](Android Generating Steps/README.md)
-=======
-* [登录](README.md)
-* [登录首页](Login page/README.md)
-* [系统](system/README.md)
-	*[用户管理](User management/README.md)
-	*[角色管理](Role management/README.md)
-	*[组织管理](Organization management/README.md)
-* [基础数据](Basic data/README.md)
-	*[司机](driver/README.md)
-	*[车辆](vehicle/README.md)
-	*[班组](team/README.md)
-	*[签约商家](Contract merchant/README.md)
-	*[变量参数](Variable parameter/README.md)
-	*[收运路线](Transportation line/README.md)
-	*[收运货物](Transportation goods/README.md)
-* [调度](dispatch/README.md)
-	*[车辆调度](Vehicle scheduling/README.md)
-	*[调度记录](Dispatching record/README.md)
-	*[过磅记录](Weighing record/README.md)
-* [移动端说明](Mobile terminal description/README.md)
-	*[ios桌面图标生成步骤](IOS Generating steps/README.md)
-	*[android桌面图标生成步骤](Android Generating steps/README.md)
->>>>>>> origin/master
