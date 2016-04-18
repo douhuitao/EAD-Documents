@@ -18,6 +18,8 @@
 	* [车辆调度](Vehicle Scheduling/README.md)
 	* [调度记录](Dispatching Record/README.md)
 	* [过磅记录](Weighing Record/README.md)
+	* [派车单打印](Pie Order Print/README.md)
+	* [日调度记录打印](Dispatching Record Printing/README.md)
 * [移动端说明](Mobile Terminal Description/README.md)
 	* [ios桌面图标生成步骤](IOS Generating Steps/README.md)
 	* [android桌面图标生成步骤](Android Generating Steps/README.md)
