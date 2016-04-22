@@ -22,7 +22,10 @@ builderView : 视图创建入口；
 
 视图工厂在处理过程中，首先实例化视图，根据请求不同进行分支：
 
-- performGet 进入QueryFactory获取数据内容；
+- performGet 组装视图 Schema 和数据内容；
+  - performGetSchemaView 组装视图Schema；
+  - performGetDataView 组装视图 Schema 及数据内容；
+  - performGetDetailView 组装视图 Schema 及一条数据的详细内容；
 - performCreate 进入视图动作工厂新增，由视图动作工厂调用新增方法；
 - performUpdate 进入视图动作工厂更新方法，由视图动作工厂调用更新方法；
 - performDelete 进入视图动作工厂删除方法，由视图动作工厂调用删除方法；
