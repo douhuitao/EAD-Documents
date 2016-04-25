@@ -9,12 +9,12 @@
 姓名|String|一般为用户的真实姓名
 英文名称|String
 邮箱|String|用户主要的电子邮箱地址
-手机号码|String|
-出生日期|String|
-所属组织机构名称|String|
-所属组织机构 ID|String|
-兼职组织机构名称|String|
-兼职组织机构ID|String|
+手机号码|String|主要联系电话
+出生日期|String|出生日期
+所属组织机构名称|String|组织机构名称
+所属组织机构 ID|String|组织机构唯一 ID
+兼职组织机构名称|String|兼职组织机构名称
+兼职组织机构ID|String|兼职组织机构唯一 ID
 用户状态|String|
 
 ### 组织机构信息

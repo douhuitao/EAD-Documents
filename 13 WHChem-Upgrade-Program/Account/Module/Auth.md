@@ -4,20 +4,39 @@ LDAP 账号用户通过 EAD 平台登录界面登录时，EAD 平台将用户输
 
 ![LDAP 认证](../../images/ldap-auth.png)
 
-### LDAP 协议
+### LDAP 连接配置
 
-**版本：** V3
-**编码：** UTF-8
-**方法：** 
+- **协议：** LDAP
+- **版本：** V3
+- **编码：** UTF-8
+- **LDAP URL：** 
+- **BaseDN：** 
 
-### 输入参数
-
-参数名称|数据类型|说明|示例
---|--|--|--|--
-
-### 返回数据
+### 连接参数
 
 参数名称|数据类型|说明|示例
---|--|--|--|--
+--|--|--|--
+SECURITY_PRINCIPAL|String|管理员|lli
+SECURITY_CREDENTIALS|String|管理员密码|pass123
 
-### 响应代码
+### 获取用户信息
+
+参数名称|数据类型|说明|示例
+--|--|--|--
+uid|String|用户账号|lli
+
+
+### 认证参数
+
+参数名称|数据类型|说明|示例
+--|--|--|--
+SECURITY_PRINCIPAL|String|用户账号|lli
+SECURITY_CREDENTIALS|String|账户密码|pass123
+
+### 异常
+
+异常类型|说明
+--|--
+AuthenticationException|认证失败
+Exception|认证出错
+
