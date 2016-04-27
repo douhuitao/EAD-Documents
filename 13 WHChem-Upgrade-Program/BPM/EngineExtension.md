@@ -29,7 +29,8 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 **驱动功能：**
 - 组织 BPM 流程发起接口参数;
-- Rest 方式请求 BPM 流程发起接口;
+- Rest 方式请求 BPM 流程发起接口获取下一环节信息;
+- 根据Rainbow Confirm 参数 Rest 方式请求 BPM 流程发起接口进行二次确认流程发起;
 - BPM 接口返回成功后更新 bpm_ts_piid、bpm_status、bpm_update_time;
 
 #### 2.2 待办提交驱动
