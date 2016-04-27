@@ -81,20 +81,17 @@
 用户 ID|uid||String|具有唯一性且不可随意变更的主键
 账号|uid||String|具有唯一性的用户账号
 姓名|cn||String|一般为用户的真实姓名
-英文名称|||String|
-简称|shortName||String|
-显示名称|||String|wanhuaCn与uid拼接起来：韩晓明（xmhan）
+英文名称|||String|没有
+简称|shortName||String|没有
 邮箱|mail||String|用户主要的电子邮箱地址
+邮箱|mail1||String|用户主要的电子邮箱地址
 手机号码|mobile||String|主要联系电话
-性别|sex||String|
+性别|sex||String|1：男，2：女
 出生日期|birthday||String|出生日期(格式：1990-1-1)
-公司名称|||String|所属公司名称
 公司 ID|unit||String|所属公司唯一 ID
-所属组织机构名称|||String|组织机构名称
-所属组织机构 ID|unitCode||String|组织机构唯一 ID
-兼职组织机构名称|||String|兼职组织机构名称
+所属组织机构 ID|erParent||String|组织机构唯一 ID
 兼职组织机构ID|vdeptNo||String|兼职组织机构唯一 ID
-用户状态|||String|
+用户状态|||String|无需同步，依赖相应同步规则
 
 #### 同步规则
 
@@ -112,18 +109,18 @@
 :--|:--|:--|:--|:--
 组织机构 ID|erglobalid||String|具有唯一性且不可随意变更的主键
 组织名称|ou||String|组织机构全称
-组织英文名称|ou;lang-en||String|组织机构英文全称
-组织简称|||String|简称
-组织缩写|||String|
-组织编码|orgunitid||String|便于机器或程序识别的字母或数字编码
+组织英文名称|ou;lang-en||String|组织机构英文全称（有可能没有数据）
+组织简称|||String|简称（没有）
+组织缩写|||String|没有
+组织编码|orgunitid||String|BPM 组织机构 ID（增加系统耦合度，暂不启用）
 父级组织ID|erparent||String|
-组织描述|description||String|
+组织描述|description||String|不是基础能力，暂不启用
 是否显示|isDisplay||Boolean|控制组织机构是否显示在选人接口&人力地图&是否同步到组(0不显示，1显示)（true-显示/false-不显示）
-组织路径|||String|
-组织层级|orgLevel||String|
+组织路径|||String|没有
+组织层级|orgLevel||String|没有
 组织类型|orgType||String|0：部门,1：公司,2：组织单元
-组织序号|displayNumber||String|
-组织状态|||String|
+组织序号|displayNumber||String|只有公司层级有数据
+组织状态|||String|没有
 
 #### 同步规则
 
