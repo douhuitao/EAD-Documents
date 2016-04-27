@@ -11,3 +11,4 @@
 * [国际化](International.md)
 * [扩展支持](Extension.md)
 * [开发工具](Tools/README.md)
+* [调试模式](Debug.md)

@@ -1,11 +1,13 @@
 # Summary
 
-* [前言](Introduction/README.md)
+* [规范](Specification/README.md)
+  * [配置开发命名](Specification/Naming.md)
+  * [扩展开发](Specification/Extension.md) 
 * [模型](Model/README.md)
   * [创建模型](Model/Create Model.md)
   * [创建模型属性](Model/Create Model Attributes.md)
   * [设置数据源](Model/Setting Data Source.md)
-  * [创建实体](Model/ Create Entity.md)
+  * [创建实体](Model/Create Entity.md)
 * [数据集](Collection/README.md)
   * [创建数据集](Collection/Create Collection.md)
 * [视图](View/README.md)
@@ -38,4 +40,4 @@
     * [注册系统变量驱动](Advanced Settings/Register Variable Driver.md)
 * [网盘](Netdisk/README.md)
 * [案例](UseCase/README.md)
-  * [案例1](UseCase/表单数据录入应用.md)
+  * [案例1](UseCase/UC01-Form Data In System.md)

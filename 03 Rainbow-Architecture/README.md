@@ -26,6 +26,10 @@ AMD 全称是 Asynchronous Module Definition，即异步模块加载机制。AMD
 
 Web Storage实际上由两部分组成：sessionStorage 与 localStorage。 sessionStorage 用于本地存储一个会话（session）中的数据，这些数据只有在同一个会话中的页面才能访问并且当会话结束后数据也随之销毁。因此 sessionStorage 不是一种持久化的本地存储，仅仅是会话级别的存储。 localStorage 用于持久化的本地存储，除非主动删除数据，否则数据是永远不会过期的。
 
+#### MVVM
+
+Rainbow 基于 API 模型动态渲染用户交互视图，通过动态渲染的数据表单对视图模型进行更新，利用 Backbone 实现服务端和客户端数据同步交互。View 绑定到 ViewModel，然后执行一些命令在向它请求一个动作。而反过来，ViewModel 跟 Model 通讯，告诉它更新来响应UI。这样便使得为应用构建UI非常的容易。同时，当 UI 和功能越来越松耦合的时候，功能的可测试性就越来越强。
+
 ### 术语定义
 
 #### View

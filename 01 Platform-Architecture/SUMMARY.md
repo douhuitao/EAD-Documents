@@ -5,6 +5,7 @@
 * [协议架构](Protocol/README.md)
 * [模型架构](Model/README.md)
 * [引擎架构](Engine/README.md)
+* [能力架构](Ability/README.md)
 * [服务组件](Service Components/README.md)
 * [Rainbow](Rainbow/README.md)
 * [扩展支持](Extension Driver/README.md)
