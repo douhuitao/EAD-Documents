@@ -5,7 +5,9 @@ BPM统一待办后，用户发起、审批、查看第三方流程时，由BPM�
 
 #### 1.1 扩充第三方系统流程配置表（TS_TRDPTY_BPD_CFG）
 
-新增字段BUSINESS_FIELDS：配置需要下发哪些字段，多个用逗号分隔。工作台表元数据配置新增列。
+- 新增字段 BUSINESS_FIELDS：配置需要下发哪些字段，多个用逗号分隔,VARCHAR2(256)。
+- 新增字段 EXT_DATA：扩展数据,VARCHAR2(256)。
+- 工作台表元数据配置新增列。
 
 #### 1.2 新增第三方系统统一业务表（WH_BT_TRDPTY）
 
@@ -17,7 +19,7 @@ BPM统一待办后，用户发起、审批、查看第三方流程时，由BPM�
 :--|:--|:--
 TS_ID|流程实例唯一标识（Primary key）|VARCHAR2(64)
 BTNO|流程实例表单号|VARCHAR2(64)
-BUSINESS_DATA|第三方系统业务数据（JSON）|VARCHAR2(1024)
+BUSINESS_DATA|第三方系统业务数据（JSON）|VARCHAR2(2048)
 CREATE_TIME|创建时间|DATE
 UPDATE_TIME|修改时间|DATE
    
