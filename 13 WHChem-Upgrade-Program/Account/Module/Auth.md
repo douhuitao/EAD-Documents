@@ -2,6 +2,8 @@
 
 用户通过 EAD 平台登录界面登录时，EAD 平台如果判断用户为 LDAP 账号将用户输入的账号和密码数据以 LDAP 协议的方式向 LDAP 发起认证请求，LDAP 认证服务处理完成后返回认证状态消息。EAD 根据 LDAP 接口返回的消息处理当前登录账号的 Session 状态或消息返回。
 
+>LDAP 不可用时，只有 LDAP 信息的账号无法登录。
+
 ![LDAP 认证](../../images/ldap-auth.png)
 
 ### LDAP 连接配置
