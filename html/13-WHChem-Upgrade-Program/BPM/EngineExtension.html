@@ -53,7 +53,7 @@
         data-chapter-title="EAD 引擎扩展"
         data-filepath="BPM/EngineExtension.md"
         data-basepath=".."
-        data-revision="Wed May 04 2016 11:19:17 GMT+0800 (CST)"
+        data-revision="Thu May 05 2016 15:56:07 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -138,7 +138,7 @@
                         
                             <b>1.2.1.</b>
                         
-                        LDAP 数据库批量导入
+                        LDAP 数据批量导入
                     </a>
             
             
@@ -348,12 +348,17 @@
 <h3 id="1&#x3001;-&#x89C6;&#x56FE;&#x9A71;&#x52A8;">1&#x3001; &#x89C6;&#x56FE;&#x9A71;&#x52A8;</h3>
 <p>EAD &#x5E73;&#x53F0;&#x7ED3;&#x5408; BMP &#x5B9A;&#x4E49;&#x7684;&#x89C6;&#x56FE;&#x9A71;&#x52A8;&#xFF0C;&#x4E3B;&#x8981;&#x529F;&#x80FD;&#x70B9;&#x662F;&#x7EC4;&#x5408; BPM &#x5BA1;&#x6279;&#x754C;&#x9762;&#x6309;&#x94AE;&#x663E;&#x793A;&#x63A5;&#x53E3;&#x52A8;&#x6001;&#x751F;&#x6210; BPM &#x8BE6;&#x60C5;&#x89C6;&#x56FE;&#x5BA1;&#x6279;&#x52A8;&#x4F5C;&#x3002;</p>
 <h4 id="11-&#x8BE6;&#x60C5;&#x89C6;&#x56FE;&#x9A71;&#x52A8;">1.1 &#x8BE6;&#x60C5;&#x89C6;&#x56FE;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMView </p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/view</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5BA1;&#x6279;&#x754C;&#x9762;&#x6309;&#x94AE;&#x663E;&#x793A;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrievebtnStatus&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmView </p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/view</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> </p>
+<ul>
+<li>&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveBaseInfo&#xFF09;;</li>
+<li>&#x5BA1;&#x6279;&#x754C;&#x9762;&#x6309;&#x94AE;&#x663E;&#x793A;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrievebtnStatus&#xFF09;;</li>
+</ul>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x6839;&#x636E; EAD &#x89C6;&#x56FE;&#x914D;&#x7F6E;&#x83B7;&#x53D6;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x5BF9;&#x8C61;;</li>
+<li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x8BE6;&#x60C5;&#x6570;&#x636E;;</li>
 <li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x5BA1;&#x6279;&#x754C;&#x9762;&#x6309;&#x94AE;&#x663E;&#x793A;&#x63A5;&#x53E3;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8BE6;&#x60C5;&#x89C6;&#x56FE;&#x663E;&#x793A;&#x6309;&#x94AE;;</li>
 <li>&#x6839;&#x636E; BPM &#x8FD4;&#x56DE;&#x7684;&#x6309;&#x94AE;&#x7EC4;&#x88C5;&#x89C6;&#x56FE;&#x52A8;&#x4F5C;;</li>
 </ul>
@@ -362,24 +367,24 @@
 </blockquote>
 <h3 id="2&#x3001;-&#x5BA1;&#x6279;&#x52A8;&#x4F5C;&#x9A71;&#x52A8;">2&#x3001; &#x5BA1;&#x6279;&#x52A8;&#x4F5C;&#x9A71;&#x52A8;</h3>
 <h4 id="21-&#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x9A71;&#x52A8;">2.1 &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMStart</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/start</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_StartProcess&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmStart</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/start</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_StartProcess&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x7EC4;&#x7EC7; BPM &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x63A5;&#x53E3;&#x53C2;&#x6570;;</li>
 <li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x63A5;&#x53E3;&#x83B7;&#x53D6;&#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4FE1;&#x606F;;</li>
 <li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_ts_piid&#x3001;bpm_status&#xFF08;&#x8349;&#x7A3F;&#xFF09;&#x3001;bpm_update_time;</li>
 <li>&#x6839;&#x636E;Rainbow Confirm &#x53C2;&#x6570; Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x4E8C;&#x6B21;&#x786E;&#x8BA4;&#x6D41;&#x7A0B;&#x53D1;&#x8D77;;</li>
-<li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_ts_piid&#x3001;bpm_status&#xFF08;&#x53D1;&#x8D77;&#xFF09;&#x3001;bpm_update_time;</li>
+<li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_status&#xFF08;&#x53D1;&#x8D77;&#xFF09;&#x3001;bpm_update_time;</li>
 </ul>
 <blockquote>
 <p>&#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x9A71;&#x52A8;&#x540C;&#x65F6;&#x652F;&#x6301;&#x4ECE;&#x8349;&#x7A3F;&#x548C;&#x9A73;&#x56DE;&#x5230;&#x8349;&#x7A3F;&#x72B6;&#x6001;&#x7684;&#x5B9E;&#x4F8B;&#x8FDB;&#x884C;&#x6D41;&#x7A0B;&#x53D1;&#x8D77;&#x64CD;&#x4F5C;&#x3002;</p>
 </blockquote>
 <h4 id="22-&#x5F85;&#x529E;&#x63D0;&#x4EA4;&#x9A71;&#x52A8;">2.2 &#x5F85;&#x529E;&#x63D0;&#x4EA4;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMSubmit</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/submit</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x63D0;&#x4EA4;&#x63A5;&#x53E3;&#xFF08;AJAX_Mobile_CompleteTask&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmSubmit</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/submit</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x63D0;&#x4EA4;&#x63A5;&#x53E3;&#xFF08;AJAX_Mobile_CompleteTask&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x63A5;&#x6536;&#x5E76;&#x89E3;&#x6790;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x5F85;&#x529E;&#x63D0;&#x4EA4;&#x6570;&#x636E;;</li>
@@ -389,9 +394,9 @@
 <li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_status&#x3001;bpm_update_time;</li>
 </ul>
 <h4 id="23-&#x5F85;&#x529E;&#x9A73;&#x56DE;&#x9A71;&#x52A8;">2.3 &#x5F85;&#x529E;&#x9A73;&#x56DE;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMBack</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/back</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x9A73;&#x56DE;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RejectTask&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmBack</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/back</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x9A73;&#x56DE;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RejectTask&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x63A5;&#x6536;&#x5E76;&#x89E3;&#x6790;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x5F85;&#x529E;&#x9A73;&#x56DE;&#x6570;&#x636E;;</li>
@@ -400,23 +405,23 @@
 <li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x5F85;&#x529E;&#x9A73;&#x56DE;&#x63A5;&#x53E3;;</li>
 <li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_status&#x3001;bpm_update_time;</li>
 </ul>
-<h4 id="24-&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x9A71;&#x52A8;">2.4 &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMTurnToDo</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/turnToDo</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_ReassignTask&#xFF09;</p>
+<h4 id="24-&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x9A71;&#x52A8;">2.4 &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x9A71;&#x52A8;</h4>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmTurnToDo</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/turnToDo</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_ReassignTask&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
-<li>&#x63A5;&#x6536;&#x5E76;&#x89E3;&#x6790;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x6570;&#x636E;;</li>
+<li>&#x63A5;&#x6536;&#x5E76;&#x89E3;&#x6790;&#x7528;&#x6237;&#x63D0;&#x4EA4;&#x7684;&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x6570;&#x636E;;</li>
 <li>&#x6839;&#x636E;&#x89C6;&#x56FE;&#x5B9A;&#x4E49;&#x5904;&#x7406;&#x52A8;&#x4F5C;&#x8868;&#x5355;&#x6570;&#x636E;;</li>
-<li>&#x7EC4;&#x7EC7;&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;&#x53C2;&#x6570;;</li>
-<li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x3001;&#x5B8C;&#x6210;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;;</li>
+<li>&#x7EC4;&#x7EC7;&#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;&#x53C2;&#x6570;;</li>
+<li>Rest &#x65B9;&#x5F0F;&#x8BF7;&#x6C42; BPM &#x5F85;&#x529E;&#x8F6C;&#x529E;&#x3001;&#x52A0;&#x7B7E;&#x63A5;&#x53E3;;</li>
 <li>BPM &#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x6210;&#x529F;&#x540E;&#x66F4;&#x65B0; bpm_status&#x3001;bpm_update_time;</li>
 </ul>
 <h3 id="3&#x3001;-&#x8F85;&#x52A9;&#x67E5;&#x8BE2;&#x9A71;&#x52A8;">3&#x3001; &#x8F85;&#x52A9;&#x67E5;&#x8BE2;&#x9A71;&#x52A8;</h3>
 <h4 id="31-&#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x9A71;&#x52A8;">3.1 &#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMNext</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/next</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveNextActivity&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmNext</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/next</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveNextActivity&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x7EC4;&#x7EC7;&#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x53C2;&#x6570;;</li>
@@ -424,9 +429,9 @@
 <li>Rest &#x98CE;&#x683C;&#x8FD4;&#x56DE;&#x4E0B;&#x4E00;&#x73AF;&#x8282;&#x4EE5;&#x53CA;&#x5BA1;&#x6279;&#x4EBA;&#x6570;&#x636E;&#xFF08;&#x63D0;&#x4F9B;&#x7ED9; Rainbow&#xFF09;;</li>
 </ul>
 <h4 id="32-&#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x9A71;&#x52A8;">3.2 &#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMBackPaths</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/backPaths</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveRejectPaths&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmBackPaths</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/backPaths</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveRejectPaths&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x7EC4;&#x7EC7;&#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x53C2;&#x6570;;</li>
@@ -434,9 +439,9 @@
 <li>Rest &#x98CE;&#x683C;&#x8FD4;&#x56DE;&#x9A73;&#x56DE;&#x8DEF;&#x5F84;&#x6570;&#x636E;&#xFF08;&#x63D0;&#x4F9B;&#x7ED9; Rainbow&#xFF09;;</li>
 </ul>
 <h4 id="33-&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x9A71;&#x52A8;">3.3 &#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMInfo</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/info</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveBaseInfo&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmInfo</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/info</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveBaseInfo&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x7EC4;&#x7EC7;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x67E5;&#x8BE2;&#x53C2;&#x6570;;</li>
@@ -444,9 +449,9 @@
 <li>Rest &#x98CE;&#x683C;&#x8FD4;&#x56DE;&#x57FA;&#x672C;&#x4FE1;&#x606F;&#x6570;&#x636E;&#xFF08;&#x63D0;&#x4F9B;&#x7ED9; Rainbow&#xFF09;;</li>
 </ul>
 <h4 id="34-&#x5BA1;&#x6279;&#x5386;&#x53F2;&#x9A71;&#x52A8;">3.4 &#x5BA1;&#x6279;&#x5386;&#x53F2;&#x9A71;&#x52A8;</h4>
-<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WHBPMLogs</p>
-<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> WHBPM/logs</p>
-<p><strong>BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5BA1;&#x6279;&#x5386;&#x53F2;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveTaskDones&#xFF09;</p>
+<p><strong>&#x9A71;&#x52A8;&#x540D;&#x79F0;&#xFF1A;</strong> WhbpmLogs</p>
+<p><strong>&#x9A71;&#x52A8; URI&#xFF1A;</strong> Whbpm/logs</p>
+<p><strong>&#x6D89;&#x53CA; BPM &#x63A5;&#x53E3;&#xFF1A;</strong> &#x5BA1;&#x6279;&#x5386;&#x53F2;&#x63A5;&#x53E3;&#xFF08;AJAX_TrdPty_RetrieveTaskDones&#xFF09;</p>
 <p><strong>&#x9A71;&#x52A8;&#x529F;&#x80FD;&#xFF1A;</strong></p>
 <ul>
 <li>&#x7EC4;&#x7EC7;&#x5BA1;&#x6279;&#x5386;&#x53F2;&#x53C2;&#x6570;;</li>

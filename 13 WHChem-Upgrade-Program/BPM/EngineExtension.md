@@ -7,14 +7,17 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 1.1 详情视图驱动
 
-**驱动名称：** WHBPMView 
+**驱动名称：** WhbpmView 
 
-**驱动 URI：** WHBPM/view
+**驱动 URI：** Whbpm/view
 
-**BPM 接口：** 审批界面按钮显示接口（AJAX_TrdPty_RetrievebtnStatus）
+**涉及 BPM 接口：** 
+- 基本信息查询接口（AJAX_TrdPty_RetrieveBaseInfo）;
+- 审批界面按钮显示接口（AJAX_TrdPty_RetrievebtnStatus）;
 
 **驱动功能：**
 - 根据 EAD 视图配置获取业务数据对象;
+- Rest 方式请求 BPM 基本信息查询接口获取详情数据;
 - Rest 方式请求 BPM 审批界面按钮显示接口接口获取当前详情视图显示按钮;
 - 根据 BPM 返回的按钮组装视图动作;
 
@@ -24,28 +27,28 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 2.1 流程发起驱动
 
-**驱动名称：** WHBPMStart
+**驱动名称：** WhbpmStart
 
-**驱动 URI：** WHBPM/start
+**驱动 URI：** Whbpm/start
 
-**BPM 接口：** 流程发起接口（AJAX_TrdPty_StartProcess）
+**涉及 BPM 接口：** 流程发起接口（AJAX_TrdPty_StartProcess）
 
 **驱动功能：**
 - 组织 BPM 流程发起接口参数;
 - Rest 方式请求 BPM 流程发起接口获取下一环节信息;
 - BPM 接口返回成功后更新 bpm_ts_piid、bpm_status（草稿）、bpm_update_time;
 - 根据Rainbow Confirm 参数 Rest 方式请求 BPM 流程发起接口进行二次确认流程发起;
-- BPM 接口返回成功后更新 bpm_ts_piid、bpm_status（发起）、bpm_update_time;
+- BPM 接口返回成功后更新 bpm_status（发起）、bpm_update_time;
 
 > 流程发起驱动同时支持从草稿和驳回到草稿状态的实例进行流程发起操作。
 
 #### 2.2 待办提交驱动
 
-**驱动名称：** WHBPMSubmit
+**驱动名称：** WhbpmSubmit
 
-**驱动 URI：** WHBPM/submit
+**驱动 URI：** Whbpm/submit
 
-**BPM 接口：** 待办提交接口（AJAX_Mobile_CompleteTask）
+**涉及 BPM 接口：** 待办提交接口（AJAX_Mobile_CompleteTask）
 
 **驱动功能：**
 - 接收并解析用户提交的待办提交数据;
@@ -56,11 +59,11 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 2.3 待办驳回驱动
 
-**驱动名称：** WHBPMBack
+**驱动名称：** WhbpmBack
 
-**驱动 URI：** WHBPM/back
+**驱动 URI：** Whbpm/back
 
-**BPM 接口：** 待办驳回接口（AJAX_TrdPty_RejectTask）
+**涉及 BPM 接口：** 待办驳回接口（AJAX_TrdPty_RejectTask）
 
 **驱动功能：**
 - 接收并解析用户提交的待办驳回数据;
@@ -69,30 +72,30 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 - Rest 方式请求 BPM 待办驳回接口;
 - BPM 接口返回成功后更新 bpm_status、bpm_update_time;
 
-#### 2.4 待办转办、加签、完成加签驱动
+#### 2.4 待办转办、加签驱动
 
-**驱动名称：** WHBPMTurnToDo
+**驱动名称：** WhbpmTurnToDo
 
-**驱动 URI：** WHBPM/turnToDo
+**驱动 URI：** Whbpm/turnToDo
 
-**BPM 接口：** 待办转办、加签、完成加签接口（AJAX_TrdPty_ReassignTask）
+**涉及 BPM 接口：** 待办转办、加签接口（AJAX_TrdPty_ReassignTask）
 
 **驱动功能：**
-- 接收并解析用户提交的待办转办、加签、完成加签数据;
+- 接收并解析用户提交的待办转办、加签数据;
 - 根据视图定义处理动作表单数据;
-- 组织待办转办、加签、完成加签接口参数;
-- Rest 方式请求 BPM 待办转办、加签、完成加签接口;
+- 组织待办转办、加签接口参数;
+- Rest 方式请求 BPM 待办转办、加签接口;
 - BPM 接口返回成功后更新 bpm_status、bpm_update_time;
 
 ### 3、 辅助查询驱动
 
 #### 3.1 下一环节以及审批人驱动
 
-**驱动名称：** WHBPMNext
+**驱动名称：** WhbpmNext
 
-**驱动 URI：** WHBPM/next
+**驱动 URI：** Whbpm/next
 
-**BPM 接口：** 下一环节以及审批人接口（AJAX_TrdPty_RetrieveNextActivity）
+**涉及 BPM 接口：** 下一环节以及审批人接口（AJAX_TrdPty_RetrieveNextActivity）
 
 **驱动功能：**
 - 组织下一环节以及审批人参数;
@@ -101,11 +104,11 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 3.2 驳回路径驱动
 
-**驱动名称：** WHBPMBackPaths
+**驱动名称：** WhbpmBackPaths
 
-**驱动 URI：** WHBPM/backPaths
+**驱动 URI：** Whbpm/backPaths
 
-**BPM 接口：** 驳回路径接口（AJAX_TrdPty_RetrieveRejectPaths）
+**涉及 BPM 接口：** 驳回路径接口（AJAX_TrdPty_RetrieveRejectPaths）
 
 **驱动功能：**
 - 组织驳回路径参数;
@@ -114,11 +117,11 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 3.3 基本信息查询驱动
 
-**驱动名称：** WHBPMInfo
+**驱动名称：** WhbpmInfo
 
-**驱动 URI：** WHBPM/info
+**驱动 URI：** Whbpm/info
 
-**BPM 接口：** 基本信息查询接口（AJAX_TrdPty_RetrieveBaseInfo）
+**涉及 BPM 接口：** 基本信息查询接口（AJAX_TrdPty_RetrieveBaseInfo）
 
 **驱动功能：**
 - 组织基本信息查询参数;
@@ -127,11 +130,11 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 
 #### 3.4 审批历史驱动
 
-**驱动名称：** WHBPMLogs
+**驱动名称：** WhbpmLogs
 
-**驱动 URI：** WHBPM/logs
+**驱动 URI：** Whbpm/logs
 
-**BPM 接口：** 审批历史接口（AJAX_TrdPty_RetrieveTaskDones）
+**涉及 BPM 接口：** 审批历史接口（AJAX_TrdPty_RetrieveTaskDones）
 
 **驱动功能：**
 - 组织审批历史参数;

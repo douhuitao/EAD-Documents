@@ -10,7 +10,7 @@ $workflow_bpm
 属性名称|别名|数据类型|描述
 :--|:--|:--|:--
 bpm_ts_piid|BPM 流程实例 ID|String| 
-bpm_status|BPM 状态|String|
+bpm_status|BPM 状态|String|草稿,审批中,退回,完成
 bpm_update_time|BPM 更新时间|Time|
 
 

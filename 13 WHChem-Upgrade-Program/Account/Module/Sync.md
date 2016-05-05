@@ -76,22 +76,27 @@
 
 #### 用户账号同步字段
 
+账号表：```sys_account```。
+
+账号扩展表： 在 Sys 主题域中新增 ```sys_account_info``` 模型及物理表,以账号表中的 ```uid``` 作为物理主键，可以在 EAD 开发者中心配置扩展字段。不在账号表（sys_account）内的字段尝试写入账号扩展表。
+
 属性名称|LDAP|EAD|数据类型|说明
 :--|:--|:--|:--|:--
-用户 ID|uid||String|具有唯一性且不可随意变更的主键
-账号|uid||String|具有唯一性的用户账号
-姓名|cn||String|一般为用户的真实姓名
-英文名称|||String|没有
-简称|shortName||String|没有
-邮箱|mail||String|用户主要的电子邮箱地址
-邮箱|mail1||String|用户主要的电子邮箱地址
-手机号码|mobile||String|主要联系电话
-性别|sex||String|1：男，2：女
-出生日期|birthday||String|出生日期(格式：1990-1-1)
-公司 ID|unit||String|所属公司唯一 ID
-所属组织机构 ID|erParent||String|组织机构唯一 ID
+用户ID|uid|account|String|具有唯一性的用户账号
+账号|uid|account|String|具有唯一性的用户账号
+姓名|cn|user_name|String|一般为用户的真实姓名
+邮箱|mail|email|String|用户主要的电子邮箱地址
+手机号码|mobile|phone|String|主要联系电话
+性别|sex|**sex**|String|1：男，2：女
+出生日期|birthday|**birthday**|String|出生日期(格式：1990-1-1)
+公司 ID|unit|**com_id**|String|所属公司唯一 ID
+所属组织机构 ID|erParent|org_id|String|组织机构唯一 ID
 兼职组织机构ID|vdeptNo||String|兼职组织机构唯一 ID
-用户状态|||String|无需同步，依赖相应同步规则
+用户状态||account_status|String|无需同步，依赖相应同步规则
+
+>账号表(sys_user)中扩展 ```sex```、```birthday```、```com_id``` 字段。
+
+按照 ```uid``` 在 EAD 账号表中查询，如果存在则按照 LDAP 的数据更新，如果不存在则新增账号，标识账号为 LDAP。 
 
 #### 同步规则
 
@@ -101,26 +106,31 @@
 - 挂起：仅应用账号唯一标识属性字段;
 - 恢复：仅应用账号唯一标识属性字段;
 
+>删除时在 EAD 中软删除账号信息。
+
 ### 组织机构信息
 
 #### 组织机构同步字段
 
+组织机构表：```sys_org```。
+
+组织机构扩展表： 在 Sys 主题域中新增 ```sys_org_info``` 模型及物理表,以组织机构表中的 ```org_id``` 作为物理主键，可以在 EAD 开发者中心配置扩展字段。不在组织机构表（sys_org）内的字段尝试写入组织机构扩展表。
+
 属性名称|LDAP|EAD|数据类型|说明
 :--|:--|:--|:--|:--
-组织机构 ID|erglobalid||String|具有唯一性且不可随意变更的主键
-组织名称|ou||String|组织机构全称
-组织英文名称|ou;lang-en||String|组织机构英文全称（有可能没有数据）
-组织简称|||String|简称（没有）
-组织缩写|||String|没有
-组织编码|orgunitid||String|BPM 组织机构 ID（增加系统耦合度，暂不启用）
-父级组织ID|erparent||String|
-组织描述|description||String|不是基础能力，暂不启用
-是否显示|isDisplay||Boolean|控制组织机构是否显示在选人接口&人力地图&是否同步到组(0不显示，1显示)（true-显示/false-不显示）
-组织路径|||String|没有
-组织层级|orgLevel||String|没有
-组织类型|orgType||String|0：部门,1：公司,2：组织单元
-组织序号|displayNumber||String|只有公司层级有数据
-组织状态|||String|没有
+组织机构 ID|orgunitid|org_id|String|具有唯一性且不可随意变更的主键
+组织名称|ou|org_name|String|组织机构全称
+组织英文名称|ou;lang-en|org_alias|String|组织机构英文全称（有可能没有数据）
+组织编码||org_code|String|BPM 组织机构 ID（增加系统耦合度，暂不启用）
+父级组织ID|erparent|parent_org_id|String|
+组织描述||org_desc|String|不是基础能力，暂不启用
+是否显示|isdisplay|**hidden**|String|控制组织机构是否显示在选人接口&人力地图&是否同步到组(0不显示，1显示)（true-显示/false-不显示）
+组织类型|orgtype|**org_type**|String|0：部门,1：公司,2：组织单元
+组织序号|displaynumber|sort_num|String|只有公司层级有数据
+
+>组织机构表(sys_org)中扩展 ```hidden```、```org_type``` 字段。
+
+按照 ```uid``` 在 EAD 组织机构表中查询，如果存在则按照 LDAP 的数据更新，如果不存在则新增组织机构，标识组织机构为 LDAP。 
 
 #### 同步规则
 
@@ -128,12 +138,16 @@
 - 修改：仅组织机构变更属性字段;
 - 删除：仅组织唯一标识属性字段;
 
+>删除时在 EAD 中软删除组织机构信息。
+
 ### 字段扩展
 
-后续要进行字段扩展仍然需要对 EAD 驱动进行升级开发。
+增加账号和组织机构扩展信息到对应的扩展表需要在 EAD 开发者中心配置并调整 LDAP 同步和导出数据结构。
+
+在 EAD 开发者中心只能配置扩展账号和组织机构扩展表中的字段。
 
 ### 信息同步异常处理
 
 - EAD 平台信息更新或新增信息失败时记录异常操作日志;
 - 对于个别账号的异常处理可以通过查阅操作日记，通知 LDAP 对同步异常的账号重新进行同步推送;
-- 如果有大量信息同步失败需要按照数据批量导入的方式清除并批量导入用户账号或组织机构信息。
+- 大量信息同步失败时，需要按照 LDAP 数据批量导入的方式处理。
