@@ -90,8 +90,8 @@
 性别|sex|**sex**|String|1：男，2：女
 出生日期|birthday|**birthday**|String|出生日期(格式：1990-1-1)
 公司 ID|unit|**com_id**|String|所属公司唯一 ID
-所属组织机构 ID|erParent|org_id|String|组织机构唯一 ID
-兼职组织机构ID|vdeptNo||String|兼职组织机构唯一 ID
+所属组织机构 ID|erparent|org_id|String|组织机构唯一 ID
+兼职组织机构ID|vdeptno||String|兼职组织机构唯一 ID
 用户状态||account_status|String|无需同步，依赖相应同步规则
 
 >账号表(sys_user)中扩展 ```sex```、```birthday```、```com_id``` 字段。
