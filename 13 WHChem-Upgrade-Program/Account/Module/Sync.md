@@ -118,10 +118,10 @@
 
 属性名称|LDAP|EAD|数据类型|说明
 :--|:--|:--|:--|:--
-组织机构 ID|orgunitid|org_id|String|具有唯一性且不可随意变更的主键
+组织机构 ID|erglobalid|org_id|String|具有唯一性且不可随意变更的主键
 组织名称|ou|org_name|String|组织机构全称
 组织英文名称|ou;lang-en|org_alias|String|组织机构英文全称（有可能没有数据）
-组织编码||org_code|String|BPM 组织机构 ID（增加系统耦合度，暂不启用）
+组织编码|orgunitid|org_code|String|BPM 组织机构 ID
 父级组织ID|erparent|parent_org_id|String|
 组织描述||org_desc|String|不是基础能力，暂不启用
 是否显示|isdisplay|**hidden**|String|控制组织机构是否显示在选人接口&人力地图&是否同步到组(0不显示，1显示)（true-显示/false-不显示）

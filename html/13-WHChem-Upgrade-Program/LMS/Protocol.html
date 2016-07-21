@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>BPM 扩展 | 万华化学 EAD 升级方案</title>
+        <title>接口及协议 | 万华化学 EAD 升级方案</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -37,10 +37,10 @@
         
     
     
-    <link rel="next" href="../BPM/EngineExtension.html" />
+    <link rel="next" href="../LMS/EngineExtension.html" />
     
     
-    <link rel="prev" href="../BPM/Model.html" />
+    <link rel="prev" href="../LMS/index.html" />
     
 
         
@@ -49,9 +49,9 @@
         
         
     <div class="book"
-        data-level="3.3"
-        data-chapter-title="BPM 扩展"
-        data-filepath="BPM/BPMExtension.md"
+        data-level="4.1"
+        data-chapter-title="接口及协议"
+        data-filepath="LMS/Protocol.md"
         data-basepath=".."
         data-revision="Tue Jul 19 2016 17:32:52 GMT+0800 (CST)"
         data-innerlanguage="">
@@ -260,7 +260,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="BPM/BPMExtension.html">
+        <li class="chapter " data-level="3.3" data-path="BPM/BPMExtension.html">
             
                 
                     <a href="../BPM/BPMExtension.html">
@@ -326,7 +326,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="4.1" data-path="LMS/Protocol.html">
+        <li class="chapter active" data-level="4.1" data-path="LMS/Protocol.html">
             
                 
                     <a href="../LMS/Protocol.html">
@@ -394,130 +394,211 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="bpm-&#x6269;&#x5C55;">BPM &#x6269;&#x5C55;</h2>
-<p>BPM&#x7EDF;&#x4E00;&#x5F85;&#x529E;&#x540E;&#xFF0C;&#x7528;&#x6237;&#x53D1;&#x8D77;&#x3001;&#x5BA1;&#x6279;&#x3001;&#x67E5;&#x770B;&#x7B2C;&#x4E09;&#x65B9;&#x6D41;&#x7A0B;&#x65F6;&#xFF0C;&#x7531;BPM&#x5E73;&#x53F0;&#x7EDF;&#x4E00;&#x8DF3;&#x8F6C;&#x5230;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x6D41;&#x7A0B;&#x9875;&#x9762;&#xFF0C;&#x540C;&#x65F6;&#x6309;&#x4E0D;&#x540C;&#x573A;&#x666F;&#x4E0B;&#x53D1;bpdUri&#x3001;ts_piid&#x3001;ts_taskid&#x7B49;&#x975E;&#x4E1A;&#x52A1;&#x5B57;&#x6BB5;&#x3002;&#x672C;&#x6B21;&#x6539;&#x9020;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x652F;&#x6301;&#x540C;&#x65F6;&#x4E0B;&#x53D1;&#x4E1A;&#x52A1;&#x5B57;&#x6BB5;&#xFF0C;&#x4F8B;&#x5982;&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x4E3B;&#x6570;&#x636E;&#x7684;ID&#x7B49;&#x3002;</p>
-<h3 id="1--&#x6570;&#x636E;&#x5E93;&#x8868;&#x6269;&#x5145;">1.  &#x6570;&#x636E;&#x5E93;&#x8868;&#x6269;&#x5145;</h3>
-<h4 id="11-&#x6269;&#x5145;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x6D41;&#x7A0B;&#x914D;&#x7F6E;&#x8868;&#xFF08;tstrdptybpdcfg&#xFF09;">1.1 &#x6269;&#x5145;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x6D41;&#x7A0B;&#x914D;&#x7F6E;&#x8868;&#xFF08;TS_TRDPTY_BPD_CFG&#xFF09;</h4>
-<ul>
-<li>&#x65B0;&#x589E;&#x5B57;&#x6BB5; BUSINESS_FIELDS&#xFF1A;&#x914D;&#x7F6E;&#x9700;&#x8981;&#x4E0B;&#x53D1;&#x54EA;&#x4E9B;&#x5B57;&#x6BB5;&#xFF0C;&#x591A;&#x4E2A;&#x7528;&#x9017;&#x53F7;&#x5206;&#x9694;,VARCHAR2(256)&#x3002;</li>
-<li>&#x65B0;&#x589E;&#x5B57;&#x6BB5; EXT_DATA&#xFF1A;&#x6269;&#x5C55;&#x6570;&#x636E;,VARCHAR2(256)&#x3002;</li>
-<li>&#x5DE5;&#x4F5C;&#x53F0;&#x8868;&#x5143;&#x6570;&#x636E;&#x914D;&#x7F6E;&#x65B0;&#x589E;&#x5217;&#x3002;</li>
-</ul>
-<h4 id="12-&#x65B0;&#x589E;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x7EDF;&#x4E00;&#x4E1A;&#x52A1;&#x8868;&#xFF08;whbttrdpty&#xFF09;">1.2 &#x65B0;&#x589E;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x7EDF;&#x4E00;&#x4E1A;&#x52A1;&#x8868;&#xFF08;WH_BT_TRDPTY&#xFF09;</h4>
-<p>&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x63A5;&#x5165;BPM&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x6D41;&#x7A0B;&#x4E0D;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x6D41;&#x7A0B;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x5C11;&#x90E8;&#x5206;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#xFF08;&#x5982;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x4E3B;&#x952E;&#x7B49;&#xFF09;&#x3002;&#x9488;&#x5BF9;&#x4EE5;&#x4E0A;&#x4E1A;&#x52A1;&#x573A;&#x666F;&#xFF0C;&#x5EFA;&#x7ACB;&#x7EDF;&#x4E00;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x8868;&#xFF0C;&#x800C;&#x975E;&#x6BCF;&#x4E2A;&#x6D41;&#x7A0B;&#x5355;&#x72EC;&#x5EFA;&#x7ACB;&#x4E1A;&#x52A1;&#x8868;&#x3002;&#x5982;&#x679C;&#x540E;&#x7EED;&#x6D41;&#x7A0B;&#x5B58;&#x5728;&#x7279;&#x6B8A;&#x9700;&#x6C42;&#x3001;&#x7EDF;&#x4E00;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#x8868;&#x8868;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x65F6;&#xFF0C;&#x518D;&#x5355;&#x72EC;&#x5EFA;&#x7ACB;&#x4E1A;&#x52A1;&#x8868;&#xFF08;&#x5E76;&#x4E0D;&#x51B2;&#x7A81;&#xFF09;&#x3002;</p>
-<p><strong>WH_BT_TRDPTY&#x8868;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</strong></p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x540D;&#x79F0;</th>
-<th style="text-align:left">&#x63CF;&#x8FF0;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">TS_ID</td>
-<td style="text-align:left">&#x6D41;&#x7A0B;&#x5B9E;&#x4F8B;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#xFF08;Primary key&#xFF09;</td>
-<td style="text-align:left">VARCHAR2(64)</td>
-</tr>
-<tr>
-<td style="text-align:left">BTNO</td>
-<td style="text-align:left">&#x6D41;&#x7A0B;&#x5B9E;&#x4F8B;&#x8868;&#x5355;&#x53F7;</td>
-<td style="text-align:left">VARCHAR2(64)</td>
-</tr>
-<tr>
-<td style="text-align:left">BUSINESS_DATA</td>
-<td style="text-align:left">&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4E1A;&#x52A1;&#x6570;&#x636E;&#xFF08;JSON&#xFF09;</td>
-<td style="text-align:left">VARCHAR2(2048)</td>
-</tr>
-<tr>
-<td style="text-align:left">CREATE_TIME</td>
-<td style="text-align:left">&#x521B;&#x5EFA;&#x65F6;&#x95F4;</td>
-<td style="text-align:left">DATE</td>
-</tr>
-<tr>
-<td style="text-align:left">UPDATE_TIME</td>
-<td style="text-align:left">&#x4FEE;&#x6539;&#x65F6;&#x95F4;</td>
-<td style="text-align:left">DATE</td>
-</tr>
-</tbody>
-</table>
-<h3 id="2--pd&#x6539;&#x9020;">2.  PD&#x6539;&#x9020;</h3>
-<p>EBTC&#x65B0;&#x589E;&#x516C;&#x5171;&#x670D;&#x52A1;IS_ SaveBusinessData</p>
-<p><strong>&#x670D;&#x52A1;&#x540D;&#x79F0;&#xFF1A;</strong> IS_SaveBusinessData</p>
-<p><strong>&#x804C;&#x8D23;&#x63CF;&#x8FF0;&#xFF1A;</strong> &#x65B0;&#x589E;&#x3001;&#x4FEE;&#x6539;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4E1A;&#x52A1;&#x6570;&#x636E;</p>
-<p><strong>&#x670D;&#x52A1;&#x6765;&#x6E90;&#xFF1A;</strong> EBTC</p>
-<p><strong>&#x670D;&#x52A1;&#x5C01;&#x88C5;&#xFF1A;</strong> &#x96C6;&#x6210;&#x670D;&#x52A1;</p>
-<h4 id="&#x8F93;&#x5165;">&#x8F93;&#x5165;</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x53C2;&#x6570;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">tsId</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x6D41;&#x7A0B;&#x5B9E;&#x4F8B;&#x552F;&#x4E00;&#x6807;&#x8BC6;</td>
-</tr>
-<tr>
-<td style="text-align:left">btno</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x6D41;&#x7A0B;&#x5B9E;&#x4F8B;&#x8868;&#x5355;&#x53F7;</td>
-</tr>
-<tr>
-<td style="text-align:left">bussinessData</td>
-<td style="text-align:left">String&#xFF08;JSON&#xFF09;</td>
-<td style="text-align:left">&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4E1A;&#x52A1;&#x6570;&#x636E;</td>
-</tr>
-<tr>
-<td style="text-align:left">params</td>
-<td style="text-align:left">Json&#x5BF9;&#x8C61;</td>
-<td style="text-align:left">&#x4E1A;&#x52A1;&#x53C2;&#x6570;</td>
-</tr>
-</tbody>
-</table>
-<h4 id="&#x8F93;&#x51FA;">&#x8F93;&#x51FA;</h4>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">&#x53C2;&#x6570;</th>
-<th style="text-align:left">&#x7C7B;&#x578B;</th>
-<th style="text-align:left">&#x8BF4;&#x660E;</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">responseCode</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x54CD;&#x5E94;&#x7801;&#xFF08;200&#x4EE3;&#x8868;&#x6210;&#x529F;&#xFF09;</td>
-</tr>
-<tr>
-<td style="text-align:left">responseMessage</td>
-<td style="text-align:left">String</td>
-<td style="text-align:left">&#x54CD;&#x5E94;&#x4FE1;&#x606F;</td>
-</tr>
-</tbody>
-</table>
-<p><strong>&#x5173;&#x952E;&#x903B;&#x8F91;&#xFF1A;</strong></p>
-<ol>
-<li>&#x5165;&#x53C2;&#x5224;&#x65AD;&#xFF0C;&#x7EC4;&#x88C5;&#x53C2;&#x6570;&#xFF1B;</li>
-<li>&#x8C03;&#x7528;&#x96C6;&#x6210;&#x670D;&#x52A1;IS_SaveProcessBizData_V3&#xFF1B;</li>
-<li>&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#xFF1B;</li>
-</ol>
-<p><strong>&#x975E;&#x529F;&#x80FD;&#x6027;&#x9700;&#x6C42;&#xFF1A;</strong></p>
-<p><strong>&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;</strong> &#x4F9B;&#x5404;&#x4E1A;&#x52A1;&#x6D41;&#x7A0B;&#x81EA;&#x5B9E;&#x73B0;&#x7684;&#x53D1;&#x8D77;&#x3001;&#x5BA1;&#x6279;&#x7684;&#x7279;&#x6B8A;&#x670D;&#x52A1;&#x8C03;&#x7528;&#xFF08;XXX@GS_TrdPty_StartSP&#x3001;XXX@GS_TrdPty_SubmitSP&#xFF09;</p>
-<h3 id="3--&#x5DE5;&#x4F5C;&#x53F0;&#x6539;&#x9020;">3.  &#x5DE5;&#x4F5C;&#x53F0;&#x6539;&#x9020;</h3>
-<p><strong>&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x4E0B;&#x53D1;URL&#x903B;&#x8F91;&#x4FEE;&#x6539;&#xFF1A;</strong></p>
-<ol>
-<li>&#x8BFB;&#x53D6;&#x7B2C;&#x4E09;&#x65B9;&#x7CFB;&#x7EDF;&#x6D41;&#x7A0B;&#x914D;&#x7F6E;&#x8868;&#x7684;BUSINESS_FIELDS&#x5B57;&#x6BB5;&#xFF1B;</li>
-<li>&#x5982;&#x679C;BUSINESS_FIELDS&#x5B57;&#x6BB5;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF0C;&#x5219;&#x6839;&#x636E;ts_piid&#x8BFB;&#x53D6;WH_BT_TRDPTY&#x8868;&#xFF1B;</li>
-<li>&#x89E3;&#x6790;&#x4E1A;&#x52A1;&#x6570;&#x636E;BUSINESS_DATA&#xFF0C;&#x6309;BUSINESS_FIELDS&#x5B57;&#x6BB5;&#x7EC4;&#x88C5;&#x4E0B;&#x53D1;&#x6570;&#x636E;&#xFF0C;&#x62FC;&#x63A5;URL&#x8FD4;&#x56DE;&#xFF1B;</li>
-</ol>
+                        <h2 id="&#x63A5;&#x53E3;&#x53CA;&#x534F;&#x8BAE;">&#x63A5;&#x53E3;&#x53CA;&#x534F;&#x8BAE;</h2>
+<p><img src="../images/lms-integrated.png" alt="&#x534F;&#x8BAE;"></p>
+<p>&#x56FA;&#x5E9F;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x91C7;&#x7528;&#x6807;&#x51C6;&#x7684; Rest API &#x901A;&#x8FC7; PI &#x5411;&#x7269;&#x6D41;&#x7CFB;&#x7EDF;&#x8BF7;&#x6C42;&#x6216;&#x63D0;&#x4F9B;&#x63A5;&#x53E3;&#x670D;&#x52A1;&#x3002;PI &#x5C06;&#x56FA;&#x5E9F;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x7684; Rest API &#x9002;&#x914D;&#x8F6C;&#x6362;&#x4E3A;&#x7269;&#x6D41;&#x7BA1;&#x7406;&#x7CFB;&#x7EDF;&#x5BF9;&#x5E94;&#x7684;&#x63A5;&#x53E3;&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x8F6C;&#x53D1;&#x5904;&#x7406;&#x3002;</p>
+<h3 id="&#x5B57;&#x7B26;&#x96C6;&#x7F16;&#x7801;">&#x5B57;&#x7B26;&#x96C6;&#x7F16;&#x7801;</h3>
+<p>UTF-8</p>
+<h3 id="&#x5B89;&#x5168;&#x8BA4;&#x8BC1;">&#x5B89;&#x5168;&#x8BA4;&#x8BC1;</h3>
+<p>EAD &#x7269;&#x6D41;&#x7CFB;&#x7EDF;&#x63A5;&#x53E3;&#x8D26;&#x53F7;&#x548C;&#x5BC6;&#x7801;&#x9A8C;&#x8BC1;&#x3002;</p>
+<h3 id="&#x54CD;&#x5E94;&#x6D88;&#x606F;">&#x54CD;&#x5E94;&#x6D88;&#x606F;</h3>
+<h4 id="&#x6210;&#x529F;">&#x6210;&#x529F;</h4>
+<pre><code>{
+    &quot;code&quot;: &quot;success&quot;,
+    &quot;content&quot;: &quot;&quot;,
+    &quot;data&quot;: {
 
+    },
+    &quot;status&quot;:&quot;200&quot;
+}
+</code></pre><h4 id="&#x5931;&#x8D25;">&#x5931;&#x8D25;</h4>
+<pre><code>{
+    &quot;code&quot;: &quot;error&quot;,
+    &quot;content&quot;: &quot;&#x9519;&#x8BEF;&#x6D88;&#x606F;&#x5185;&#x5BB9;&quot;,
+    &quot;status&quot;:&quot;400&quot;
+}
+</code></pre><h3 id="pi-&#x8F6C;&#x6362;">PI &#x8F6C;&#x6362;</h3>
+<p>PI &#x6839;&#x636E;&#x7269;&#x6D41;&#x7CFB;&#x7EDF;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x7684;&#x63A5;&#x53E3;&#x534F;&#x8BAE;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x7684;&#x6620;&#x5C04;&#x914D;&#x7F6E;&#x3002;</p>
+<h2 id="&#x56FA;&#x5E9F;&#x5916;&#x8FD0;&#x8F66;&#x5361;&#x4FE1;&#x606F;&#x540C;&#x6B65;&#xFF08;&#x6FC0;&#x6D3B;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x6CE8;&#x9500;&#xFF09;">&#x56FA;&#x5E9F;&#x5916;&#x8FD0;&#x8F66;&#x5361;&#x4FE1;&#x606F;&#x540C;&#x6B65;&#xFF08;&#x6FC0;&#x6D3B;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x6CE8;&#x9500;&#xFF09;</h2>
+<h3 id="&#x7C7B;&#x578B;">&#x7C7B;&#x578B;</h3>
+<ul>
+<li>&#x65B9;&#x5F0F;&#xFF1A;POST</li>
+<li>&#x4E3B;&#x52A8;&#x901A;&#x8FC7; PI &#x5411;&#x7269;&#x6599;&#x7CFB;&#x7EDF;&#x53D1;&#x8D77; POST &#x8BF7;&#x6C42;&#x3002;</li>
+</ul>
+<h3 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;</h3>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>card_id</td>
+<td>&#x8F66;&#x5361; ID</td>
+<td>String(48)</td>
+<td>NFC &#x5361; ID</td>
+</tr>
+<tr>
+<td>apply_code</td>
+<td>&#x4E1A;&#x52A1;&#x5355;&#x53F7;</td>
+<td>String(64)</td>
+<td>&#x56FA;&#x5E9F;&#x7CFB;&#x7EDF;&#x5916;&#x8FD0;&#x5904;&#x7F6E;&#x5355;&#x53F7;&#x3002;</td>
+</tr>
+<tr>
+<td>car_number</td>
+<td>&#x8F66;&#x724C;&#x53F7;</td>
+<td>String(64)</td>
+<td>&#x8FD0;&#x8F93;&#x8F66;&#x8F86;&#x724C;&#x7167;&#x53F7;&#x7801;</td>
+</tr>
+<tr>
+<td>region</td>
+<td>&#x533A;&#x57DF;&#x7F16;&#x7801;</td>
+<td>String(64)</td>
+<td>&#x56FA;&#x5E9F;&#x7CFB;&#x7EDF;&#xFF0C;&#x533A;&#x57DF;&#x7F16;&#x7801;&#xFF0C;&#x70DF;&#x53F0;&#xFF1A;YT&#xFF0C;&#x5B81;&#x6CE2;&#xFF1A;NB &#x3002;</td>
+</tr>
+<tr>
+<td>goods_name</td>
+<td>&#x8D27;&#x7269;&#x540D;&#x79F0;</td>
+<td>String(64)</td>
+<td>&#x56FA;&#x5E9F;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>ship_enterprise</td>
+<td>&#x53D1;&#x8D27;&#x5355;&#x4F4D;</td>
+<td>String(64)</td>
+<td>&#x53D1;&#x8D27;&#x5355;&#x4F4D;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>dispose_enterprise</td>
+<td>&#x63A5;&#x53D7;&#x5355;&#x4F4D;</td>
+<td>String(64)</td>
+<td>&#x63A5;&#x6536;&#x5355;&#x4F4D;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>status</td>
+<td>&#x8F66;&#x5361;&#x72B6;&#x6001;</td>
+<td>String(64)</td>
+<td>1&#xFF1A;&#x6709;&#x6548;&#xFF0C;0&#xFF1A;&#x65E0;&#x6548;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x53C2;&#x6570;&#x793A;&#x4F8B;">&#x53C2;&#x6570;&#x793A;&#x4F8B;</h3>
+<pre><code>{
+    &quot;card_id&quot;:&quot;39092d65&quot;,
+    &quot;apply_code&quot;:&quot;201607140049&quot;,
+    &quot;car_number&quot;:&quot;&#x9C81;F68601&quot;,
+    &quot;goods_name&quot;:&quot;&#x5E9F; MDI&quot;,
+    &quot;ship_enterprise&quot;:&quot;&#x70DF;&#x53F0;&#x5DE5;&#x4E1A;&#x56ED;&#x6307;&#x6325;&#x90E8;&quot;,
+    &quot;dispose_enterprise&quot;:&quot;&#x946B;&#x5E7F;&#x7EFF;&#x73AF;&#x518D;&#x751F;&#x8D44;&#x6E90;&#x80A1;&#x4EFD;&#x6709;&#x9650;&#x516C;&#x53F8;&quot;,
+    &quot;region&quot;:&quot;YT&quot;,
+    &quot;status&quot;:&quot;1&quot;
+}
+</code></pre><p>&#x5411; PI &#x4EE5; POST &#x65B9;&#x5F0F;&#x901A;&#x8FC7; JSON Body &#x53D1;&#x9001;&#x6570;&#x636E;&#x9879;&#x3002;</p>
+<h2 id="&#x56FA;&#x5E9F;&#x5916;&#x8FD0;&#x8F66;&#x8F86;&#x8FC7;&#x78C5;&#x6570;&#x636E;&#x540C;&#x6B65;">&#x56FA;&#x5E9F;&#x5916;&#x8FD0;&#x8F66;&#x8F86;&#x8FC7;&#x78C5;&#x6570;&#x636E;&#x540C;&#x6B65;</h2>
+<h3 id="&#x7C7B;&#x578B;">&#x7C7B;&#x578B;</h3>
+<ul>
+<li>&#x65B9;&#x5F0F;&#xFF1A;PUT</li>
+<li>&#x63D0;&#x4F9B;&#x63A5;&#x53E3;&#x4F9B; PI &#x4EE5; PUT &#x65B9;&#x5F0F;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+<h3 id="&#x8BF7;&#x6C42;&#x53C2;&#x6570;">&#x8BF7;&#x6C42;&#x53C2;&#x6570;</h3>
+<p>&#x7269;&#x6D41;&#x7CFB;&#x7EDF;&#x901A;&#x8FC7; PI &#x4EE5; PUT &#x65B9;&#x5F0F;&#x901A;&#x8FC7; JSON Body &#x53D1;&#x9001;&#x6570;&#x636E;&#x9879;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x540D;&#x79F0;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>card_id</td>
+<td>&#x8F66;&#x5361; ID</td>
+<td>String(48)</td>
+<td>NFC &#x5361; ID</td>
+</tr>
+<tr>
+<td>apply_code</td>
+<td>&#x4E1A;&#x52A1;&#x5355;&#x53F7;</td>
+<td>String(64)</td>
+<td>&#x56FA;&#x5E9F;&#x7CFB;&#x7EDF;&#x5916;&#x8FD0;&#x5904;&#x7F6E;&#x5355;&#x53F7;&#x3002;</td>
+</tr>
+<tr>
+<td>car_number</td>
+<td>&#x8F66;&#x724C;&#x53F7;</td>
+<td>String(64)</td>
+<td>&#x8FD0;&#x8F93;&#x8F66;&#x8F86;&#x724C;&#x7167;&#x53F7;&#x7801;</td>
+</tr>
+<tr>
+<td>tare_weight</td>
+<td>&#x76AE;&#x91CD;</td>
+<td>Int</td>
+<td>&#x5355;&#x4F4D;&#xFF1A;&#x5343;&#x514B;</td>
+</tr>
+<tr>
+<td>gross_weight</td>
+<td>&#x6BDB;&#x91CD;</td>
+<td>Int</td>
+<td>&#x5355;&#x4F4D;&#xFF1A;&#x5343;&#x514B;</td>
+</tr>
+<tr>
+<td>net_weight</td>
+<td>&#x51C0;&#x91CD;</td>
+<td>Int</td>
+<td>&#x5355;&#x4F4D;&#xFF1A;&#x5343;&#x514B;</td>
+</tr>
+<tr>
+<td>first_time</td>
+<td>&#x7A7A;&#x8F66;&#x8FC7;&#x78C5;&#x65F6;&#x95F4;</td>
+<td>Datetime</td>
+<td>&#x683C;&#x5F0F;&#xFF1A;2016-01-01 12:00:00</td>
+</tr>
+<tr>
+<td>first_node</td>
+<td>&#x7A7A;&#x8F66;&#x8FC7;&#x78C5;&#x70B9;</td>
+<td>String(64)</td>
+<td>&#x7A7A;&#x8F66;&#x8FC7;&#x78C5;&#x70B9;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>second_time</td>
+<td>&#x91CD;&#x8F66;&#x8FC7;&#x78C5;&#x65F6;&#x95F4;</td>
+<td>Datetime</td>
+<td>&#x683C;&#x5F0F;&#xFF1A;2016-01-01 12:00:00</td>
+</tr>
+<tr>
+<td>second_node</td>
+<td>&#x91CD;&#x8F66;&#x8FC7;&#x78C5;&#x70B9;</td>
+<td>String(64)</td>
+<td>&#x7A7A;&#x8F66;&#x8FC7;&#x78C5;&#x70B9;&#x6807;&#x8BC6;</td>
+</tr>
+<tr>
+<td>image_url</td>
+<td>&#x8FC7;&#x78C5;&#x76D1;&#x63A7;&#x622A;&#x56FE; URL</td>
+<td>String(1024)</td>
+<td>&#x591A;&#x4E2A;&#x56FE;&#x7247;&#x7528;&#x82F1;&#x6587;&#x9017;&#x53F7; &#x201C;,&#x201D; &#x5206;&#x9694;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x53C2;&#x6570;&#x793A;&#x4F8B;">&#x53C2;&#x6570;&#x793A;&#x4F8B;</h3>
+<pre><code>{
+    &quot;card_id&quot;:&quot;39092d65&quot;,
+    &quot;apply_code&quot;:&quot;201607140049&quot;,
+    &quot;car_number&quot;:&quot;&#x9C81;F68601&quot;,
+    &quot;tare_weight&quot;:&quot;100000&quot;,
+    &quot;gross_weight&quot;:&quot;300000&quot;,
+    &quot;net_weight&quot;:&quot;200000&quot;,
+    &quot;first_time&quot;:&quot;2016-07-14 10:00:35&quot;,
+    &quot;first_node&quot;:&quot;4&#x53F7;&#x95E8;-1&#x53F7;&#x78C5;&quot;,
+    &quot;second_time&quot;:&quot;2016-07-14 14:00:55&quot;,
+    &quot;second_node&quot;:&quot;4&#x53F7;&#x95E8;-2&#x53F7;&#x78C5;&quot;,
+    &quot;image_url&quot;:&quot;/web/images/12057898.jpg,/web/images/12057899.jpg&quot;
+}
+</code></pre>
                     
                     </section>
                 
@@ -527,10 +608,10 @@
         </div>
 
         
-        <a href="../BPM/Model.html" class="navigation navigation-prev " aria-label="Previous page: BPM 模型模板"><i class="fa fa-angle-left"></i></a>
+        <a href="../LMS/index.html" class="navigation navigation-prev " aria-label="Previous page: 物流系统集成方案"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../BPM/EngineExtension.html" class="navigation navigation-next " aria-label="Next page: EAD 引擎扩展"><i class="fa fa-angle-right"></i></a>
+        <a href="../LMS/EngineExtension.html" class="navigation navigation-next " aria-label="Next page: EAD 扩展驱动"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
