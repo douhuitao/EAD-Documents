@@ -10,7 +10,5 @@
   * [应用引擎部署](Deploy/Engine.md)
 * [应用发布](Release/README.md)
   * [功能发布](Release/Function.md) 
-    * [Java 程序发布](Release/Function-Java.md)
-    * [配置数据发布](Release/Function-Configure.md)
   * [各环境发布建议](Release/Environment.md)
 
