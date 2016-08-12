@@ -38,6 +38,8 @@
     * [注册查询驱动](Advanced Settings/Register Query Driver.md)
     * [注册视图动作驱动](Advanced Settings/Register Action Driver.md)
     * [注册系统变量驱动](Advanced Settings/Register Variable Driver.md)
+  * [表单联动](Advanced Settings/Form.md)
+  * [视图模式](Advanced Settings/View Mode.md)
 * [网盘](Netdisk/README.md)
 * [案例](UseCase/README.md)
   * [案例1](UseCase/UC01-Form Data In System.md)
