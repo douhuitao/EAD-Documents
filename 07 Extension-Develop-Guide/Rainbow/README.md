@@ -23,3 +23,23 @@ define(function(require, exports, module){
 ```
 
 API 参考：http://requirejs.org/docs/api.html#cjsmodule
+
+### RequireJS 打包
+
+r.js 下载地址：http://requirejs.org/docs/release/2.2.0/r.js ，另存为链接，下载存储到 Rainbow 根目录。
+
+Rainbow 根目录，执行打包命令（依赖于 Node 环境）。
+
+```
+node r.js -o _built.js
+```
+
+### 版本标识更新
+
+Rainbow 进行 JS 或 CSS 资源更新后为了确保能够及时更新发布到客户端，需要修改生产环境入口文件（app.html）的版本标识，确保缓存更新。
+
+搜索 urlArgs 修改 URL 版本标识后缀：
+```
+urlArgs: 'bust=20160808001', //按照日期加顺序号的规则确保唯一性
+```
+

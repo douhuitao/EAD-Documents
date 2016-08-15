@@ -13,6 +13,7 @@
   * [变量驱动](Extend Project Develop/Variable Extend Develop.md)
 * [Rainbow 扩展开发](Rainbow/README.md)
   * [全局对象](Rainbow/Global.md)
+  * [API 说明](Rainbow/API.md)
   * [动作扩展](Rainbow/Action.md)
   * [视图扩展](Rainbow/View.md)
   * [主题自定义](Rainbow/Theme.md)

@@ -22,7 +22,7 @@ lessc style.less style.css
 
 ### Requirejs
 
-```r.js``` 下载地址：http://requirejs.org/docs/release/2.2.0/r.js ，（另存为链接，下载存储到 Rainbow 根目录）。
+r.js 下载地址：http://requirejs.org/docs/release/2.2.0/r.js ，（另存为链接，下载存储到 Rainbow 根目录）。
 
 Rainbow 根目录，执行打包命令（依赖于 Node 环境）。
 ```
