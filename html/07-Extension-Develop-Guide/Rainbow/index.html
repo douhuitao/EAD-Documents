@@ -53,7 +53,7 @@
         data-chapter-title="Rainbow 扩展开发"
         data-filepath="Rainbow/README.md"
         data-basepath=".."
-        data-revision="Mon Mar 28 2016 07:36:50 GMT+0800 (CST)"
+        data-revision="Mon Aug 15 2016 08:49:05 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -296,14 +296,29 @@
             
         </li>
     
-        <li class="chapter " data-level="4.2" data-path="Rainbow/Action.html">
+        <li class="chapter " data-level="4.2" data-path="Rainbow/API.html">
+            
+                
+                    <a href="../Rainbow/API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        API 说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Rainbow/Action.html">
             
                 
                     <a href="../Rainbow/Action.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.2.</b>
+                            <b>4.3.</b>
                         
                         动作扩展
                     </a>
@@ -311,14 +326,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.3" data-path="Rainbow/View.html">
+        <li class="chapter " data-level="4.4" data-path="Rainbow/View.html">
             
                 
                     <a href="../Rainbow/View.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.3.</b>
+                            <b>4.4.</b>
                         
                         视图扩展
                     </a>
@@ -326,14 +341,14 @@
             
         </li>
     
-        <li class="chapter " data-level="4.4" data-path="Rainbow/Theme.html">
+        <li class="chapter " data-level="4.5" data-path="Rainbow/Theme.html">
             
                 
                     <a href="../Rainbow/Theme.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>4.4.</b>
+                            <b>4.5.</b>
                         
                         主题自定义
                     </a>
@@ -424,7 +439,15 @@
     return fn;
 });
 </code></pre><p>API &#x53C2;&#x8003;&#xFF1A;<a href="http://requirejs.org/docs/api.html#cjsmodule" target="_blank">http://requirejs.org/docs/api.html#cjsmodule</a></p>
-
+<h3 id="requirejs-&#x6253;&#x5305;">RequireJS &#x6253;&#x5305;</h3>
+<p>r.js &#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;<a href="http://requirejs.org/docs/release/2.2.0/r.js" target="_blank">http://requirejs.org/docs/release/2.2.0/r.js</a> &#xFF0C;&#x53E6;&#x5B58;&#x4E3A;&#x94FE;&#x63A5;&#xFF0C;&#x4E0B;&#x8F7D;&#x5B58;&#x50A8;&#x5230; Rainbow &#x6839;&#x76EE;&#x5F55;&#x3002;</p>
+<p>Rainbow &#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x6267;&#x884C;&#x6253;&#x5305;&#x547D;&#x4EE4;&#xFF08;&#x4F9D;&#x8D56;&#x4E8E; Node &#x73AF;&#x5883;&#xFF09;&#x3002;</p>
+<pre><code>node r.js -o _built.js
+</code></pre><h3 id="&#x7248;&#x672C;&#x6807;&#x8BC6;&#x66F4;&#x65B0;">&#x7248;&#x672C;&#x6807;&#x8BC6;&#x66F4;&#x65B0;</h3>
+<p>Rainbow &#x8FDB;&#x884C; JS &#x6216; CSS &#x8D44;&#x6E90;&#x66F4;&#x65B0;&#x540E;&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x80FD;&#x591F;&#x53CA;&#x65F6;&#x66F4;&#x65B0;&#x53D1;&#x5E03;&#x5230;&#x5BA2;&#x6237;&#x7AEF;&#xFF0C;&#x9700;&#x8981;&#x4FEE;&#x6539;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x5165;&#x53E3;&#x6587;&#x4EF6;&#xFF08;app.html&#xFF09;&#x7684;&#x7248;&#x672C;&#x6807;&#x8BC6;&#xFF0C;&#x786E;&#x4FDD;&#x7F13;&#x5B58;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x641C;&#x7D22; urlArgs &#x4FEE;&#x6539; URL &#x7248;&#x672C;&#x6807;&#x8BC6;&#x540E;&#x7F00;&#xFF1A;</p>
+<pre><code>urlArgs: &apos;bust=20160808001&apos;, //&#x6309;&#x7167;&#x65E5;&#x671F;&#x52A0;&#x987A;&#x5E8F;&#x53F7;&#x7684;&#x89C4;&#x5219;&#x786E;&#x4FDD;&#x552F;&#x4E00;&#x6027;
+</code></pre>
                     
                     </section>
                 

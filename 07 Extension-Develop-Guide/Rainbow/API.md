@@ -4,72 +4,73 @@
 
 - actions
   - 类型：Array
-  - 描述：视图动作
+  - 描述：视图动作。
   - 元素：action
 - data
   - 类型：Object
-  - 描述：视图数据
+  - 描述：视图数据。
 - extend
   - 类型：String
-  - 描述：视图前端扩展配置
+  - 描述：视图前端扩展配置。
 - handle
   - 类型：String
-  - 描述：视图数据
-  - 枚举：mulpitle|Single
+  - 枚举：mulpitle,single
+  - 描述：视图数据，mulpitle：支持列表数据多选，single：支持列表数据单选，Null：不支持数据选择。 
 - id
   - 类型：UUID
-  - 描述：物理主键
+  - 描述：物理主键。
 - layout
   - 类型：String
-  - 描述：视图默认布局（预留）
+  - 描述：视图默认布局（预留）。
 - legend
   - 类型：String
-  - 描述：视图描述
+  - 描述：视图描述。
 - mode
   - 类型：String
-  - 描述：视图模式
-  - 枚举：table|tree|calendar|schedule
+  - 枚举：table,tree,calendar,schedule
+  - 描述：视图模式，table：表格列表，tree：树形列表，calendar：日历列表，schedule：排程列表。
 - name
   - 类型：String
-  - 描述：视图名称
+  - 描述：视图名称。
 - params
   - 类型：Object
-  - 描述：视图前端参数
+  - 描述：视图前端参数。
 - schema
   - 类型：Object
-  - 描述：视图定义
+  - 描述：视图定义。
 - setting
   - 类型：Object
-  - 描述：视图个性化设置参数，根据当前登录用户存储或显示（预留）
+  - 描述：视图个性化设置参数，根据当前登录用户存储或显示（预留）。
 - template
   - 类型：Text
-  - 描述：视图自定义模板（预留）
+  - 描述：视图自定义模板（预留）。
 - type
   - 类型：String
-  - 描述：视图类型
-  - 枚举：standard|box
+  - 枚举：standard,box
+  - 描述：视图类型，standard：标准视图，box：网盘视图。 
 
 ### action
 
 - action
   - 类型：String
-  - 描述：前端事件
-  - 枚举：one|batch|ever|file|download|upload|move|auth|更多参考附录
+  - 枚举：one,batch,ever,file,download,upload,move,auth
+  - 描述：前端事件,更多参考附录。
+  
 - allowMobile
   - 类型：String
-  - 描述：允许移动端访问（预留）
+  - 描述：允许移动端访问（预留）。
 - controls
   - 类型：String
-  - 描述：表单控件（预留）
+  - 描述：表单控件（预留）。
 - group
   - 类型：String
-  - 描述：动作按钮分组
+  - 描述：动作按钮分组。
 - icon
   - 类型：String
-  - 描述：图标（详情参考附录：图标集）
+  - 描述：图标（详情参考附录：图标集）。
 - id
   - 类型：UUID
-  - 描述：视图动作物理主键
+  - 描述：视图动作物理主键。
 - key
   - 类型：String
   - 描述：动作编码，与API HTTP 请求方法组合实现动作 URL 导航。
@@ -82,137 +83,137 @@
 - method
   - 类型：String
   - 描述：API HTTP 请求方法,遵循 Restful 风格实现 CRUD，与动作编码组合实现动作 URL 导航。
-  - 枚举：POST|PUT|DELETE
+  - 枚举：POST,PUT,DELETE
 - name
   - 类型：String
-  - 描述：动作名称
+  - 描述：动作名称。
 - primary
   - 类型：Boolean
   - 描述：重要动作，高亮显示。
 - params
   - 类型：Object
-  - 描述：动作前端参数
+  - 描述：动作前端参数。
 - selected
   - 类型：String
-  - single|somewhat|mulpitle
-  - 描述：选择模型，single：选定单条数据时出现，somewhat：只有选定数据时出现，mulpitle：选定多条数据时出现，Null：一直出现。
+  - none,single,somewhat,mulpitle
+  - 描述：数据选定显示模式，none：没有选定数据时出现，single：选定单条数据时出现，somewhat：只有选定数据时出现，mulpitle：选定多条数据时出现，Null：一直出现。
 - view
   - 类型：Object
-  - 描述：操作视图 API （嵌套）
+  - 描述：操作视图 API （嵌套）。
 
 ### data
 
 - collection
   - 类型：Array
   - 描述：查询数据集
-  - 元素：行数据
+  - 元素：行数据。
 - count
   - 类型：Int
-  - 描述：当前数据条数
+  - 描述：数据总条数。
 - pagination
   - 类型：Object
-  - 描述：分页对象
+  - 描述：分页对象。
 
 #### pagination
 
 - count
   - 类型：Int
-  - 描述：分页数
+  - 描述：分页总数。
 - current
   - 类型：Int
-  - 描述：当前分页
+  - 描述：当前分页。
 - size: 15
   - 类型：Int
-  - 描述：分页长度（每页条数）
+  - 描述：分页长度（每页条数）。
 
 ### schema
 
 - async: false
   - 类型：Boolean
-  - 描述：异步分页（仅在视图模式为树形是有效）
+  - 描述：异步分页（仅在视图模式为树形是有效）。
 - attributes
   - 类型：Array
-  - 描述：视图属性列表
+  - 描述：视图属性列表。
   - 元素：attribute
 - filters
   - 类型：Array
-  - 描述：视图过滤器列表
+  - 描述：视图过滤器列表。
   - 元素：filter
 - idName
   - 类型：String
-  - 描述：视图主键字段名称
+  - 描述：视图主键字段名称。
 - nodeIdName
   - 类型：String
-  - 描述：视图节点字段名称（仅在视图模式为树形时有效）
+  - 描述：视图节点字段名称（仅在视图模式为树形时有效）。
 - parentIdName
   - 类型：String
-  - 描述：视图父节点字段名称（仅在视图模式为树形时有效）
+  - 描述：视图父节点字段名称（仅在视图模式为树形时有效）。
 
 #### attribute
 
 - access
   - 类型：String
-  - 描述：权限
-  - 枚举：readonly|createonly|updateonly|write|none（禁止）
+  - 枚举：readonly,createonly,updateonly,write,none（禁止）
+  - 描述：权限。
 - alias
   - 类型：String
-  - 描述：别名，语义名称
+  - 描述：别名，语义名称。
 - control
   - 类型：String
-  - 枚举：text|select|chosen|date|datetime|multiple|textarea|editor|html|checkbox|更多参考附录
-  - 描述：表单控件
+  - 枚举：text,select,chosen,date,datetime,multiple,textarea,editor,html,checkbox
+  - 描述：表单控件,更多参考附录。
 - dataType
   - 类型：String
-  - 描述：数据类型
+  - 描述：数据类型。
 - display
   - 类型：String
   - 描述：渲染时执行的宏脚本（Javascript）。
 - group
   - 类型：String
-  - 描述：分组
+  - 描述：分组。
 - hidden
   - 类型：String
-  - 枚举：list|all
+  - 枚举：list,all
   - 描述：隐藏方式，list：列表隐藏，all：全部隐藏，空值代表不隐藏。
 - legend
   - 类型：String
-  - 描述：属性说明
+  - 描述：属性说明。
 - metaType
   - 类型：String
-  - 枚举：Boolean|Int|Key|Number|String|Text|Time|Object|Array
-  - 描述：元数据类型
+  - 枚举：Boolean,Int,Key,Number,String,Text,Time,Object,Array
+  - 描述：元数据类型。
 - name
   - 类型：String
-  - 描述：属性字段名称
+  - 描述：属性字段名称。
 - required
   - 类型：Boolean
-  - 描述：是否必须
+  - 描述：是否必须。
 - sort
   - 类型：Int
-  - 描述：序号
+  - 描述：序号。
 - system
   - 类型：String
-  - 描述：系统属性
+  - 描述：系统属性。
 - type
   - 类型：String
   - 枚举：value
-  - 描述：属性类型（预留）
+  - 描述：属性类型（预留）。
 - unique
   - 类型：String
-  - 描述：唯一类型
+  - 描述：唯一类型。
 - value
-  - 类型：String|Int|Text
-  - 描述：默认值
+  - 类型：String,Int,Text
+  - 描述：默认值。
 
 #### filter
 
 - control
   - 类型：String
-  - 枚举：text|select|chosen|date|datetime|multiple|textarea|editor|html|checkbox|更多参考附录
-  - 描述：表单控件
+  - 枚举：text,select,chosen,date,datetime,multiple,textarea,editor,html,checkbox,更多参考附录
+  - 描述：表单控件。
 - isAid
   - 类型：String
-  - 描述：辅助过滤器（预留）
+  - 描述：辅助过滤器（预留）。
 - isRange
   - 类型：Boolean
   - 描述：区间过滤器，仅在数据类型为时间或数值时有效。
@@ -221,8 +222,8 @@
   - 描述：属性字段名称，与视图属性字段名称映射。
 - required
   - 类型：Boolean
-  - 描述：必须（不为空）
+  - 描述：必须（不为空）。
 - value
-  - 类型：String|Int|Text
-  - 描述：默认值
+  - 类型：String,Int,Text
+  - 描述：默认值。
 

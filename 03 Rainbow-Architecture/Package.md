@@ -8,8 +8,10 @@
 │  └─img
 ├─dist
 │  └─js
+├─img
 ├─js
 │  ├─action
+│  ├─templates
 │  ├─vendor
 │  │  ├─bootstrap-daterangepicker
 │  │  ├─bootstrap-datetimepicker
@@ -41,7 +43,9 @@
 │         └─action
 └─theme
     ├─classic
-    └─tech
+    ├─tech
+    ├─whchem
+    └─whbpm
 ```
 
 - assets ：资源包
@@ -49,10 +53,12 @@
     - css ：CSS 样式文件
     - fonts ：字体
     - img ：图片
-- dist
+- dist ：打包存储目录
     - js ：打包 JS 生成目录
+- img ： 图片目录，主要存储登录界面背景、Logo 等图片资源
 - js
     - action ：扩展 Action 存放路径
+    - templates ：扩展 Action 引用模板目录
     - vendor ：第三方组件目录
       - bootstrap-daterangepicker ：日期区间选择器
       - bootstrap-datetimepicker ：日期选择器
@@ -69,8 +75,8 @@
     - en ：英文语言包目录
     - zh ：中文语言包目录
 - src ：源码目录
-    - base ：基础模块
-    - common ：通用模块
+    - base ：基础模块（应用容器、导航等）
+    - common ：通用模块（登录、通知等）
     - components ：组件
       - base ：基础抽象
       - controls ：表单控件
@@ -78,10 +84,12 @@
       - form ：表单
       - list ：列表
       - webkit ：小组件
-    - utility ：辅助函数
+    - utility ：辅助函数（模式窗口、数据过滤筛选方法、cookie 操作）
     - view ：视图
       - kit ：部件
           - action ：视图动作
 - theme ：主题包存放路径
     - classic ：经典主题
     - tech ：科技主题
+    - whchem ：万华主题
+    - whbpm ： 万华 BPM 主题

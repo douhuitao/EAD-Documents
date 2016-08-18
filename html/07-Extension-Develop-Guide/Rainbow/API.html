@@ -1,0 +1,827 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>API 说明 | 扩展开发手册</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Rainbow/Action.html" />
+    
+    
+    <link rel="prev" href="../Rainbow/Global.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4.2"
+        data-chapter-title="API 说明"
+        data-filepath="Rainbow/API.md"
+        data-basepath=".."
+        data-revision="Mon Aug 15 2016 08:49:05 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Ready To Develop/index.html">
+            
+                
+                    <a href="../Ready To Develop/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        开发环境搭建
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Ready To Develop/Ready To Develop.html">
+            
+                
+                    <a href="../Ready To Develop/Ready To Develop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        准备
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Ready To Develop/Custom Developer Environment.html">
+            
+                
+                    <a href="../Ready To Develop/Custom Developer Environment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        用户开发环境
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Ready To Develop/Maven repository.html">
+            
+                
+                    <a href="../Ready To Develop/Maven repository.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Maven 私服搭建
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Create Project/index.html">
+            
+                
+                    <a href="../Create Project/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        工程创建
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="Create Project/Create EAD Project.html">
+            
+                
+                    <a href="../Create Project/Create EAD Project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        平台工程创建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Create Project/Create Extend Project.html">
+            
+                
+                    <a href="../Create Project/Create Extend Project.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        扩展开发工程创建
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Extend Project Develop/index.html">
+            
+                
+                    <a href="../Extend Project Develop/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        扩展开发规范
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Extend Project Develop/Query Extend Develop.html">
+            
+                
+                    <a href="../Extend Project Develop/Query Extend Develop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        查询驱动
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="Extend Project Develop/Action Extend Develop.html">
+            
+                
+                    <a href="../Extend Project Develop/Action Extend Develop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        视图动作驱动
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="Extend Project Develop/Variable Extend Develop.html">
+            
+                
+                    <a href="../Extend Project Develop/Variable Extend Develop.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        变量驱动
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Rainbow/index.html">
+            
+                
+                    <a href="../Rainbow/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Rainbow 扩展开发
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="Rainbow/Global.html">
+            
+                
+                    <a href="../Rainbow/Global.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        全局对象
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.2" data-path="Rainbow/API.html">
+            
+                
+                    <a href="../Rainbow/API.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        API 说明
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Rainbow/Action.html">
+            
+                
+                    <a href="../Rainbow/Action.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        动作扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Rainbow/View.html">
+            
+                
+                    <a href="../Rainbow/View.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        视图扩展
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Rainbow/Theme.html">
+            
+                
+                    <a href="../Rainbow/Theme.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        主题自定义
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Packaging/index.html">
+            
+                
+                    <a href="../Packaging/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        程序打包
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="Deployment/index.html">
+            
+                
+                    <a href="../Deployment/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        程序发布
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >扩展开发手册</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="&#x89C6;&#x56FE;-api-&#x8BF4;&#x660E;">&#x89C6;&#x56FE; API &#x8BF4;&#x660E;</h2>
+<h3 id="&#x57FA;&#x672C;&#x5C5E;&#x6027;">&#x57FA;&#x672C;&#x5C5E;&#x6027;</h3>
+<ul>
+<li>actions<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Array</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x52A8;&#x4F5C;</li>
+<li>&#x5143;&#x7D20;&#xFF1A;action</li>
+</ul>
+</li>
+<li>data<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x6570;&#x636E;</li>
+</ul>
+</li>
+<li>extend<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x524D;&#x7AEF;&#x6269;&#x5C55;&#x914D;&#x7F6E;</li>
+</ul>
+</li>
+<li>handle<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x6570;&#x636E;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;mulpitle|Single</li>
+</ul>
+</li>
+<li>id<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;UUID</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x7269;&#x7406;&#x4E3B;&#x952E;</li>
+</ul>
+</li>
+<li>layout<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x9ED8;&#x8BA4;&#x5E03;&#x5C40;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>legend<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x63CF;&#x8FF0;</li>
+</ul>
+</li>
+<li>mode<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x6A21;&#x5F0F;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;table|tree|calendar|schedule</li>
+</ul>
+</li>
+<li>name<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+<li>params<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x524D;&#x7AEF;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li>schema<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x5B9A;&#x4E49;</li>
+</ul>
+</li>
+<li>setting<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x4E2A;&#x6027;&#x5316;&#x8BBE;&#x7F6E;&#x53C2;&#x6570;&#xFF0C;&#x6839;&#x636E;&#x5F53;&#x524D;&#x767B;&#x5F55;&#x7528;&#x6237;&#x5B58;&#x50A8;&#x6216;&#x663E;&#x793A;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>template<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Text</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x81EA;&#x5B9A;&#x4E49;&#x6A21;&#x677F;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>type<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x7C7B;&#x578B;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;standard|box</li>
+</ul>
+</li>
+</ul>
+<h3 id="action">action</h3>
+<ul>
+<li>action<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x524D;&#x7AEF;&#x4E8B;&#x4EF6;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;one|batch|ever|file|download|upload|move|auth|&#x66F4;&#x591A;&#x53C2;&#x8003;&#x9644;&#x5F55;</li>
+</ul>
+</li>
+<li>allowMobile<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5141;&#x8BB8;&#x79FB;&#x52A8;&#x7AEF;&#x8BBF;&#x95EE;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>controls<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>group<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x52A8;&#x4F5C;&#x6309;&#x94AE;&#x5206;&#x7EC4;</li>
+</ul>
+</li>
+<li>icon<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x56FE;&#x6807;&#xFF08;&#x8BE6;&#x60C5;&#x53C2;&#x8003;&#x9644;&#x5F55;&#xFF1A;&#x56FE;&#x6807;&#x96C6;&#xFF09;</li>
+</ul>
+</li>
+<li>id<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;UUID</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x52A8;&#x4F5C;&#x7269;&#x7406;&#x4E3B;&#x952E;</li>
+</ul>
+</li>
+<li>key<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x52A8;&#x4F5C;&#x7F16;&#x7801;&#xFF0C;&#x4E0E;API HTTP &#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x7EC4;&#x5408;&#x5B9E;&#x73B0;&#x52A8;&#x4F5C; URL &#x5BFC;&#x822A;&#x3002;</li>
+</ul>
+</li>
+<li>legend<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x52A8;&#x4F5C;&#x63CF;&#x8FF0;&#x8BF4;&#x660E;&#x3002;</li>
+</ul>
+</li>
+<li>list<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Text</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x53EF;&#x64CD;&#x4F5C;&#x89C6;&#x56FE;&#x5C5E;&#x6027;&#x5217;&#x8868;&#xFF0C;&#x4EE5;&#x201C;,&#x201D;&#x5206;&#x9694;&#x4FDD;&#x5B58;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x3002;</li>
+</ul>
+</li>
+<li>method<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;API HTTP &#x8BF7;&#x6C42;&#x65B9;&#x6CD5;,&#x9075;&#x5FAA; Restful &#x98CE;&#x683C;&#x5B9E;&#x73B0; CRUD&#xFF0C;&#x4E0E;&#x52A8;&#x4F5C;&#x7F16;&#x7801;&#x7EC4;&#x5408;&#x5B9E;&#x73B0;&#x52A8;&#x4F5C; URL &#x5BFC;&#x822A;&#x3002;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;POST|PUT|DELETE</li>
+</ul>
+</li>
+<li>name<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x52A8;&#x4F5C;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+<li>primary<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Boolean</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x91CD;&#x8981;&#x52A8;&#x4F5C;&#xFF0C;&#x9AD8;&#x4EAE;&#x663E;&#x793A;&#x3002;</li>
+</ul>
+</li>
+<li>params<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x52A8;&#x4F5C;&#x524D;&#x7AEF;&#x53C2;&#x6570;</li>
+</ul>
+</li>
+<li>selected<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>single|somewhat|mulpitle</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x9009;&#x62E9;&#x6A21;&#x578B;&#xFF0C;single&#xFF1A;&#x9009;&#x5B9A;&#x5355;&#x6761;&#x6570;&#x636E;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;somewhat&#xFF1A;&#x53EA;&#x6709;&#x9009;&#x5B9A;&#x6570;&#x636E;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;mulpitle&#xFF1A;&#x9009;&#x5B9A;&#x591A;&#x6761;&#x6570;&#x636E;&#x65F6;&#x51FA;&#x73B0;&#xFF0C;Null&#xFF1A;&#x4E00;&#x76F4;&#x51FA;&#x73B0;&#x3002;</li>
+</ul>
+</li>
+<li>view<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x64CD;&#x4F5C;&#x89C6;&#x56FE; API &#xFF08;&#x5D4C;&#x5957;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h3 id="data">data</h3>
+<ul>
+<li>collection<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Array</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x67E5;&#x8BE2;&#x6570;&#x636E;&#x96C6;</li>
+<li>&#x5143;&#x7D20;&#xFF1A;&#x884C;&#x6570;&#x636E;</li>
+</ul>
+</li>
+<li>count<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Int</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5F53;&#x524D;&#x6570;&#x636E;&#x6761;&#x6570;</li>
+</ul>
+</li>
+<li>pagination<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Object</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5206;&#x9875;&#x5BF9;&#x8C61;</li>
+</ul>
+</li>
+</ul>
+<h4 id="pagination">pagination</h4>
+<ul>
+<li>count<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Int</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5206;&#x9875;&#x6570;</li>
+</ul>
+</li>
+<li>current<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Int</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5F53;&#x524D;&#x5206;&#x9875;</li>
+</ul>
+</li>
+<li>size: 15<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Int</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5206;&#x9875;&#x957F;&#x5EA6;&#xFF08;&#x6BCF;&#x9875;&#x6761;&#x6570;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h3 id="schema">schema</h3>
+<ul>
+<li>async: false<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Boolean</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5F02;&#x6B65;&#x5206;&#x9875;&#xFF08;&#x4EC5;&#x5728;&#x89C6;&#x56FE;&#x6A21;&#x5F0F;&#x4E3A;&#x6811;&#x5F62;&#x662F;&#x6709;&#x6548;&#xFF09;</li>
+</ul>
+</li>
+<li>attributes<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Array</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x5C5E;&#x6027;&#x5217;&#x8868;</li>
+<li>&#x5143;&#x7D20;&#xFF1A;attribute</li>
+</ul>
+</li>
+<li>filters<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Array</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x8FC7;&#x6EE4;&#x5668;&#x5217;&#x8868;</li>
+<li>&#x5143;&#x7D20;&#xFF1A;filter</li>
+</ul>
+</li>
+<li>idName<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x4E3B;&#x952E;&#x5B57;&#x6BB5;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+<li>nodeIdName<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x8282;&#x70B9;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#xFF08;&#x4EC5;&#x5728;&#x89C6;&#x56FE;&#x6A21;&#x5F0F;&#x4E3A;&#x6811;&#x5F62;&#x65F6;&#x6709;&#x6548;&#xFF09;</li>
+</ul>
+</li>
+<li>parentIdName<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x89C6;&#x56FE;&#x7236;&#x8282;&#x70B9;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#xFF08;&#x4EC5;&#x5728;&#x89C6;&#x56FE;&#x6A21;&#x5F0F;&#x4E3A;&#x6811;&#x5F62;&#x65F6;&#x6709;&#x6548;&#xFF09;</li>
+</ul>
+</li>
+</ul>
+<h4 id="attribute">attribute</h4>
+<ul>
+<li>access<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x6743;&#x9650;</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;readonly|createonly|updateonly|write|none&#xFF08;&#x7981;&#x6B62;&#xFF09;</li>
+</ul>
+</li>
+<li>alias<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x522B;&#x540D;&#xFF0C;&#x8BED;&#x4E49;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+<li>control<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;text|select|chosen|date|datetime|multiple|textarea|editor|html|checkbox|&#x66F4;&#x591A;&#x53C2;&#x8003;&#x9644;&#x5F55;</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;</li>
+</ul>
+</li>
+<li>dataType<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+</ul>
+</li>
+<li>display<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x6E32;&#x67D3;&#x65F6;&#x6267;&#x884C;&#x7684;&#x5B8F;&#x811A;&#x672C;&#xFF08;Javascript&#xFF09;&#x3002;</li>
+</ul>
+</li>
+<li>group<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5206;&#x7EC4;</li>
+</ul>
+</li>
+<li>hidden<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;list|all</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x9690;&#x85CF;&#x65B9;&#x5F0F;&#xFF0C;list&#xFF1A;&#x5217;&#x8868;&#x9690;&#x85CF;&#xFF0C;all&#xFF1A;&#x5168;&#x90E8;&#x9690;&#x85CF;&#xFF0C;&#x7A7A;&#x503C;&#x4EE3;&#x8868;&#x4E0D;&#x9690;&#x85CF;&#x3002;</li>
+</ul>
+</li>
+<li>legend<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5C5E;&#x6027;&#x8BF4;&#x660E;</li>
+</ul>
+</li>
+<li>metaType<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;Boolean|Int|Key|Number|String|Text|Time|Object|Array</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5143;&#x6570;&#x636E;&#x7C7B;&#x578B;</li>
+</ul>
+</li>
+<li>name<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x540D;&#x79F0;</li>
+</ul>
+</li>
+<li>required<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Boolean</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x662F;&#x5426;&#x5FC5;&#x987B;</li>
+</ul>
+</li>
+<li>sort<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Int</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5E8F;&#x53F7;</li>
+</ul>
+</li>
+<li>system<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x7CFB;&#x7EDF;&#x5C5E;&#x6027;</li>
+</ul>
+</li>
+<li>type<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;value</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5C5E;&#x6027;&#x7C7B;&#x578B;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>unique<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x552F;&#x4E00;&#x7C7B;&#x578B;</li>
+</ul>
+</li>
+<li>value<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String|Int|Text</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+</li>
+</ul>
+<h4 id="filter">filter</h4>
+<ul>
+<li>control<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x679A;&#x4E3E;&#xFF1A;text|select|chosen|date|datetime|multiple|textarea|editor|html|checkbox|&#x66F4;&#x591A;&#x53C2;&#x8003;&#x9644;&#x5F55;</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;</li>
+</ul>
+</li>
+<li>isAid<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x8F85;&#x52A9;&#x8FC7;&#x6EE4;&#x5668;&#xFF08;&#x9884;&#x7559;&#xFF09;</li>
+</ul>
+</li>
+<li>isRange<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Boolean</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x533A;&#x95F4;&#x8FC7;&#x6EE4;&#x5668;&#xFF0C;&#x4EC5;&#x5728;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E3A;&#x65F6;&#x95F4;&#x6216;&#x6570;&#x503C;&#x65F6;&#x6709;&#x6548;&#x3002;</li>
+</ul>
+</li>
+<li>name<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#xFF0C;&#x4E0E;&#x89C6;&#x56FE;&#x5C5E;&#x6027;&#x5B57;&#x6BB5;&#x540D;&#x79F0;&#x6620;&#x5C04;&#x3002;</li>
+</ul>
+</li>
+<li>required<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;Boolean</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x5FC5;&#x987B;&#xFF08;&#x4E0D;&#x4E3A;&#x7A7A;&#xFF09;</li>
+</ul>
+</li>
+<li>value<ul>
+<li>&#x7C7B;&#x578B;&#xFF1A;String|Int|Text</li>
+<li>&#x63CF;&#x8FF0;&#xFF1A;&#x9ED8;&#x8BA4;&#x503C;</li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Rainbow/Global.html" class="navigation navigation-prev " aria-label="Previous page: 全局对象"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Rainbow/Action.html" class="navigation navigation-next " aria-label="Next page: 动作扩展"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
