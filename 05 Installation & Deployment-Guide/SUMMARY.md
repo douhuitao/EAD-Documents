@@ -17,3 +17,7 @@
 * [集群部署](Master&Slave/README.md)
   * [Mysql 主备配置](Master&Slave/Mysql.md)
   * [Mongodb 主备配置](Master&Slave/Mongodb.md)
+* [EAD Suse环境部署](Suse Install/README.md)
+  * [安装包路径](Suse Install/install_package.md)
+  * [Mongodb安装](Suse Install/install_mongodb.md)
+  * [Jre & Tomcat安装](Suse Install/install_jre&tomcat.md)

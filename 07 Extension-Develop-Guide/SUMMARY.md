@@ -7,6 +7,7 @@
 * [工程创建](Create Project/README.md)
   * [平台工程创建](Create Project/Create EAD Project.md)
   * [扩展开发工程创建](Create Project/Create Extend Project.md)
+  * [本地环境启动](Create Project/Start Local project.md)
 * [扩展开发规范](Extend Project Develop/README.md)
   * [查询驱动](Extend Project Develop/Query Extend Develop.md)
   * [视图动作驱动](Extend Project Develop/Action Extend Develop.md)
