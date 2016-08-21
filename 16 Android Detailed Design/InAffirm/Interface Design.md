@@ -2,7 +2,7 @@
 
 #### 获取转移单接口
 
-获取装车确认(内部转移)单
+获取装车确认(内部转移)单，登录成功后加载主页时、同步转移单成功后调用
 
 URL `http://eadqas.whchem.com:8080/hwms/api/mobile-hwit`
 

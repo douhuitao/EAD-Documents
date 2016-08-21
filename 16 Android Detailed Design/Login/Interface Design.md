@@ -44,7 +44,7 @@ HTTP请求方式 `POST`
 
 #### 卡同步接口
 
-获取当前可登录系统的员工(车)卡信息
+获取当前可登录系统的员工(车)卡信息，程序打开时调用
 
 URL `http://eadqas.whchem.com:8080/hwms/api/card/sync`
 
