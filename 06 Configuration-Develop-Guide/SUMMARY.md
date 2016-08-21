@@ -58,4 +58,5 @@
   * [高级进阶](Case-PMO/Advanced/README.md)
     * [快速构建模型视图](Case-PMO/Advanced/Quick.md) 
     * [高级属性配置](Case-PMO/Advanced/Attributes.md)
-    * [高级视图动作](Case-PMO/Advanced/Actions.md)
+    * [通用视图动作驱动](Case-PMO/Advanced/Common Actions.md)
+    * [自定义视图动作驱动](Case-PMO/Advanced/Custom Actions.md)
