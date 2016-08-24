@@ -56,7 +56,7 @@ db.createUser(
 在 Windows 命令窗口中运行以下命令，把 mongodb 加入 Windows 服务：
 
 ```
-sc.exe create MongoDB binPath= "D:\gbros\mongodb\bin\mongod.exe --auth --service --config=\"D:\gbros\mongodb\mongod.cfg\"" DisplayName= "MongoDB" start= "auto"
+sc.exe create MongoDB binPath= "D:\gbros\mongodb\bin\mongod.exe --auth --service --config="D:\gbros\mongodb\mongod.cfg" DisplayName= "MongoDB" start= "auto"
 ```
 > 注意：以上命令中的 binPath 和 config 路径设置为正确路径；
 > DisplayName 为 Windows 中mongodb服务名称，start 为 mongodb 启动类型；
