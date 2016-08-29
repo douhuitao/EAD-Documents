@@ -2,6 +2,7 @@
 
 ### 引擎驱动
 
+<<<<<<< Updated upstream
 > 注意，引擎驱动都是依靠Spring Bean + 反射机制执行的，所以在命名是，Spring Bean 名称不能重复；
 
 驱动开发默认命名都采用驼峰命名法，遵循Google Code Style。
@@ -65,6 +66,9 @@ public Object getDay(EadVariable variable) { }
 ```
 public Object getDepartmentId(EadVariable variable, Session session) { }
 ```
+=======
+参考附录 《Java 编码规范》；
+>>>>>>> Stashed changes
 
 ### Rainbow 扩展驱动
 
