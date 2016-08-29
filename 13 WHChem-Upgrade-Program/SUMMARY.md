@@ -15,4 +15,7 @@
   * [BPM 扩展](BPM/BPMExtension.md)
   * [EAD 引擎扩展](BPM/EngineExtension.md)
   * [Rainbow 扩展](BPM/RainbowExtension.md)
+* [物流系统集成方案](LMS/README.md)
+  * [接口及协议](LMS/Protocol.md)
+  * [EAD 扩展驱动](LMS/EngineExtension.md)
 

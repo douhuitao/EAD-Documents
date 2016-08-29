@@ -1,6 +1,9 @@
 # Summary
 
 * [概述](README.md)
+* [编码规范](StyleGuide/README.md)
+  * [Java 编码规范](StyleGuide/Java.md) 
+  * [Javascript 编码规范](StyleGuide/JavaScript.md)
 * [引擎附录](Engine/README.md)
   * [系统变量](Engine/Var.md)
   * [驱动](Engine/Driver.md)

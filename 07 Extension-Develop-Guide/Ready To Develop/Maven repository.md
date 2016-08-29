@@ -46,6 +46,7 @@ $ ./nexus start
 ### 用户开发环境配置连接 Maven 私服
 
 #### 1、设置用户环境全局 Maven setting 文件；
+(可到svn目录直接下载setting文件，进行覆盖：https://svnpd.ap.whchem.com/svn/ECS/EAD/trunk/Tools)
 
 ```
 <profiles>
@@ -90,6 +91,12 @@ $ ./nexus start
     <activeProfile>nexus</activeProfile>
   </activeProfiles>
   ```
+
+如有必要，手动设置本地Maven库的地址：
+
+    <localRepository>M:\maven\repository</localRepository>
+
+
 在首次搭建好 Nexus 时，需要 Maven 私服连接外网。
 私服访问或下载规则如下：
 - 用户首次编译工程时，会首先到私服去下载包；

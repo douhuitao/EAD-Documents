@@ -53,7 +53,7 @@
         data-chapter-title="源码包结构"
         data-filepath="Package.md"
         data-basepath="."
-        data-revision="Wed Apr 20 2016 13:35:57 GMT+0800 (CST)"
+        data-revision="Thu Aug 18 2016 10:22:03 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -288,8 +288,10 @@
 &#x2502;  &#x2514;&#x2500;img
 &#x251C;&#x2500;dist
 &#x2502;  &#x2514;&#x2500;js
+&#x251C;&#x2500;img
 &#x251C;&#x2500;js
 &#x2502;  &#x251C;&#x2500;action
+&#x2502;  &#x251C;&#x2500;templates
 &#x2502;  &#x251C;&#x2500;vendor
 &#x2502;  &#x2502;  &#x251C;&#x2500;bootstrap-daterangepicker
 &#x2502;  &#x2502;  &#x251C;&#x2500;bootstrap-datetimepicker
@@ -321,7 +323,9 @@
 &#x2502;         &#x2514;&#x2500;action
 &#x2514;&#x2500;theme
     &#x251C;&#x2500;classic
-    &#x2514;&#x2500;tech
+    &#x251C;&#x2500;tech
+    &#x251C;&#x2500;whchem
+    &#x2514;&#x2500;whbpm
 </code></pre><ul>
 <li>assets &#xFF1A;&#x8D44;&#x6E90;&#x5305;<ul>
 <li>bootstrap &#xFF1A;Bootstrap</li>
@@ -330,12 +334,14 @@
 <li>img &#xFF1A;&#x56FE;&#x7247;</li>
 </ul>
 </li>
-<li>dist<ul>
+<li>dist &#xFF1A;&#x6253;&#x5305;&#x5B58;&#x50A8;&#x76EE;&#x5F55;<ul>
 <li>js &#xFF1A;&#x6253;&#x5305; JS &#x751F;&#x6210;&#x76EE;&#x5F55;</li>
 </ul>
 </li>
+<li>img &#xFF1A; &#x56FE;&#x7247;&#x76EE;&#x5F55;&#xFF0C;&#x4E3B;&#x8981;&#x5B58;&#x50A8;&#x767B;&#x5F55;&#x754C;&#x9762;&#x80CC;&#x666F;&#x3001;Logo &#x7B49;&#x56FE;&#x7247;&#x8D44;&#x6E90;</li>
 <li>js<ul>
 <li>action &#xFF1A;&#x6269;&#x5C55; Action &#x5B58;&#x653E;&#x8DEF;&#x5F84;</li>
+<li>templates &#xFF1A;&#x6269;&#x5C55; Action &#x5F15;&#x7528;&#x6A21;&#x677F;&#x76EE;&#x5F55;</li>
 <li>vendor &#xFF1A;&#x7B2C;&#x4E09;&#x65B9;&#x7EC4;&#x4EF6;&#x76EE;&#x5F55;<ul>
 <li>bootstrap-daterangepicker &#xFF1A;&#x65E5;&#x671F;&#x533A;&#x95F4;&#x9009;&#x62E9;&#x5668;</li>
 <li>bootstrap-datetimepicker &#xFF1A;&#x65E5;&#x671F;&#x9009;&#x62E9;&#x5668;</li>
@@ -358,8 +364,8 @@
 </ul>
 </li>
 <li>src &#xFF1A;&#x6E90;&#x7801;&#x76EE;&#x5F55;<ul>
-<li>base &#xFF1A;&#x57FA;&#x7840;&#x6A21;&#x5757;</li>
-<li>common &#xFF1A;&#x901A;&#x7528;&#x6A21;&#x5757;</li>
+<li>base &#xFF1A;&#x57FA;&#x7840;&#x6A21;&#x5757;&#xFF08;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#x3001;&#x5BFC;&#x822A;&#x7B49;&#xFF09;</li>
+<li>common &#xFF1A;&#x901A;&#x7528;&#x6A21;&#x5757;&#xFF08;&#x767B;&#x5F55;&#x3001;&#x901A;&#x77E5;&#x7B49;&#xFF09;</li>
 <li>components &#xFF1A;&#x7EC4;&#x4EF6;<ul>
 <li>base &#xFF1A;&#x57FA;&#x7840;&#x62BD;&#x8C61;</li>
 <li>controls &#xFF1A;&#x8868;&#x5355;&#x63A7;&#x4EF6;</li>
@@ -369,7 +375,7 @@
 <li>webkit &#xFF1A;&#x5C0F;&#x7EC4;&#x4EF6;</li>
 </ul>
 </li>
-<li>utility &#xFF1A;&#x8F85;&#x52A9;&#x51FD;&#x6570;</li>
+<li>utility &#xFF1A;&#x8F85;&#x52A9;&#x51FD;&#x6570;&#xFF08;&#x6A21;&#x5F0F;&#x7A97;&#x53E3;&#x3001;&#x6570;&#x636E;&#x8FC7;&#x6EE4;&#x7B5B;&#x9009;&#x65B9;&#x6CD5;&#x3001;cookie &#x64CD;&#x4F5C;&#xFF09;</li>
 <li>view &#xFF1A;&#x89C6;&#x56FE;<ul>
 <li>kit &#xFF1A;&#x90E8;&#x4EF6;<ul>
 <li>action &#xFF1A;&#x89C6;&#x56FE;&#x52A8;&#x4F5C;</li>
@@ -382,6 +388,8 @@
 <li>theme &#xFF1A;&#x4E3B;&#x9898;&#x5305;&#x5B58;&#x653E;&#x8DEF;&#x5F84;<ul>
 <li>classic &#xFF1A;&#x7ECF;&#x5178;&#x4E3B;&#x9898;</li>
 <li>tech &#xFF1A;&#x79D1;&#x6280;&#x4E3B;&#x9898;</li>
+<li>whchem &#xFF1A;&#x4E07;&#x534E;&#x4E3B;&#x9898;</li>
+<li>whbpm &#xFF1A; &#x4E07;&#x534E; BPM &#x4E3B;&#x9898;</li>
 </ul>
 </li>
 </ul>

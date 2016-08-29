@@ -87,6 +87,21 @@ EAD 平台结合 BMP 定义的视图驱动，主要功能点是组合 BPM 审批
 - Rest 方式请求 BPM 待办转办、加签接口;
 - BPM 接口返回成功后更新 bpm_status、bpm_update_time;
 
+#### 2.4 注销驱动
+
+**驱动名称：** WhbpmLogout
+
+**驱动 URI：** Whbpm/logout
+
+**涉及 BPM 接口：** 注销接口（?）
+
+**驱动功能：**
+- 接收并解析用户提交的数据;
+- 根据视图定义处理动作表单数据;
+- 组织注销接口参数;
+- Rest 方式请求 BPM 注销接口;
+- BPM 接口返回成功后更新 bpm_status、bpm_update_time;
+
 ### 3、 辅助查询驱动
 
 #### 3.1 下一环节以及审批人驱动
