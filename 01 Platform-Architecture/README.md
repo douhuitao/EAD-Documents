@@ -22,9 +22,3 @@ EAD 服务端 API 引擎，基于 J2EE 软件开发平台的 Spring Cloud 框架
 
 #### Rainbow
 EAD 平台前端解析引擎，基于 HTML5、CSS3 和 JavaScript 对 EAD 服务引擎提供的 Rest Service API 进行解析和渲染，动态生成 Web 用户交互界面的前端应用程序框架。 
-
-### 参考资料
-
-- 《EAD 引擎架构设计说明》;
-- 《Rainbow 架构设计说明》;
-- 《维基百科》;
